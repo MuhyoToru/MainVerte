@@ -9,51 +9,57 @@ import SwiftUI
 
 struct AddPlantExView: View {
     
-    
+    @State private var plantCounter = 0
     
     var body: some View {
         
-        Button(action: {
-            // Action à mettre
-        }) {
             HStack(spacing: 0) {
                 ZStack {
-                    Rectangle()
+                   UnevenRoundedRectangle(topLeadingRadius: 20, bottomLeadingRadius: 20, bottomTrailingRadius: 0, topTrailingRadius: 0)
+                        .foregroundStyle(Color.mvWhite)
                         .frame(width: 297.5, height: 80)
                         .foregroundStyle(Color.mvWhite)
+    
                     VStack {
-                        Text("Rosier Fées des...")
-                            .foregroundColor(.black)
-                            .font(.headline)
-                        
-                        Text("Un rosier paysager...")
-                            .foregroundColor(.gray)
-                            .font(.subheadline)
-                            .padding(.leading, 1)
-                        
+                        HStack {
+                            Image("MVSnowFairyRoseBush")
+                            VStack {
+                                Text("Rosier Fées des...")
+                                    .foregroundColor(.black)
+                                    .font(.headline)
+                                
+                                Text("Un rosier paysager...")
+                                    .foregroundColor(.gray)
+                                    .font(.subheadline)
+                                    .padding(.leading, 1)
+                            }
+                        }
                     }
                 }
                 
                 VStack {
                     ZStack {
-                        Rectangle()
+                        UnevenRoundedRectangle(bottomTrailingRadius: 20, topTrailingRadius: 20)
                             .fill(Color.mvLightBlue)
                             .frame(width: 40 , height: 80)
                         
+                        
                         VStack(spacing: -4) {
                             Button(action: {
-                                // Action à mettre
+                                plantCounter += 1
                             }) {
                                 Text("+")
                                     .foregroundStyle(.mvWhite)
                                     .font(.title)
                             }
-                            Text("0")
+                            Text("\(plantCounter)")
                                 .foregroundStyle(.mvWhite)
                                 .font(.title)
                             
                             Button(action: {
-                                // Action à mettre
+                                if plantCounter > 0 {
+                                    plantCounter -= 1
+                                }
                             }) {
                                 Text("-")
                                     .foregroundStyle(.mvWhite)
@@ -64,10 +70,7 @@ struct AddPlantExView: View {
                 }
                 
             }
-            
-            .cornerRadius(20)
-            .shadow(radius: 2)
-        }
+            .shadow(radius: 1)
     }
 }
 

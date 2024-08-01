@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF7CB4842C5BB404008A24AD /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB4832C5BB404008A24AD /* MyAccountView.swift */; };
+		AF7CB4882C5BB489008A24AD /* MyAccountRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB4872C5BB489008A24AD /* MyAccountRegisterView.swift */; };
+		AF7CB48A2C5BB49E008A24AD /* MyAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB4892C5BB49E008A24AD /* MyAccountLoginView.swift */; };
+		AF7CB48C2C5BB4D8008A24AD /* AuthentificationSelectionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB48B2C5BB4D8008A24AD /* AuthentificationSelectionExView.swift */; };
 		E20AF7652C5B8355001579B2 /* MainVerte_V002App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7642C5B8355001579B2 /* MainVerte_V002App.swift */; };
 		E20AF7692C5B8356001579B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20AF7682C5B8356001579B2 /* Assets.xcassets */; };
 		E20AF76C2C5B8356001579B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20AF76B2C5B8356001579B2 /* Preview Assets.xcassets */; };
@@ -84,6 +88,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF7CB4832C5BB404008A24AD /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
+		AF7CB4872C5BB489008A24AD /* MyAccountRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountRegisterView.swift; sourceTree = "<group>"; };
+		AF7CB4892C5BB49E008A24AD /* MyAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountLoginView.swift; sourceTree = "<group>"; };
+		AF7CB48B2C5BB4D8008A24AD /* AuthentificationSelectionExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationSelectionExView.swift; sourceTree = "<group>"; };
 		E20AF7612C5B8355001579B2 /* MainVerte_V002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainVerte_V002.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20AF7642C5B8355001579B2 /* MainVerte_V002App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVerte_V002App.swift; sourceTree = "<group>"; };
 		E20AF7682C5B8356001579B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -238,6 +246,9 @@
 				E20AF7DA2C5B8497001579B2 /* MySpacePlantsView.swift */,
 				E20AF7E22C5B84A0001579B2 /* MySpacesView.swift */,
 				E20AF8002C5B84A7001579B2 /* ProfilView.swift */,
+				AF7CB4832C5BB404008A24AD /* MyAccountView.swift */,
+				AF7CB4872C5BB489008A24AD /* MyAccountRegisterView.swift */,
+				AF7CB4892C5BB49E008A24AD /* MyAccountLoginView.swift */,
 				E20AF7732C5B8373001579B2 /* ExView */,
 				E20AF7742C5B837D001579B2 /* ModalView */,
 				E20AF7752C5B8383001579B2 /* ViewController */,
@@ -263,6 +274,7 @@
 				E20AF7B92C5B845F001579B2 /* ResearchBarExView.swift */,
 				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
 				E20AF7B72C5B845F001579B2 /* TitleExView.swift */,
+				AF7CB48B2C5BB4D8008A24AD /* AuthentificationSelectionExView.swift */,
 			);
 			name = ExView;
 			sourceTree = "<group>";
@@ -395,13 +407,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7CB4842C5BB404008A24AD /* MyAccountView.swift in Sources */,
 				E20AF7EF2C5B84A0001579B2 /* ListPlantAddPlantView.swift in Sources */,
 				E20AF7CA2C5B845F001579B2 /* ResearchAndFilterExView.swift in Sources */,
+				AF7CB48A2C5BB49E008A24AD /* MyAccountLoginView.swift in Sources */,
 				E20AF7982C5B83DD001579B2 /* SoilModel.swift in Sources */,
 				E20AF7F42C5B84A0001579B2 /* CreateSpaceView.swift in Sources */,
 				E20AF7D92C5B8491001579B2 /* IdeasView.swift in Sources */,
 				E20AF7F02C5B84A0001579B2 /* IdeaSpacesView.swift in Sources */,
 				E20AF7D62C5B8491001579B2 /* ContentView.swift in Sources */,
+				AF7CB48C2C5BB4D8008A24AD /* AuthentificationSelectionExView.swift in Sources */,
 				E20AF8022C5B84A7001579B2 /* IdeaTipsView.swift in Sources */,
 				E20AF7892C5B83DD001579B2 /* InteriorExteriorModel.swift in Sources */,
 				E20AF78F2C5B83DD001579B2 /* IdeaQuestionModel.swift in Sources */,
@@ -445,6 +460,7 @@
 				E20AF7972C5B83DD001579B2 /* MySpaceModel.swift in Sources */,
 				E20AF78C2C5B83DD001579B2 /* IdeaModel.swift in Sources */,
 				E20AF8042C5B84A7001579B2 /* ProfilView.swift in Sources */,
+				AF7CB4882C5BB489008A24AD /* MyAccountRegisterView.swift in Sources */,
 				E20AF78D2C5B83DD001579B2 /* IdeaTipModel.swift in Sources */,
 				E20AF7FD2C5B84A0001579B2 /* FavoritesTipsView.swift in Sources */,
 				E20AF7D82C5B8491001579B2 /* MySpaceAddPlantView.swift in Sources */,
