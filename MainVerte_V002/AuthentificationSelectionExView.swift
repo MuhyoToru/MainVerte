@@ -8,11 +8,36 @@
 import SwiftUI
 
 struct AuthentificationSelectionExView: View {
+    
+    @State private var selection = 0
+    let options = ["Se connecter", "S'inscrire"]
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack(spacing: 0) {
+            ForEach(options.indices, id: \.self) { index in
+                Button(action: {
+                    selection = index
+                }) {
+                    Text(options[index])
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(selection == index ? Color.mvDarkGreen : Color.mvWhite)
+                        .foregroundColor(selection == index ? Color.mvWhite : Color.mvDarkGreen)
+                        .font(.title2)
+                }
+            }
+        }
+        .background(Color.mvWhite)
+        .overlay(
+            RoundedRectangle(cornerRadius: 40)
+                .stroke(Color.mvDarkGreen, lineWidth: 1)
+        )
+        .cornerRadius(40)
+        .shadow(radius: 2)
     }
 }
-
 #Preview {
     AuthentificationSelectionExView()
 }

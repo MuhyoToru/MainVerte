@@ -10,7 +10,9 @@ import SwiftUI
 struct MyAccountView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//        appeler le boutton de authentificationSelectionExView (Account register et Login View)
+        
+//  Appeler le boutton de authentificationSelectionExView (Account register et Login View)
+        
     }
 }
 

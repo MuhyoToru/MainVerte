@@ -259,6 +259,8 @@
 		E20AF7732C5B8373001579B2 /* ExView */ = {
 			isa = PBXGroup;
 			children = (
+				AF7CB48B2C5BB4D8008A24AD /* AuthentificationSelectionExView.swift */,
+				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
 				E20AF7B22C5B845F001579B2 /* ActionButtonExView.swift */,
 				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
 				E20AF7B02C5B845F001579B2 /* BackgroundExView.swift */,
@@ -272,9 +274,7 @@
 				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
 				E20AF7BB2C5B845F001579B2 /* ResearchAndFilterExView.swift */,
 				E20AF7B92C5B845F001579B2 /* ResearchBarExView.swift */,
-				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
 				E20AF7B72C5B845F001579B2 /* TitleExView.swift */,
-				AF7CB48B2C5BB4D8008A24AD /* AuthentificationSelectionExView.swift */,
 			);
 			name = ExView;
 			sourceTree = "<group>";
