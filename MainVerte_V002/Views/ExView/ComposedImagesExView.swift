@@ -23,7 +23,7 @@ struct ComposedImagesExView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 176)
                     .clipped()
-                    .clipShape(CustomCornerShape(corners: [.topLeft, .bottomLeft], radius: 20))
+                    .clipShape(UnevenRoundedRectangle(topLeadingRadius: 20, bottomLeadingRadius: 20))
                 VStack (spacing: 5){
                     Image(topImage)
                         .resizable()
@@ -37,7 +37,7 @@ struct ComposedImagesExView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 88)
                     .clipped()
-                    .clipShape(CustomCornerShape(corners: [.topRight, .bottomRight], radius: 20))
+                    .clipShape(UnevenRoundedRectangle( bottomTrailingRadius: 20, topTrailingRadius: 20))
             }
             .frame(height: 176)
             Text(title)
@@ -47,20 +47,7 @@ struct ComposedImagesExView: View {
                 .font(.system(size: 12, weight: .medium))
                 .foregroundColor(.mvDarkGreen)
         }
-        .padding(.horizontal)
         .padding(.vertical, 12)
-    }
-}
-
-struct CustomCornerShape: Shape {
-    var corners: UIRectCorner
-    var radius: CGFloat
-    
-    func path(in rect: CGRect) -> Path {
-        let path = UIBezierPath(roundedRect: rect,
-                                byRoundingCorners: corners,
-                                cornerRadii: CGSize(width: radius, height: radius))
-        return Path(path.cgPath)
     }
 }
 
