@@ -89,6 +89,12 @@
 		E20AF8152C5BC0AC001579B2 /* Sumana-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E20AF8132C5BC0AB001579B2 /* Sumana-Regular.ttf */; };
 		E20AF8192C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */; };
 		E20AF81B2C5BC77E001579B2 /* IsInPotExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */; };
+		E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */; };
+		E2A252032C5CDB3E0048E809 /* MessageBubbleExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */; };
+		E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */; };
+		E2A252052C5CDB3E0048E809 /* JustifiedTextExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */; };
+		E2A252062C5CDB3E0048E809 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A252002C5CDB3E0048E809 /* MyAccountView.swift */; };
+		E2A252072C5CDB3E0048E809 /* MyAccountRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +182,12 @@
 		E20AF8172C5BC0F7001579B2 /* MainVerte-V002-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MainVerte-V002-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSpaceGlobalButtonDisplayExView.swift; sourceTree = "<group>"; };
 		E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsInPotExView.swift; sourceTree = "<group>"; };
+		E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthentificationSelectionExView.swift; sourceTree = "<group>"; };
+		E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleExView.swift; sourceTree = "<group>"; };
+		E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountLoginView.swift; sourceTree = "<group>"; };
+		E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustifiedTextExView.swift; sourceTree = "<group>"; };
+		E2A252002C5CDB3E0048E809 /* MyAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
+		E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountRegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +268,9 @@
 				E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */,
 				E20AF7DA2C5B8497001579B2 /* MySpacePlantsView.swift */,
 				E20AF7E22C5B84A0001579B2 /* MySpacesView.swift */,
+				E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */,
+				E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */,
+				E2A252002C5CDB3E0048E809 /* MyAccountView.swift */,
 				E20AF8002C5B84A7001579B2 /* ProfilView.swift */,
 				E20AF7732C5B8373001579B2 /* ExView */,
 				E20AF7742C5B837D001579B2 /* ModalView */,
@@ -267,6 +282,9 @@
 		E20AF7732C5B8373001579B2 /* ExView */ = {
 			isa = PBXGroup;
 			children = (
+				E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */,
+				E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */,
+				E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */,
 				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
 				E20AF7B22C5B845F001579B2 /* ActionButtonExView.swift */,
 				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
@@ -439,11 +457,13 @@
 				E20AF7F02C5B84A0001579B2 /* IdeaSpacesView.swift in Sources */,
 				E20AF7D62C5B8491001579B2 /* ContentView.swift in Sources */,
 				E20AF8022C5B84A7001579B2 /* IdeaTipsView.swift in Sources */,
+				E2A252052C5CDB3E0048E809 /* JustifiedTextExView.swift in Sources */,
 				E20AF7892C5B83DD001579B2 /* InteriorExteriorModel.swift in Sources */,
 				E20AF78F2C5B83DD001579B2 /* IdeaQuestionModel.swift in Sources */,
 				E20AF7A52C5B8418001579B2 /* FertilizerViewModel.swift in Sources */,
 				E20AF7C02C5B845F001579B2 /* PlantationButtonExView.swift in Sources */,
 				E20AF7C32C5B845F001579B2 /* MySpaceButtonExView.swift in Sources */,
+				E2A252032C5CDB3E0048E809 /* MessageBubbleExView.swift in Sources */,
 				E20AF7F92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift in Sources */,
 				E20AF7AB2C5B8418001579B2 /* SoilViewModel.swift in Sources */,
 				E20AF78A2C5B83DD001579B2 /* ExposureModel.swift in Sources */,
@@ -453,6 +473,8 @@
 				E20AF7942C5B83DD001579B2 /* DiseaseModel.swift in Sources */,
 				E20AF7D12C5B847C001579B2 /* TestUIKitViewController.swift in Sources */,
 				E20AF7FC2C5B84A0001579B2 /* ListPlantDetailsView.swift in Sources */,
+				E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */,
+				E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */,
 				E20AF7932C5B83DD001579B2 /* PlantContainerModel.swift in Sources */,
 				E20AF7C12C5B845F001579B2 /* ActionButtonExView.swift in Sources */,
 				E20AF7FB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift in Sources */,
@@ -468,6 +490,7 @@
 				E20AF7AD2C5B8418001579B2 /* CommentViewModel.swift in Sources */,
 				E20AF7F62C5B84A0001579B2 /* IdeaQuestionsView.swift in Sources */,
 				E20AF7D72C5B8491001579B2 /* FavoritesSpacesView.swift in Sources */,
+				E2A252072C5CDB3E0048E809 /* MyAccountRegisterView.swift in Sources */,
 				E20AF7C92C5B845F001579B2 /* ButtonAddExView.swift in Sources */,
 				E20AF7A82C5B8418001579B2 /* DiseaseViewModel.swift in Sources */,
 				E20AF7FA2C5B84A0001579B2 /* FavoritesPlantsView.swift in Sources */,
@@ -479,6 +502,7 @@
 				E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */,
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,
+				E2A252062C5CDB3E0048E809 /* MyAccountView.swift in Sources */,
 				E20AF8092C5B92F6001579B2 /* InteriorOrExteriorExView.swift in Sources */,
 				E20AF7972C5B83DD001579B2 /* MySpaceModel.swift in Sources */,
 				E20AF78C2C5B83DD001579B2 /* IdeaModel.swift in Sources */,
