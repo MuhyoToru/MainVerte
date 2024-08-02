@@ -15,7 +15,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Tomate",
                 scientificName: "Solanum lycopersicum",
-                image: "",
+                image: "MVTomato",
                 description: "Plante annuelle, avec des fruits rouges, jaunes, ou orange, utilisés dans de nombreux plats.",
                 size: 0,
                 startSowingDate: Month.february,
@@ -33,7 +33,7 @@ class PlantViewModel: ObservableObject {
                 colors: [.red, .yellow, .orange, .green],
                 difficulty: "Moyenne",
                 fertilizers: [],
-                diseases: [],
+                diseases: [DiseaseViewModel().diseases[0]],
                 exposures: [Exposure.fullSun],
                 soils: [],
                 interiorExterior: [InteriorExterior.exterior],

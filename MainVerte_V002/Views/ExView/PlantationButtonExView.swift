@@ -13,7 +13,7 @@ struct PlantationButtonExView: View {
     
     var body: some View {
         NavigationLink ( destination : {
-            MySpacePlantDetailsView()
+            MySpacePlantDetailsView(plantation : plantation)
         }, label : {
             ZStack {
                 RoundedRectangle(cornerRadius: 20)
@@ -28,9 +28,14 @@ struct PlantationButtonExView: View {
                         .resizable()
                         .frame(width : 60, height: 60)
                         .cornerRadius(15)
-                    Text(plantation.plant.name)
-                        .font(.system(size: 24))
-                        .foregroundStyle(.mvDarkGreen)
+                    VStack(alignment : .leading, spacing : 0) {
+                        Text(plantation.plant.name)
+                            .font(.system(size: 24))
+                            .foregroundStyle(.mvDarkGreen)
+                        Text(plantation.plant.description)
+                            .frame(height: 30)
+                            .foregroundStyle(.mvMediumGray)
+                    }
                     Spacer()
                     Image(systemName: "arrow.right")
                         .foregroundStyle(.mvMediumGray)

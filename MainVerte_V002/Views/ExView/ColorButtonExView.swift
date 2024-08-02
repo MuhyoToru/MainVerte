@@ -10,6 +10,7 @@ import SwiftUI
 struct ColorButtonExView: View {
     
     var colorButton : ColorButton
+    @Binding var newSpace : MySpace
     @State var isSelected : Bool = false
     
     var buttonSize : CGFloat = 28
@@ -18,6 +19,11 @@ struct ColorButtonExView: View {
         VStack {
             Button(action: {
                 isSelected.toggle()
+                if isSelected {
+                    newSpace.color.append(colorButton.color)
+                } else {
+                    newSpace.color.remove(at: newSpace.color.firstIndex(of: colorButton.color)!)
+                }
             }, label: {
                 ZStack {
                     Image(systemName: "leaf.fill")
@@ -39,5 +45,5 @@ struct ColorButtonExView: View {
 
 
 #Preview {
-    ColorButtonExView(colorButton : ColorButton(color: .mvFilterRed, colorName: "Red"))
+    ColorButtonExView(colorButton : ColorButton(color: .mvFilterRed, colorName: "Red"), newSpace: .constant(MySpace(name: "", image: "", city: "", difficulty: "", area: 0, acceptedFauna: true, color: [], exposure: .fullShade, soil: [], interiorExterior: .interior, existingPlant: [], createdDate: Date.now, personalNotes: "")))
 }

@@ -81,6 +81,14 @@
 		E20AF8032C5B84A7001579B2 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */; };
 		E20AF8042C5B84A7001579B2 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8002C5B84A7001579B2 /* ProfilView.swift */; };
 		E20AF8052C5B84A7001579B2 /* IdeasMyPublicatonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */; };
+		E20AF8092C5B92F6001579B2 /* InteriorOrExteriorExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */; };
+		E20AF80B2C5BA987001579B2 /* ExposureExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF80A2C5BA987001579B2 /* ExposureExView.swift */; };
+		E20AF80F2C5BB18D001579B2 /* DifficultyExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */; };
+		E20AF8112C5BB271001579B2 /* AcceptedFaunaExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */; };
+		E20AF8142C5BC0AC001579B2 /* Sumana-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E20AF8122C5BC0AB001579B2 /* Sumana-Bold.ttf */; };
+		E20AF8152C5BC0AC001579B2 /* Sumana-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E20AF8132C5BC0AB001579B2 /* Sumana-Regular.ttf */; };
+		E20AF8192C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */; };
+		E20AF81B2C5BC77E001579B2 /* IsInPotExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +167,15 @@
 		E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesView.swift; path = Views/FavoritesView.swift; sourceTree = "<group>"; };
 		E20AF8002C5B84A7001579B2 /* ProfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilView.swift; path = Views/ProfilView.swift; sourceTree = "<group>"; };
 		E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeasMyPublicatonsView.swift; path = Views/IdeasMyPublicatonsView.swift; sourceTree = "<group>"; };
+		E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteriorOrExteriorExView.swift; sourceTree = "<group>"; };
+		E20AF80A2C5BA987001579B2 /* ExposureExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureExView.swift; sourceTree = "<group>"; };
+		E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyExView.swift; sourceTree = "<group>"; };
+		E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptedFaunaExView.swift; sourceTree = "<group>"; };
+		E20AF8122C5BC0AB001579B2 /* Sumana-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sumana-Bold.ttf"; sourceTree = "<group>"; };
+		E20AF8132C5BC0AB001579B2 /* Sumana-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sumana-Regular.ttf"; sourceTree = "<group>"; };
+		E20AF8172C5BC0F7001579B2 /* MainVerte-V002-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MainVerte-V002-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSpaceGlobalButtonDisplayExView.swift; sourceTree = "<group>"; };
+		E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsInPotExView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +208,9 @@
 		E20AF7632C5B8355001579B2 /* MainVerte_V002 */ = {
 			isa = PBXGroup;
 			children = (
+				E20AF8172C5BC0F7001579B2 /* MainVerte-V002-Info.plist */,
 				E20AF7642C5B8355001579B2 /* MainVerte_V002App.swift */,
+				E20AF8162C5BC0B3001579B2 /* Fonts */,
 				E20AF7682C5B8356001579B2 /* Assets.xcassets */,
 				E20AF7762C5B838F001579B2 /* Models */,
 				E20AF76A2C5B8356001579B2 /* Preview Content */,
@@ -248,14 +267,20 @@
 		E20AF7732C5B8373001579B2 /* ExView */ = {
 			isa = PBXGroup;
 			children = (
+				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
 				E20AF7B22C5B845F001579B2 /* ActionButtonExView.swift */,
 				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
 				E20AF7B02C5B845F001579B2 /* BackgroundExView.swift */,
 				E20AF7BA2C5B845F001579B2 /* ButtonAddExView.swift */,
 				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
 				E20AF7B32C5B845F001579B2 /* ComposedImagesExView.swift */,
+				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
+				E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */,
+				E20AF80A2C5BA987001579B2 /* ExposureExView.swift */,
 				E20AF7BE2C5B845F001579B2 /* FavoriteButtonExView.swift */,
 				E20AF7B82C5B845F001579B2 /* FilterAndSortButtonExView.swift */,
+				E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */,
+				E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */,
 				E20AF7BD2C5B845F001579B2 /* LineSeparatorExView.swift */,
 				E20AF7B42C5B845F001579B2 /* MySpaceButtonExView.swift */,
 				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
@@ -325,6 +350,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		E20AF8162C5BC0B3001579B2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E20AF8122C5BC0AB001579B2 /* Sumana-Bold.ttf */,
+				E20AF8132C5BC0AB001579B2 /* Sumana-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -384,6 +418,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E20AF76C2C5B8356001579B2 /* Preview Assets.xcassets in Resources */,
+				E20AF8142C5BC0AC001579B2 /* Sumana-Bold.ttf in Resources */,
+				E20AF8152C5BC0AC001579B2 /* Sumana-Regular.ttf in Resources */,
 				E20AF7692C5B8356001579B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,18 +473,22 @@
 				E20AF7FA2C5B84A0001579B2 /* FavoritesPlantsView.swift in Sources */,
 				E20AF7C82C5B845F001579B2 /* ResearchBarExView.swift in Sources */,
 				E20AF7CD2C5B845F001579B2 /* FavoriteButtonExView.swift in Sources */,
+				E20AF81B2C5BC77E001579B2 /* IsInPotExView.swift in Sources */,
 				E20AF7AA2C5B8418001579B2 /* MySpaceViewModel.swift in Sources */,
 				E20AF7C52C5B845F001579B2 /* AddPlantExView.swift in Sources */,
 				E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */,
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,
+				E20AF8092C5B92F6001579B2 /* InteriorOrExteriorExView.swift in Sources */,
 				E20AF7972C5B83DD001579B2 /* MySpaceModel.swift in Sources */,
 				E20AF78C2C5B83DD001579B2 /* IdeaModel.swift in Sources */,
 				E20AF8042C5B84A7001579B2 /* ProfilView.swift in Sources */,
 				E20AF78D2C5B83DD001579B2 /* IdeaTipModel.swift in Sources */,
 				E20AF7FD2C5B84A0001579B2 /* FavoritesTipsView.swift in Sources */,
 				E20AF7D82C5B8491001579B2 /* MySpaceAddPlantView.swift in Sources */,
+				E20AF80B2C5BA987001579B2 /* ExposureExView.swift in Sources */,
 				E20AF7CB2C5B845F001579B2 /* SegmentedButtonsExView.swift in Sources */,
+				E20AF8112C5BB271001579B2 /* AcceptedFaunaExView.swift in Sources */,
 				E20AF7902C5B83DD001579B2 /* MonthModel.swift in Sources */,
 				E20AF7922C5B83DD001579B2 /* ColorButtonModel.swift in Sources */,
 				E20AF7F82C5B84A0001579B2 /* CreateIdeaQuestionView.swift in Sources */,
@@ -457,9 +497,11 @@
 				E20AF7992C5B83DD001579B2 /* UserModel.swift in Sources */,
 				E20AF7F72C5B84A0001579B2 /* CreateIdeaTipsView.swift in Sources */,
 				E20AF7AF2C5B8418001579B2 /* IdeaTipViewModel.swift in Sources */,
+				E20AF80F2C5BB18D001579B2 /* DifficultyExView.swift in Sources */,
 				E20AF7912C5B83DD001579B2 /* FertilizerModel.swift in Sources */,
 				E20AF7652C5B8355001579B2 /* MainVerte_V002App.swift in Sources */,
 				E20AF7EE2C5B84A0001579B2 /* ListPlantsView.swift in Sources */,
+				E20AF8192C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift in Sources */,
 				E20AF7CF2C5B846A001579B2 /* FiltersAndSortViewModal.swift in Sources */,
 				E20AF7A92C5B8418001579B2 /* IdeaQuestionViewModel.swift in Sources */,
 				E20AF7DD2C5B8497001579B2 /* FavoritesQuestionsView.swift in Sources */,
@@ -603,6 +645,7 @@
 				DEVELOPMENT_TEAM = UMN55WUG4L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MainVerte-V002-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -632,6 +675,7 @@
 				DEVELOPMENT_TEAM = UMN55WUG4L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MainVerte-V002-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

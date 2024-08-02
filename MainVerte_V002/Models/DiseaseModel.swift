@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Disease {
+class Disease: Identifiable {
     let id: UUID = UUID()
     let name: String
     let image: String

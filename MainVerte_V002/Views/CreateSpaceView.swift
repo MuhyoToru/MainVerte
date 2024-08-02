@@ -9,24 +9,24 @@ import SwiftUI
 
 struct CreateSpaceView: View {
     
-    @State var nameSpace : String = ""
+    @State var newSpace : MySpace = MySpace(name: "", image: "", city: "", difficulty: "", area: 0, acceptedFauna: true, color: [], exposure: .fullSun, soil: [], interiorExterior: .interior, existingPlant: [], createdDate: Date.now, personalNotes: "")
     @State var surface : String = ""
-    @State var city : String = ""
-    @State var exposure : Exposure = .fullSun
     @State var soil : Soil = SoilViewModel().soils[0]
     @State var difficulty : String = "Facile"
     @State var acceptedFauna : Bool = true
     @State var isInside : Bool = true
     @State var isInPot : Bool = true
     
-    var whereItIs : [String] = ["Intérieur", "Extérieur"]
-    var exposures : [Exposure] = [.fullShade, .partialShade, .fullSun]
-    var soils: [Soil] = SoilViewModel().soils
-    var difficultys : [String] = ["Facile", "Moyen", "Difficile"]
     var colors : [ColorButton] = [ColorButton(color: .mvFilterRed, colorName: "Rouge"), ColorButton(color: .mvFilterBlue, colorName: "Bleu"), ColorButton(color: .mvFilterPink, colorName: "Rose"), ColorButton(color: .mvFilterGreen, colorName: "Vert"), ColorButton(color: .mvFilterWhite, colorName: "Blanc"), ColorButton(color: .mvFilterYellow, colorName: "Jaune")]
     
-    var titleSize : CGFloat = 24
+    var titleSize : CGFloat = 28
     var textSize : CGFloat = 18
+    var widthButton : CGFloat = 82
+    var heightButton : CGFloat = 36
+    var cornerRadiusButton : CGFloat = 10
+    var minimalButtonTextSize : CGFloat = 13
+    var maximalButtonTextSize : CGFloat = 15
+    var widthText : CGFloat = 90
     
     var body: some View {
         VStack {
@@ -35,149 +35,71 @@ struct CreateSpaceView: View {
                 UnevenRoundedRectangle(topLeadingRadius: 40, bottomLeadingRadius: 0, bottomTrailingRadius: 0, topTrailingRadius: 40)
                     .foregroundStyle(.mvLightGreen)
                 VStack(spacing : 16) {
+                    VStack {
+                        Text("Nom ")
+                            .font(.system(size: textSize * 1.2))
+                        HStack {
+//                            Image(systemName: "pencil")
+//                                .foregroundStyle(.mvMediumGray)
+                            TextField("Entrer un Nom", text: $newSpace.name)
+                                .multilineTextAlignment(.center)
+                                .font(.system(size: titleSize))
+                        }
+                    }
                     HStack {
-                        Text("Nom : ")
-                        TextField("Nom", text: $nameSpace)
+                        Text("Superficie : ")
+                        TextField("Superficie", text: $surface)
+                            .frame(width: 90)
+                        Text("m²")
+                        Spacer()
                     }
-                    .font(.system(size: titleSize))
-                    VStack(alignment : .leading, spacing : 16) {
-                        HStack {
-                            Text("Superficie : ")
-                            TextField("Superficie", text: $surface)
-                                .frame(width: 100)
-                            Text("m2")
-                        }
-                        .font(.system(size: textSize))
-                        HStack {
-                            Text("Ville : ")
-                            TextField("Ville", text: $city)
-                                .frame(width: 100)
-                        }
-                        .font(.system(size: textSize))
-                        HStack {
-                            Button(action: {
-                                
-                            }, label: {
-                                ZStack {
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .foregroundStyle(.mvWhite)
-                                        .frame(height: 44)
-                                    Text("Intérieur")
-                                        .foregroundStyle(.mvDarkGray)
-                                }
-                            })
-                            Text("ou")
-                            Button(action: {
-                                
-                            }, label: {
-                                ZStack {
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .foregroundStyle(.mvWhite)
-                                        .frame(height: 44)
-                                    Text("Extérieur")
-                                        .foregroundStyle(.mvDarkGray)
-                                }
-                            })
-                        }
-                        .font(.system(size: textSize))
-                        HStack {
-                            Text("Exposition")
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
+                    .font(.system(size: textSize))
+                    HStack {
+                        Text("Ville : ")
+                        TextField("Ville", text: $newSpace.city)
+                            .frame(width: 100)
+                        Spacer()
+                    }
+                    .font(.system(size: textSize))
+                    InteriorOrExteriorExView(newSpace: $newSpace, widthButton: widthButton, heightButton: heightButton, cornerRadiusButton: cornerRadiusButton, minimalButtonTextSize: minimalButtonTextSize, maximalButtonTextSize: maximalButtonTextSize)
+                    ExposureExView(newSpace: $newSpace, widthButton: widthButton, heightButton: heightButton, cornerRadiusButton: cornerRadiusButton, minimalButtonTextSize: minimalButtonTextSize, maximalButtonTextSize: maximalButtonTextSize, widthText: widthText)
+                    HStack {
+                        Text("Sol")
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundStyle(.mvWhite)
+                                .frame(height: heightButton)
+                            HStack {
                                 Text("Test")
+                                    .font(.system(size: minimalButtonTextSize))
+                                Spacer()
+                                Image(systemName: "arrow.down")
                             }
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                        }
-                        .font(.system(size: textSize))
-                        HStack {
-                            Text("Sol")
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                HStack {
-                                    Text("Test")
-                                    Spacer()
-                                    Image(systemName: "arrow.down")
-                                }
-                                .padding(.horizontal, 16)
-                            }
-                        }
-                        .font(.system(size: textSize))
-                        HStack {
-                            Text("Difficulté")
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                        }
-                        .font(.system(size: textSize))
-                        HStack {
-                            Text("Faune accepté")
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                        }
-                        .font(.system(size: textSize))
-                        HStack {
-                            Text("En pot ou En sol")
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundStyle(.blue)
-                                    .frame(height: 44)
-                                Text("Test")
-                            }
-                        }
-                        .font(.system(size: textSize))
-                        LazyVGrid(columns : [GridItem(.adaptive(minimum: 50))]) {
-                            ForEach(colors) { colorButton in
-                                ColorButtonExView(colorButton: colorButton)
-                            }
+                            .padding(.horizontal, 16)
                         }
                     }
-
+                    .font(.system(size: textSize))
+                    DifficultyExView(newSpace: $newSpace, widthButton: widthButton, heightButton: heightButton, cornerRadiusButton: cornerRadiusButton, minimalButtonTextSize: minimalButtonTextSize, maximalButtonTextSize: maximalButtonTextSize, widthText: widthText)
+                    AcceptedFaunaExView(newSpace: $newSpace, widthButton: widthButton, heightButton: heightButton, cornerRadiusButton: cornerRadiusButton, minimalButtonTextSize: minimalButtonTextSize, maximalButtonTextSize: maximalButtonTextSize, widthText: widthText)
+//                    IsInPotExView(newSpace: $newSpace, widthButton: widthButton, heightButton: heightButton, cornerRadiusButton: cornerRadiusButton, minimalButtonTextSize: minimalButtonTextSize, maximalButtonTextSize: maximalButtonTextSize, widthText: widthText)
+                    LazyVGrid(columns : [GridItem(.adaptive(minimum: 50))]) {
+                        ForEach(colors) { colorButton in
+                            ColorButtonExView(colorButton: colorButton, newSpace : $newSpace)
+                        }
+                    }
+                    .frame(height: 44)
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        RoundedRectangle(cornerRadius: cornerRadiusButton)
+                            .frame(width: 140)
+                        Spacer()
+                        RoundedRectangle(cornerRadius: cornerRadiusButton)
+                            .frame(width: 140)
+                        Spacer()
+                    }
+                    .frame(height: heightButton)
+                    Spacer()
                 }
                 .padding()
             }
