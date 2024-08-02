@@ -31,7 +31,6 @@ struct IdeasView: View {
                 default:
                     IdeaSpacesView()
                 }
-                Spacer()
             }
             .background(BackgroundExView(opacity: 0.8))
         }

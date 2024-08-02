@@ -36,7 +36,6 @@ struct SegmentedButtonsExView: View {
         .frame(height: 36)
         .background(Color.mvLightBlue)
         .cornerRadius(10)
-//        .padding()
     }
 }
 

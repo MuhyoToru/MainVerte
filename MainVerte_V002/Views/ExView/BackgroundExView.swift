@@ -17,7 +17,7 @@ struct BackgroundExView: View {
                 .resizable()
                 .scaledToFill()
             Rectangle()
-                .foregroundStyle(.white.opacity(opacity))
+                .foregroundStyle(.mvGray.opacity(opacity))
         }
         .ignoresSafeArea()
     }

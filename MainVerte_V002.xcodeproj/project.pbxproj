@@ -81,6 +81,8 @@
 		E20AF8032C5B84A7001579B2 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */; };
 		E20AF8042C5B84A7001579B2 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8002C5B84A7001579B2 /* ProfilView.swift */; };
 		E20AF8052C5B84A7001579B2 /* IdeasMyPublicatonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */; };
+		F65A28F42C5B93100021764A /* JustifiedTextExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A28F32C5B93100021764A /* JustifiedTextExView.swift */; };
+		F65A28F62C5B9AC70021764A /* MessageBubbleExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A28F52C5B9AC70021764A /* MessageBubbleExView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +161,8 @@
 		E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesView.swift; path = Views/FavoritesView.swift; sourceTree = "<group>"; };
 		E20AF8002C5B84A7001579B2 /* ProfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilView.swift; path = Views/ProfilView.swift; sourceTree = "<group>"; };
 		E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeasMyPublicatonsView.swift; path = Views/IdeasMyPublicatonsView.swift; sourceTree = "<group>"; };
+		F65A28F32C5B93100021764A /* JustifiedTextExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifiedTextExView.swift; sourceTree = "<group>"; };
+		F65A28F52C5B9AC70021764A /* MessageBubbleExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleExView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +267,8 @@
 				E20AF7B92C5B845F001579B2 /* ResearchBarExView.swift */,
 				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
 				E20AF7B72C5B845F001579B2 /* TitleExView.swift */,
+				F65A28F32C5B93100021764A /* JustifiedTextExView.swift */,
+				F65A28F52C5B9AC70021764A /* MessageBubbleExView.swift */,
 			);
 			name = ExView;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 				E20AF78A2C5B83DD001579B2 /* ExposureModel.swift in Sources */,
 				E20AF7C42C5B845F001579B2 /* ColorButtonExView.swift in Sources */,
 				E20AF7F52C5B84A0001579B2 /* MySpacePlantDetailsView.swift in Sources */,
+				F65A28F42C5B93100021764A /* JustifiedTextExView.swift in Sources */,
 				E20AF7F22C5B84A0001579B2 /* MySpacesView.swift in Sources */,
 				E20AF7942C5B83DD001579B2 /* DiseaseModel.swift in Sources */,
 				E20AF7D12C5B847C001579B2 /* TestUIKitViewController.swift in Sources */,
@@ -459,6 +466,7 @@
 				E20AF7AF2C5B8418001579B2 /* IdeaTipViewModel.swift in Sources */,
 				E20AF7912C5B83DD001579B2 /* FertilizerModel.swift in Sources */,
 				E20AF7652C5B8355001579B2 /* MainVerte_V002App.swift in Sources */,
+				F65A28F62C5B9AC70021764A /* MessageBubbleExView.swift in Sources */,
 				E20AF7EE2C5B84A0001579B2 /* ListPlantsView.swift in Sources */,
 				E20AF7CF2C5B846A001579B2 /* FiltersAndSortViewModal.swift in Sources */,
 				E20AF7A92C5B8418001579B2 /* IdeaQuestionViewModel.swift in Sources */,
