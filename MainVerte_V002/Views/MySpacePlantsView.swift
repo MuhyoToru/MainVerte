@@ -17,6 +17,7 @@ struct MySpacePlantsView: View {
             VStack {
                 TitleExView(title: mySpace.name)
                 ResearchAndFilterExView(researchText: $researchText)
+                    .padding(.horizontal, 16)
                 LineSeparatorExView()
                 ScrollView {
                     ForEach(mySpace.existingPlant) { plantation in

@@ -11,13 +11,16 @@ struct TitleExView: View {
     
     var title : String
     
+    var textSize : CGFloat = 36
+    
     var body: some View {
         Text(title)
-            .font(.title)
+            .font(.custom("Sumana-Regular", size: textSize))
             .foregroundStyle(.mvDarkGray)
+            .frame(height: textSize * 1.8)
     }
 }
 
 #Preview {
-    TitleExView(title: "Test")
+    TitleExView(title: "Le projet Titre")
 }
