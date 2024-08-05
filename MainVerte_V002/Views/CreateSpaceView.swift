@@ -85,51 +85,19 @@ struct CreateSpaceView: View {
                         Button (action : {
                             
                         }, label : {
-                            ZStack {
-                                RoundedRectangle(cornerRadius: cornerRadiusButton)
-                                    .foregroundStyle(.mvWhite)
-                                    .frame(width: widthButton * 2, height: heightButton)
-                                RoundedRectangle(cornerRadius: cornerRadiusButton)
-                                    .strokeBorder(.mvDarkGreen, lineWidth: 1.5)
-                                    .frame(width: widthButton * 2, height: heightButton)
-                                HStack {
-                                    Text("Ajouter une Plante")
-                                    Spacer()
-                                    Image(systemName: "plus")
-                                }
-                                .foregroundStyle(.mvDarkGreen)
-                                .frame(width: widthButton * 1.8)
-                                .bold()
-                                .font(.system(size: minimalButtonTextSize))
-                            }
+                            ButtonAddExView(text: "Ajouter une Plante", iconName: "plus", fontSize: 12, cornerRadius: 5, textWeight: .bold, width: 160, height: 30)
                         })
                         if !asAnImage {
                             Button (action : {
-                                newSpace.image = "MVGarden"
+                                newSpace.image = "MVGarden01"
                                 if !asAnImage {
                                     asAnImage = true
                                 }
                             }, label : {
-                                ZStack {
-                                    RoundedRectangle(cornerRadius: cornerRadiusButton)
-                                        .foregroundStyle(.mvWhite)
-                                        .frame(width: widthButton * 2, height: heightButton)
-                                    RoundedRectangle(cornerRadius: cornerRadiusButton)
-                                        .strokeBorder(.mvDarkGreen, lineWidth: 1.5)
-                                        .frame(width: widthButton * 2, height: heightButton)
-                                    HStack {
-                                        Text("Ajouter une Image")
-                                        Spacer()
-                                        Image(systemName: "camera")
-                                    }
-                                    .foregroundStyle(.mvDarkGreen)
-                                    .frame(width: widthButton * 1.8)
-                                    .bold()
-                                    .font(.system(size: minimalButtonTextSize))
-                                }
+                                ButtonAddExView(text: "Ajouter une Photo", iconName: "camera", fontSize: 12, cornerRadius: 5, textWeight: .bold, width: 160, height: 30)
                             })
                         } else {
-                            Image("MVGarden")
+                            Image("MVGarden01")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width : 200, height: 200)

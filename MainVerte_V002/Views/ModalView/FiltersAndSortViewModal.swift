@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct FiltersAndSortViewModal: View {
+    
+    var heightModal : CGFloat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.red
+            Text("Work in Progress")
+        }
+        .presentationDetents([.fraction(heightModal)])
     }
 }
 
 #Preview {
-    FiltersAndSortViewModal()
+    FiltersAndSortViewModal(heightModal: 0.8)
 }

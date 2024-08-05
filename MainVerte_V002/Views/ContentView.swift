@@ -28,7 +28,7 @@ struct ContentView: View {
                         .tabItem {
                             Label("Favori", systemImage: "heart")
                         }
-                    ProfilView()
+                    MyAccountView()
                         .tabItem {
                             Label("Profil", systemImage: "person")
                         }

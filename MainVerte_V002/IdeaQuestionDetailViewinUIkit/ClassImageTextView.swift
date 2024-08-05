@@ -32,7 +32,6 @@ class ImageTextView: UIView {
         textView.textAlignment = .justified
         textView.isEditable = false
         textView.isScrollEnabled = false
-    
         
         addSubview(imageView)
         addSubview(textView)
@@ -52,12 +51,6 @@ class ImageTextView: UIView {
             textView.trailingAnchor.constraint(equalTo: trailingAnchor),
             textView.bottomAnchor.constraint(equalTo: bottomAnchor),
             textView.heightAnchor.constraint(equalToConstant: 100),
-            
-            
-        
-        
-        
         ])
-        
     }
 }

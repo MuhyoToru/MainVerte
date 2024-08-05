@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ButtonAddExView: View {
-//    var action: () -> Void
     var text: String
     var iconName: String
     var fontSize: CGFloat = 16
@@ -18,9 +17,11 @@ struct ButtonAddExView: View {
     var height: CGFloat = 60
     
     var body: some View {
-//        Button(action: {
-//            action()
-//        }) {
+        ZStack {
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .foregroundStyle(.mvWhite)
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .stroke(Color.mvDarkGreen, lineWidth: 1.5)
             HStack {
                 Text(text)
                     .font(.system(size: fontSize, weight: textWeight))
@@ -29,21 +30,14 @@ struct ButtonAddExView: View {
                     .foregroundColor(.mvDarkGreen)
                     .font(.system(size: 14, weight: .bold))
             }
-            .frame(width: width, height: height)
-            .background(
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(Color.mvDarkGreen, lineWidth: 1.5)
-            )
-//        }
+        }
+        .frame(width: width, height: height)
     }
 }
 
 #Preview {
     VStack(spacing: 20) {
         ButtonAddExView(
-//            action: {
-//                // Action pour ajouter une plante
-//            },
             text: "Ajouter une Plante",
             iconName: "plus",
             fontSize: 12,
@@ -53,9 +47,6 @@ struct ButtonAddExView: View {
             height: 30
         )
         ButtonAddExView(
-//            action: {
-//                // Action pour ajouter une photo
-//            },
             text: "Ajouter une Photo",
             iconName: "camera",
             fontSize: 12,
@@ -65,22 +56,14 @@ struct ButtonAddExView: View {
             height: 30
         )
         ButtonAddExView(
-//            action: {
-//                // Action pour ajouter une photo
-//            },
             text: "Ajouter une Photo",
             iconName: "camera"
             
         )
         ButtonAddExView(
-//            action: {
-//                // Action pour ajouter une description
-//            },
             text: "Ajouter Description",
             iconName: "pencil"
-            
         )
     }
     .padding()
-
 }
