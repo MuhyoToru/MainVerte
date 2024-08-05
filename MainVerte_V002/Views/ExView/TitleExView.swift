@@ -10,17 +10,23 @@ import SwiftUI
 struct TitleExView: View {
     
     var title : String
-    
-    var textSize : CGFloat = 36
+    var textSize : CGFloat = 32
+    var textColor: Color = .mvVeryDarkGreen
+    var textWeight: Font.Weight = .regular
+
     
     var body: some View {
         Text(title)
-            .font(.custom("Sumana-Regular", size: textSize))
-            .foregroundStyle(.mvDarkGray)
+            .font(.custom("Sumana-Regular", size: textSize).weight(textWeight)) //
+            .foregroundStyle(textColor) //
             .frame(height: textSize * 1.8)
     }
 }
 
 #Preview {
-    TitleExView(title: "Le projet Titre")
+    VStack {
+        TitleExView(title: "Le projet Titre")
+        TitleExView(title: "Commentaires", textSize: 30, textColor: .mvDarkGreen)
+        TitleExView(title: "Texte Gras", textSize: 20, textColor: .mvDarkGreen, textWeight: .bold)
+    }
 }

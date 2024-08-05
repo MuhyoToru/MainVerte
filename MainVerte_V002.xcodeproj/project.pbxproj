@@ -95,8 +95,11 @@
 		E2A252052C5CDB3E0048E809 /* JustifiedTextExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */; };
 		E2A252062C5CDB3E0048E809 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A252002C5CDB3E0048E809 /* MyAccountView.swift */; };
 		E2A252072C5CDB3E0048E809 /* MyAccountRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */; };
-		E2A252092C5CFEFD0048E809 /* SoilExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A252082C5CFEFD0048E809 /* SoilExView.swift */; };
-		E2A2520B2C5D077A0048E809 /* SoilButtonSelectionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2520A2C5D07790048E809 /* SoilButtonSelectionExView.swift */; };
+		F65A28FD2C5D03060021764A /* ImageTextExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A28FC2C5D03060021764A /* ImageTextExView.swift */; };
+		F65A28FF2C5E39CB0021764A /* IdeaListSpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A28FE2C5E39CB0021764A /* IdeaListSpacesView.swift */; };
+		F65A29012C5E96550021764A /* IdeaListTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29002C5E96550021764A /* IdeaListTipsView.swift */; };
+		F65A29032C5E9C130021764A /* IdeaListQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */; };
+		F65A29052C603C430021764A /* CreateIdeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29042C603C420021764A /* CreateIdeaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,8 +193,11 @@
 		E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustifiedTextExView.swift; sourceTree = "<group>"; };
 		E2A252002C5CDB3E0048E809 /* MyAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountRegisterView.swift; sourceTree = "<group>"; };
-		E2A252082C5CFEFD0048E809 /* SoilExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoilExView.swift; sourceTree = "<group>"; };
-		E2A2520A2C5D07790048E809 /* SoilButtonSelectionExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoilButtonSelectionExView.swift; sourceTree = "<group>"; };
+		F65A28FC2C5D03060021764A /* ImageTextExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextExView.swift; sourceTree = "<group>"; };
+		F65A28FE2C5E39CB0021764A /* IdeaListSpacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaListSpacesView.swift; sourceTree = "<group>"; };
+		F65A29002C5E96550021764A /* IdeaListTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaListTipsView.swift; sourceTree = "<group>"; };
+		F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaListQuestionsView.swift; sourceTree = "<group>"; };
+		F65A29042C603C420021764A /* CreateIdeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIdeaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +255,7 @@
 			children = (
 				E20AF7D22C5B8491001579B2 /* ContentView.swift */,
 				E20AF7E82C5B84A0001579B2 /* CreateIdeaQuestionView.swift */,
+				F65A29042C603C420021764A /* CreateIdeaView.swift */,
 				E20AF7E12C5B84A0001579B2 /* CreateIdeaSpaceView.swift */,
 				E20AF7E72C5B84A0001579B2 /* CreateIdeaTipsView.swift */,
 				E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */,
@@ -262,6 +269,9 @@
 				E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */,
 				E20AF7EB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift */,
 				E20AF7E02C5B84A0001579B2 /* IdeaSpacesView.swift */,
+				F65A28FE2C5E39CB0021764A /* IdeaListSpacesView.swift */,
+				F65A29002C5E96550021764A /* IdeaListTipsView.swift */,
+				F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */,
 				E20AF7D52C5B8491001579B2 /* IdeasView.swift */,
 				E20AF7E32C5B84A0001579B2 /* IdeaTipDetailsView.swift */,
 				E20AF7FE2C5B84A7001579B2 /* IdeaTipsView.swift */,
@@ -296,6 +306,7 @@
 				E20AF7BA2C5B845F001579B2 /* ButtonAddExView.swift */,
 				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
 				E20AF7B32C5B845F001579B2 /* ComposedImagesExView.swift */,
+				F65A28FC2C5D03060021764A /* ImageTextExView.swift */,
 				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
 				E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */,
 				E20AF80A2C5BA987001579B2 /* ExposureExView.swift */,
@@ -310,8 +321,6 @@
 				E20AF7B92C5B845F001579B2 /* ResearchBarExView.swift */,
 				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
 				E20AF7B72C5B845F001579B2 /* TitleExView.swift */,
-				E2A252082C5CFEFD0048E809 /* SoilExView.swift */,
-				E2A2520A2C5D07790048E809 /* SoilButtonSelectionExView.swift */,
 			);
 			name = ExView;
 			sourceTree = "<group>";
@@ -478,7 +487,6 @@
 				E20AF7F22C5B84A0001579B2 /* MySpacesView.swift in Sources */,
 				E20AF7942C5B83DD001579B2 /* DiseaseModel.swift in Sources */,
 				E20AF7D12C5B847C001579B2 /* TestUIKitViewController.swift in Sources */,
-				E2A2520B2C5D077A0048E809 /* SoilButtonSelectionExView.swift in Sources */,
 				E20AF7FC2C5B84A0001579B2 /* ListPlantDetailsView.swift in Sources */,
 				E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */,
 				E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */,
@@ -491,13 +499,16 @@
 				E20AF7A72C5B8418001579B2 /* PlantationViewModel.swift in Sources */,
 				E20AF78E2C5B83DD001579B2 /* PlantationModel.swift in Sources */,
 				E20AF7952C5B83DD001579B2 /* CommentModel.swift in Sources */,
+				F65A29032C5E9C130021764A /* IdeaListQuestionsView.swift in Sources */,
 				E20AF7DC2C5B8497001579B2 /* MySpacePlantsView.swift in Sources */,
 				E20AF7C72C5B845F001579B2 /* FilterAndSortButtonExView.swift in Sources */,
 				E20AF7F12C5B84A0001579B2 /* CreateIdeaSpaceView.swift in Sources */,
 				E20AF7AD2C5B8418001579B2 /* CommentViewModel.swift in Sources */,
 				E20AF7F62C5B84A0001579B2 /* IdeaQuestionsView.swift in Sources */,
 				E20AF7D72C5B8491001579B2 /* FavoritesSpacesView.swift in Sources */,
+				F65A29052C603C430021764A /* CreateIdeaView.swift in Sources */,
 				E2A252072C5CDB3E0048E809 /* MyAccountRegisterView.swift in Sources */,
+				F65A28FD2C5D03060021764A /* ImageTextExView.swift in Sources */,
 				E20AF7C92C5B845F001579B2 /* ButtonAddExView.swift in Sources */,
 				E20AF7A82C5B8418001579B2 /* DiseaseViewModel.swift in Sources */,
 				E20AF7FA2C5B84A0001579B2 /* FavoritesPlantsView.swift in Sources */,
@@ -505,7 +516,9 @@
 				E20AF7CD2C5B845F001579B2 /* FavoriteButtonExView.swift in Sources */,
 				E20AF81B2C5BC77E001579B2 /* IsInPotExView.swift in Sources */,
 				E20AF7AA2C5B8418001579B2 /* MySpaceViewModel.swift in Sources */,
+				F65A28FF2C5E39CB0021764A /* IdeaListSpacesView.swift in Sources */,
 				E20AF7C52C5B845F001579B2 /* AddPlantExView.swift in Sources */,
+				F65A29012C5E96550021764A /* IdeaListTipsView.swift in Sources */,
 				E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */,
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,
@@ -531,7 +544,6 @@
 				E20AF80F2C5BB18D001579B2 /* DifficultyExView.swift in Sources */,
 				E20AF7912C5B83DD001579B2 /* FertilizerModel.swift in Sources */,
 				E20AF7652C5B8355001579B2 /* MainVerte_V002App.swift in Sources */,
-				E2A252092C5CFEFD0048E809 /* SoilExView.swift in Sources */,
 				E20AF7EE2C5B84A0001579B2 /* ListPlantsView.swift in Sources */,
 				E20AF8192C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift in Sources */,
 				E20AF7CF2C5B846A001579B2 /* FiltersAndSortViewModal.swift in Sources */,

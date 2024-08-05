@@ -13,7 +13,7 @@ struct ComposedImagesExView: View {
     var bottomImage: String = "MVBathroom03"
     var rightImage: String = "MVBathroom04"
     var title: String = "Salle de bain"
-    var subtitle: String = "15 IdÃ©es"
+    var subtitle: String = "15 Idées"
     
     var body: some View {
         VStack (alignment: .leading) {
@@ -40,14 +40,13 @@ struct ComposedImagesExView: View {
                     .clipShape(UnevenRoundedRectangle( bottomTrailingRadius: 20, topTrailingRadius: 20))
             }
             .frame(height: 176)
-            Text(title)
-                .font(.system(size: 20, weight: .bold))
-                .foregroundColor(.mvDarkGreen)
+            TitleExView(title: title, textSize: 20, textColor: .mvDarkGreen, textWeight: .bold)
             Text(subtitle)
                 .font(.system(size: 12, weight: .medium))
                 .foregroundColor(.mvDarkGreen)
+                .offset(y: -5)
         }
-        .padding(.vertical, 12)
+        .padding(.vertical, 8)
     }
 }
 

@@ -8,32 +8,60 @@
 import SwiftUI
 
 struct IdeasView: View {
-    @State private var segmentedSelection = 0
+    @State private var segmentedSelection: Int
     let tabs = ["Espaces", "Astuces", "Questions"]
-    @State var researchText : String = ""
-
+    
+    init(segmentedSelection: Int = 0) {
+        _segmentedSelection = State(initialValue: segmentedSelection)
+    }
+    
+    @State var researchText: String = ""
+    @State private var showModal = false
+    
     var body: some View {
         NavigationStack {
-            VStack {
-                SegmentedButtonsExView(selection: $segmentedSelection, tabs: tabs)
+            ZStack {
+                VStack {
+                    SegmentedButtonsExView(selection: $segmentedSelection, tabs: tabs) {
+                        withAnimation {
+                            showModal = false
+                        }
+                    }
                     .padding()
-                ResearchAndFilterExView(researchText: $researchText)
-                    .padding(.horizontal, 16)
-                LineSeparatorExView()
-                // Display corresponding view
-                switch segmentedSelection {
-                case 0:
-                    IdeaSpacesView()
-                case 1:
-                    IdeaTipsView()
-                case 2:
-                    IdeaQuestionsView()
-                default:
-                    IdeaSpacesView()
+                    ResearchAndFilterExView(researchText: $researchText)
+                        .padding(.horizontal, 16)
+                    LineSeparatorExView()
+                    switch segmentedSelection {
+                    case 0:
+                        IdeaSpacesView(showModal: $showModal)
+                    case 1:
+                        IdeaTipsView(showModal: $showModal)
+                    case 2:
+                        IdeaQuestionsView(showModal: $showModal)
+                    default:
+                        IdeaSpacesView(showModal: $showModal)
+                    }
+                }
+                .background(BackgroundExView(opacity: 0.9))
+                if showModal {
+                    GeometryReader { geometry in
+                        Color.clear
+                            .edgesIgnoringSafeArea(.all)
+                            .onTapGesture {
+                                withAnimation {
+                                    showModal = false
+                                }
+                            }
+                        CreateIdeaView(showModal: $showModal)
+                            .transition(.move(edge: .bottom))
+                            .animation(.spring(), value: showModal)
+                            .offset(y: geometry.safeAreaInsets.bottom - 14)
+                    }
+                    .zIndex(1)
                 }
             }
-            .background(BackgroundExView(opacity: 0.8))
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

@@ -35,7 +35,7 @@ struct FavoritesView: View {
                     }
                 }
             }
-            .background(BackgroundExView(opacity: 0.8))
+            .background(BackgroundExView(opacity: 0.9))
         }
     }
 }
