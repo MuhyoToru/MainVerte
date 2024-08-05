@@ -31,7 +31,11 @@ struct MySpacesView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        ActionButtonExView()
+                        NavigationLink(destination: {
+                            CreateSpaceView()
+                        }, label: {
+                            ActionButtonExView()
+                        })
                     }
                 }
                 .padding()

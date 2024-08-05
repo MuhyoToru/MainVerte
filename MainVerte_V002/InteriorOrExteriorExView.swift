@@ -10,8 +10,8 @@ import SwiftUI
 struct InteriorOrExteriorExView: View {
     
     @Binding var newSpace : MySpace
-    @State var firstButtonIsSelected : Bool = true
-    @State var secondButtonIsSelected : Bool = false
+    @Binding var firstButtonIsSelected : Bool
+    @Binding var secondButtonIsSelected : Bool
     
     var widthButton : CGFloat
     var heightButton : CGFloat
@@ -55,5 +55,5 @@ struct InteriorOrExteriorExView: View {
 }
 
 #Preview {
-    InteriorOrExteriorExView(newSpace: .constant(MySpace(name: "", image: "", city: "", difficulty: "", area: 0, acceptedFauna: true, color: [], exposure: .fullShade, soil: [], interiorExterior: .interior, existingPlant: [], createdDate: Date.now, personalNotes: "")), widthButton: 84, heightButton: 36, cornerRadiusButton: 10, minimalButtonTextSize: 13, maximalButtonTextSize: 15)
+    InteriorOrExteriorExView(newSpace: .constant(MySpace(name: "", image: "", city: "", difficulty: "", area: 0, acceptedFauna: true, color: [], exposure: .fullShade, soil: [], interiorExterior: .interior, existingPlant: [], createdDate: Date.now, personalNotes: "")),firstButtonIsSelected: .constant(true), secondButtonIsSelected: .constant(false), widthButton: 84, heightButton: 36, cornerRadiusButton: 10, minimalButtonTextSize: 13, maximalButtonTextSize: 15)
 }

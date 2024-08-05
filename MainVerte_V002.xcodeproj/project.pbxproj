@@ -95,6 +95,8 @@
 		E2A252052C5CDB3E0048E809 /* JustifiedTextExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */; };
 		E2A252062C5CDB3E0048E809 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A252002C5CDB3E0048E809 /* MyAccountView.swift */; };
 		E2A252072C5CDB3E0048E809 /* MyAccountRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */; };
+		E2A252092C5CFEFD0048E809 /* SoilExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A252082C5CFEFD0048E809 /* SoilExView.swift */; };
+		E2A2520B2C5D077A0048E809 /* SoilButtonSelectionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2520A2C5D07790048E809 /* SoilButtonSelectionExView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -188,6 +190,8 @@
 		E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustifiedTextExView.swift; sourceTree = "<group>"; };
 		E2A252002C5CDB3E0048E809 /* MyAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountRegisterView.swift; sourceTree = "<group>"; };
+		E2A252082C5CFEFD0048E809 /* SoilExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoilExView.swift; sourceTree = "<group>"; };
+		E2A2520A2C5D07790048E809 /* SoilButtonSelectionExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoilButtonSelectionExView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +310,8 @@
 				E20AF7B92C5B845F001579B2 /* ResearchBarExView.swift */,
 				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
 				E20AF7B72C5B845F001579B2 /* TitleExView.swift */,
+				E2A252082C5CFEFD0048E809 /* SoilExView.swift */,
+				E2A2520A2C5D07790048E809 /* SoilButtonSelectionExView.swift */,
 			);
 			name = ExView;
 			sourceTree = "<group>";
@@ -472,6 +478,7 @@
 				E20AF7F22C5B84A0001579B2 /* MySpacesView.swift in Sources */,
 				E20AF7942C5B83DD001579B2 /* DiseaseModel.swift in Sources */,
 				E20AF7D12C5B847C001579B2 /* TestUIKitViewController.swift in Sources */,
+				E2A2520B2C5D077A0048E809 /* SoilButtonSelectionExView.swift in Sources */,
 				E20AF7FC2C5B84A0001579B2 /* ListPlantDetailsView.swift in Sources */,
 				E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */,
 				E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */,
@@ -524,6 +531,7 @@
 				E20AF80F2C5BB18D001579B2 /* DifficultyExView.swift in Sources */,
 				E20AF7912C5B83DD001579B2 /* FertilizerModel.swift in Sources */,
 				E20AF7652C5B8355001579B2 /* MainVerte_V002App.swift in Sources */,
+				E2A252092C5CFEFD0048E809 /* SoilExView.swift in Sources */,
 				E20AF7EE2C5B84A0001579B2 /* ListPlantsView.swift in Sources */,
 				E20AF8192C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift in Sources */,
 				E20AF7CF2C5B846A001579B2 /* FiltersAndSortViewModal.swift in Sources */,

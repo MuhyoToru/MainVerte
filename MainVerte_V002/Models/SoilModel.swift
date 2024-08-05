@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Soil {
+class Soil : Identifiable, Equatable {
     let id: UUID = UUID()
     let name: String
     let description: String
@@ -17,5 +17,12 @@ class Soil {
         self.name = name
         self.description = description
         self.characteristics = characteristics
+    }
+    
+    static func == (lhs: Soil, rhs: Soil) -> Bool {
+        return
+            lhs.name == rhs.name &&
+            lhs.description == rhs.description &&
+            lhs.characteristics == rhs.characteristics
     }
 }

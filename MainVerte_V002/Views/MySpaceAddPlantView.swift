@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct MySpaceAddPlantView: View {
+    
+    @State var selection : Int = 0
+    @State var researchText : String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack {
+                TitleExView(title: "Ajouter une plante")
+                VStack(spacing : 16) {
+                    SegmentedButtonsExView(selection: $selection, tabs: ["Déjà Présente", "Rechercher", "Propositions"])
+                    if selection == 1 {
+                        ResearchAndFilterExView(researchText: $researchText)
+                    }
+                }
+                .padding(.horizontal, 16)
+                LineSeparatorExView()
+                ScrollView {
+                    
+                }
+            }
+            .background(BackgroundExView(opacity: 0.8))
     }
 }
 

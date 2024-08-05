@@ -30,8 +30,11 @@ struct MySpacePlantsView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 40, height: 40)
+                    NavigationLink(destination: {
+                        MySpaceAddPlantView()
+                    }, label: {
+                        ActionButtonExView()
+                    })
                 }
             }
             .padding()
