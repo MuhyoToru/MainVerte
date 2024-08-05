@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct IdeaSpacesView: View {
+    @Binding var showModal: Bool
+    
     var body: some View {
         VStack {
             ScrollView {
-                VStack(alignment: .leading){
-                    ComposedImagesExView(
-                        leftImage: "MVBathroom01",
-                        topImage: "MVBathroom02",
-                        bottomImage: "MVBathroom03",
-                        rightImage: "MVBathroom04",
-                        title: "Salle de bain",
-                        subtitle: "15 Idées"
-                    )
+                VStack {
+                    NavigationLink(destination: IdeaListSpacesView()) {
+                        ComposedImagesExView(
+                            leftImage: "MVBathroom01",
+                            topImage: "MVBathroom02",
+                            bottomImage: "MVBathroom03",
+                            rightImage: "MVBathroom04",
+                            title: "Salle de bain",
+                            subtitle: "15 Idées"
+                        )
+                    }
                     ComposedImagesExView(
                         leftImage: "MVGarden01",
                         topImage: "MVGarden02",
@@ -32,16 +36,23 @@ struct IdeaSpacesView: View {
             }
             HStack {
                 Spacer()
-                ActionButtonExView(action: "plus")
+                Button(action: {
+                    withAnimation {
+                        showModal = true
+                    }
+                }) {
+                    ActionButtonExView(action: "plus")
+                }
             }
         }
         .padding(.horizontal)
         .padding(.bottom, 12)
+        
     }
 }
 
 
 
-#Preview {
-    IdeaSpacesView()
-}
+//#Preview {
+//    IdeaSpacesView()
+//}

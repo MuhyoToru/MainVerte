@@ -23,7 +23,7 @@ struct MessageBubbleExView: View {
                     HStack(alignment: .top, spacing: 0) {
                         Triangle()
                             .fill(Color.white)
-                            .frame(width: 16, height: 16)
+                            .frame(width: 12, height: 12)
                         Text(text)
                             .padding(.horizontal)
                             .padding(.vertical, 10)
@@ -49,7 +49,7 @@ struct MessageBubbleExView: View {
                             ))
                         Triangle()
                             .fill(Color.white)
-                            .frame(width: 16, height: 16)
+                            .frame(width: 12, height: 12)
                             .rotationEffect(.degrees(-90))
                     }
                     .offset(x: 10, y: 20)

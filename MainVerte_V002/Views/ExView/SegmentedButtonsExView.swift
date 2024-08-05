@@ -10,12 +10,14 @@ import SwiftUI
 struct SegmentedButtonsExView: View {
     @Binding var selection: Int
     let tabs: [String]
+    var onSegmentTapped: () -> Void = {}
 
     var body: some View {
         HStack(spacing: 0) {
             ForEach(Array(tabs.enumerated()), id: \.offset) { index, tab in
                 Button(action: {
                     selection = index
+                    onSegmentTapped() // Appel de la fermeture pour fermer la modale
                 }) {
                     Text(tab)
                         .font(selection == index ? .system(size: 15, weight: .semibold) : .system(size: 14))
@@ -24,7 +26,7 @@ struct SegmentedButtonsExView: View {
                         .foregroundColor(.mvDarkGray)
                         .cornerRadius(6)
                 }
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 6)
                 .background(Color.mvLightBlue)
                 if index < tabs.count - 1 {
                     Rectangle()
