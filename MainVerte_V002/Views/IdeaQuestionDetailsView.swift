@@ -13,7 +13,8 @@ struct IdeaQuestionDetailsView: View {
     var body: some View {
         VStack {
             ZStack {
-                Text("Potager")
+                TitleExView(title: "Potager")
+           
                     .font(.system(size: 30))
                 HStack {
                     Spacer()
@@ -21,14 +22,12 @@ struct IdeaQuestionDetailsView: View {
                 }
             }
             .padding(.horizontal, 5)
-            Image("MVTipQuestionPest")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 176)
-                .cornerRadius(20)
-                .clipped()
-            JustifiedTextExView(text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides chimiques ?")
-                .frame(height: 100)
+          
+            ImageTextViewRepresentable(
+                image: UIImage(named: "MVTipQuestionPest") ?? UIImage(),
+                text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides chimiques ?"
+            )
+                .frame(height: 284)
             HStack {
                 Text("Commentaires")
                     .font(.title2)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0DA1B32C5D163B0060956C /* ClassImageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0DA1B22C5D163B0060956C /* ClassImageTextView.swift */; };
+		AF4627D12C600C4B00679B13 /* ImageTextViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4627D02C600C4B00679B13 /* ImageTextViewRepresentable.swift */; };
 		E20AF7652C5B8355001579B2 /* MainVerte_V002App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7642C5B8355001579B2 /* MainVerte_V002App.swift */; };
 		E20AF7692C5B8356001579B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20AF7682C5B8356001579B2 /* Assets.xcassets */; };
 		E20AF76C2C5B8356001579B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20AF76B2C5B8356001579B2 /* Preview Assets.xcassets */; };
@@ -98,6 +100,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF0DA1B22C5D163B0060956C /* ClassImageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassImageTextView.swift; sourceTree = "<group>"; };
+		AF4627D02C600C4B00679B13 /* ImageTextViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextViewRepresentable.swift; sourceTree = "<group>"; };
 		E20AF7612C5B8355001579B2 /* MainVerte_V002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainVerte_V002.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20AF7642C5B8355001579B2 /* MainVerte_V002App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVerte_V002App.swift; sourceTree = "<group>"; };
 		E20AF7682C5B8356001579B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -201,6 +205,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0DA1AE2C5D105A0060956C /* UIkit */ = {
+			isa = PBXGroup;
+			children = (
+				AF0DA1AF2C5D11A90060956C /* IdeaQuestionDetailViewinUIkit */,
+			);
+			name = UIkit;
+			sourceTree = "<group>";
+		};
+		AF0DA1AF2C5D11A90060956C /* IdeaQuestionDetailViewinUIkit */ = {
+			isa = PBXGroup;
+			children = (
+				AF0DA1B22C5D163B0060956C /* ClassImageTextView.swift */,
+				AF4627D02C600C4B00679B13 /* ImageTextViewRepresentable.swift */,
+			);
+			path = IdeaQuestionDetailViewinUIkit;
+			sourceTree = "<group>";
+		};
 		E20AF7582C5B8355001579B2 = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +295,7 @@
 				E20AF8002C5B84A7001579B2 /* ProfilView.swift */,
 				E20AF7732C5B8373001579B2 /* ExView */,
 				E20AF7742C5B837D001579B2 /* ModalView */,
+				AF0DA1AE2C5D105A0060956C /* UIkit */,
 				E20AF7752C5B8383001579B2 /* ViewController */,
 			);
 			name = Views;
@@ -473,6 +495,7 @@
 				E20AF7942C5B83DD001579B2 /* DiseaseModel.swift in Sources */,
 				E20AF7D12C5B847C001579B2 /* TestUIKitViewController.swift in Sources */,
 				E20AF7FC2C5B84A0001579B2 /* ListPlantDetailsView.swift in Sources */,
+				AF4627D12C600C4B00679B13 /* ImageTextViewRepresentable.swift in Sources */,
 				E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */,
 				E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */,
 				E20AF7932C5B83DD001579B2 /* PlantContainerModel.swift in Sources */,
@@ -502,6 +525,7 @@
 				E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */,
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,
+				AF0DA1B32C5D163B0060956C /* ClassImageTextView.swift in Sources */,
 				E2A252062C5CDB3E0048E809 /* MyAccountView.swift in Sources */,
 				E20AF8092C5B92F6001579B2 /* InteriorOrExteriorExView.swift in Sources */,
 				E20AF7972C5B83DD001579B2 /* MySpaceModel.swift in Sources */,
