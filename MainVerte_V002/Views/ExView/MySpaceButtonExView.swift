@@ -26,11 +26,10 @@ struct MySpaceButtonExView: View {
                 HStack {
                     Image(mySpace.image)
                         .resizable()
+                        .aspectRatio(contentMode: .fill)
                         .frame(width : 60, height: 60)
-                        .cornerRadius(15)
-                    Text(mySpace.name)
-                        .font(.system(size: 24))
-                        .foregroundStyle(.mvDarkGreen)
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                    TitleExView(title: mySpace.name, textSize: 30, textColor: .mvDarkGreen)
                     Spacer()
                     Image(systemName: "arrow.right")
                         .foregroundStyle(.mvMediumGray)
@@ -42,5 +41,5 @@ struct MySpaceButtonExView: View {
 }
 
 #Preview {
-    MySpaceButtonExView(mySpace:  MySpace(name: "Jardin", image: "MVGarden", city: "Orange", difficulty: "Facile", area: 10, acceptedFauna: true, color: [.gray], exposure: Exposure.fullShade, soil: [SoilViewModel().soils[0]], interiorExterior: InteriorExterior.exterior, createdDate: Date.now, personalNotes: ""))
+    MySpaceButtonExView(mySpace:  MySpace(name: "Jardin", image: "MVGarden01", city: "Orange", difficulty: "Facile", area: 10, acceptedFauna: true, color: [.gray], exposure: Exposure.fullShade, soil: [SoilViewModel().soils[0]], interiorExterior: InteriorExterior.exterior, createdDate: Date.now, personalNotes: ""))
 }

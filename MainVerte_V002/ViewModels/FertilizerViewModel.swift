@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Observation
 
 @Observable class FertilizerViewModel {
     var fertilizers : [Fertilizer] = []

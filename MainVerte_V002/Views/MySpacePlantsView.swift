@@ -15,6 +15,15 @@ struct MySpacePlantsView: View {
     var body: some View {
         ZStack {
             VStack {
+                HStack {
+                    NavigationLink(destination: MySpacesView()) {
+                        Image(systemName: "chevron.left")
+                        Text("Mes Espaces")
+                    }
+                    .foregroundColor(Color.mvMediumGray)
+                    .navigationBarBackButtonHidden(true)
+                    Spacer()
+                }
                 TitleExView(title: mySpace.name)
                 ResearchAndFilterExView(researchText: $researchText)
                     .padding(.horizontal, 16)

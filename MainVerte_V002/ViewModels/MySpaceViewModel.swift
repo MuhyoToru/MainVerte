@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Observation
 
-@Observable class MySpaceViewModel {
-    var mySpaces: [MySpace] = []
+class MySpaceViewModel : ObservableObject{
+    @Published var mySpaces: [MySpace] = []
     
     init() {
         mySpaces = [

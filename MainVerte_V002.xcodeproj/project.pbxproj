@@ -93,6 +93,9 @@
 		E20AF81B2C5BC77E001579B2 /* IsInPotExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */; };
 		E2175E3B2C60B73B0050F7C4 /* SoilExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E392C60B73B0050F7C4 /* SoilExView.swift */; };
 		E2175E3C2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */; };
+		E2175E3E2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */; };
+		E2175E412C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E402C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift */; };
+		E2175E452C61007C0050F7C4 /* DiseaseExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E442C61007C0050F7C4 /* DiseaseExView.swift */; };
 		E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */; };
 		E2A252032C5CDB3E0048E809 /* MessageBubbleExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */; };
 		E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */; };
@@ -195,6 +198,9 @@
 		E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsInPotExView.swift; sourceTree = "<group>"; };
 		E2175E392C60B73B0050F7C4 /* SoilExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoilExView.swift; sourceTree = "<group>"; };
 		E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoilButtonSelectionExView.swift; sourceTree = "<group>"; };
+		E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpacePlantDetailsViewController.swift; sourceTree = "<group>"; };
+		E2175E402C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpacePlantDetailsViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		E2175E442C61007C0050F7C4 /* DiseaseExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseExView.swift; sourceTree = "<group>"; };
 		E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthentificationSelectionExView.swift; sourceTree = "<group>"; };
 		E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleExView.swift; sourceTree = "<group>"; };
 		E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountLoginView.swift; sourceTree = "<group>"; };
@@ -280,41 +286,42 @@
 			children = (
 				E20AF7D22C5B8491001579B2 /* ContentView.swift */,
 				E20AF7E82C5B84A0001579B2 /* CreateIdeaQuestionView.swift */,
-				F65A29042C603C420021764A /* CreateIdeaView.swift */,
 				E20AF7E12C5B84A0001579B2 /* CreateIdeaSpaceView.swift */,
 				E20AF7E72C5B84A0001579B2 /* CreateIdeaTipsView.swift */,
+				F65A29042C603C420021764A /* CreateIdeaView.swift */,
 				E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */,
 				E20AF7EA2C5B84A0001579B2 /* FavoritesPlantsView.swift */,
 				E20AF7DB2C5B8497001579B2 /* FavoritesQuestionsView.swift */,
 				E20AF7D32C5B8491001579B2 /* FavoritesSpacesView.swift */,
 				E20AF7ED2C5B84A0001579B2 /* FavoritesTipsView.swift */,
 				E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */,
+				F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */,
+				F65A28FE2C5E39CB0021764A /* IdeaListSpacesView.swift */,
+				F65A29002C5E96550021764A /* IdeaListTipsView.swift */,
 				E20AF7E92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift */,
 				E20AF7E62C5B84A0001579B2 /* IdeaQuestionsView.swift */,
 				E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */,
 				E20AF7EB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift */,
 				E20AF7E02C5B84A0001579B2 /* IdeaSpacesView.swift */,
-				F65A28FE2C5E39CB0021764A /* IdeaListSpacesView.swift */,
-				F65A29002C5E96550021764A /* IdeaListTipsView.swift */,
-				F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */,
 				E20AF7D52C5B8491001579B2 /* IdeasView.swift */,
 				E20AF7E32C5B84A0001579B2 /* IdeaTipDetailsView.swift */,
 				E20AF7FE2C5B84A7001579B2 /* IdeaTipsView.swift */,
 				E20AF7DF2C5B84A0001579B2 /* ListPlantAddPlantView.swift */,
 				E20AF7EC2C5B84A0001579B2 /* ListPlantDetailsView.swift */,
 				E20AF7DE2C5B84A0001579B2 /* ListPlantsView.swift */,
+				E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */,
+				E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */,
+				E2A252002C5CDB3E0048E809 /* MyAccountView.swift */,
 				E20AF7D42C5B8491001579B2 /* MySpaceAddPlantView.swift */,
 				E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */,
 				E20AF7DA2C5B8497001579B2 /* MySpacePlantsView.swift */,
 				E20AF7E22C5B84A0001579B2 /* MySpacesView.swift */,
-				E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */,
-				E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */,
-				E2A252002C5CDB3E0048E809 /* MyAccountView.swift */,
 				E20AF8002C5B84A7001579B2 /* ProfilView.swift */,
 				E20AF7732C5B8373001579B2 /* ExView */,
 				E20AF7742C5B837D001579B2 /* ModalView */,
 				AF0DA1AE2C5D105A0060956C /* UIkit */,
 				E20AF7752C5B8383001579B2 /* ViewController */,
+				E2175E3F2C60D37A0050F7C4 /* ViewControllerRepresentable */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -322,33 +329,34 @@
 		E20AF7732C5B8373001579B2 /* ExView */ = {
 			isa = PBXGroup;
 			children = (
-				E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */,
-				E2175E392C60B73B0050F7C4 /* SoilExView.swift */,
-				E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */,
-				E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */,
-				E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */,
 				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
 				E20AF7B22C5B845F001579B2 /* ActionButtonExView.swift */,
 				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
+				E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */,
 				E20AF7B02C5B845F001579B2 /* BackgroundExView.swift */,
 				E20AF7BA2C5B845F001579B2 /* ButtonAddExView.swift */,
 				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
 				E20AF7B32C5B845F001579B2 /* ComposedImagesExView.swift */,
-				F65A28FC2C5D03060021764A /* ImageTextExView.swift */,
 				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
 				E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */,
 				E20AF80A2C5BA987001579B2 /* ExposureExView.swift */,
 				E20AF7BE2C5B845F001579B2 /* FavoriteButtonExView.swift */,
 				E20AF7B82C5B845F001579B2 /* FilterAndSortButtonExView.swift */,
+				F65A28FC2C5D03060021764A /* ImageTextExView.swift */,
 				E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */,
 				E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */,
+				E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */,
 				E20AF7BD2C5B845F001579B2 /* LineSeparatorExView.swift */,
+				E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */,
 				E20AF7B42C5B845F001579B2 /* MySpaceButtonExView.swift */,
 				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
 				E20AF7BB2C5B845F001579B2 /* ResearchAndFilterExView.swift */,
 				E20AF7B92C5B845F001579B2 /* ResearchBarExView.swift */,
 				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
+				E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */,
+				E2175E392C60B73B0050F7C4 /* SoilExView.swift */,
 				E20AF7B72C5B845F001579B2 /* TitleExView.swift */,
+				E2175E442C61007C0050F7C4 /* DiseaseExView.swift */,
 			);
 			name = ExView;
 			sourceTree = "<group>";
@@ -365,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				E20AF7D02C5B847C001579B2 /* TestUIKitViewController.swift */,
+				E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -418,6 +427,14 @@
 				E20AF8132C5BC0AB001579B2 /* Sumana-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E2175E3F2C60D37A0050F7C4 /* ViewControllerRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				E2175E402C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift */,
+			);
+			name = ViewControllerRepresentable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +530,7 @@
 				E20AF78A2C5B83DD001579B2 /* ExposureModel.swift in Sources */,
 				E20AF7C42C5B845F001579B2 /* ColorButtonExView.swift in Sources */,
 				E20AF7F52C5B84A0001579B2 /* MySpacePlantDetailsView.swift in Sources */,
+				E2175E412C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift in Sources */,
 				E20AF7F22C5B84A0001579B2 /* MySpacesView.swift in Sources */,
 				E20AF7942C5B83DD001579B2 /* DiseaseModel.swift in Sources */,
 				E20AF7D12C5B847C001579B2 /* TestUIKitViewController.swift in Sources */,
@@ -559,6 +577,7 @@
 				E20AF7972C5B83DD001579B2 /* MySpaceModel.swift in Sources */,
 				E20AF78C2C5B83DD001579B2 /* IdeaModel.swift in Sources */,
 				E20AF8042C5B84A7001579B2 /* ProfilView.swift in Sources */,
+				E2175E452C61007C0050F7C4 /* DiseaseExView.swift in Sources */,
 				E20AF78D2C5B83DD001579B2 /* IdeaTipModel.swift in Sources */,
 				E20AF7FD2C5B84A0001579B2 /* FavoritesTipsView.swift in Sources */,
 				E20AF7D82C5B8491001579B2 /* MySpaceAddPlantView.swift in Sources */,
@@ -582,6 +601,7 @@
 				E20AF7A92C5B8418001579B2 /* IdeaQuestionViewModel.swift in Sources */,
 				E20AF7DD2C5B8497001579B2 /* FavoritesQuestionsView.swift in Sources */,
 				E20AF7BF2C5B845F001579B2 /* BackgroundExView.swift in Sources */,
+				E2175E3E2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift in Sources */,
 				E20AF7A62C5B8418001579B2 /* UserViewModel.swift in Sources */,
 				E20AF7AC2C5B8418001579B2 /* PlantViewModel.swift in Sources */,
 				E20AF7962C5B83DD001579B2 /* IdeaSpaceModel.swift in Sources */,

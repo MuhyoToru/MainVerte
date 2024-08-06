@@ -26,12 +26,11 @@ struct PlantationButtonExView: View {
                 HStack {
                     Image(plantation.plant.image)
                         .resizable()
+                        .aspectRatio(contentMode: .fill)
                         .frame(width : 60, height: 60)
-                        .cornerRadius(15)
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
                     VStack(alignment : .leading, spacing : 0) {
-                        Text(plantation.plant.name)
-                            .font(.system(size: 24))
-                            .foregroundStyle(.mvDarkGreen)
+                        TitleExView(title: plantation.plant.name, textSize: 22, textColor: .mvDarkGreen)
                         Text(plantation.plant.description)
                             .frame(height: 30)
                             .foregroundStyle(.mvMediumGray)

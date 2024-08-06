@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Observation
 
 @Observable class SoilViewModel {
     var soils : [Soil] = []

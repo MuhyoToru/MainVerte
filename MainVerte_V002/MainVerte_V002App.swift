@@ -8,6 +8,9 @@
 import SwiftUI
 
 @main
+
+
+
 struct MainVerte_V002App: App {
     var body: some Scene {
         WindowGroup {

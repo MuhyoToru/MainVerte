@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MySpacesView: View {
     
-    var mySpacesViewModel =  MySpaceViewModel().mySpaces
+    @StateObject var mySpacesViewModel =  MySpaceViewModel()
     @State var researchText : String = ""
     
     var body: some View {
@@ -21,8 +21,10 @@ struct MySpacesView: View {
                         .padding(.horizontal, 16)
                     LineSeparatorExView()
                     ScrollView {
-                        ForEach(mySpacesViewModel) { mySpace in
-                            MySpaceButtonExView(mySpace: mySpace)
+                        VStack(spacing : 16) {
+                            ForEach(mySpacesViewModel.mySpaces) { mySpace in
+                                MySpaceButtonExView(mySpace: mySpace)
+                            }
                         }
                     }
                     .padding()
@@ -32,7 +34,7 @@ struct MySpacesView: View {
                     HStack {
                         Spacer()
                         NavigationLink(destination: {
-                            CreateSpaceView()
+                            CreateSpaceView(mySpaces: $mySpacesViewModel.mySpaces)
                         }, label: {
                             ActionButtonExView()
                         })
@@ -41,6 +43,7 @@ struct MySpacesView: View {
                 .padding()
             }
             .background(BackgroundExView(opacity: 0.8))
+            .navigationBarBackButtonHidden(true)
         }
     }
 }
