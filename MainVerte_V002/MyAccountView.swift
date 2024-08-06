@@ -8,22 +8,26 @@
 import SwiftUI
 
 struct MyAccountView: View {
+    
+    @State private var selectedView = 0
+    
     var body: some View {
-        VStack {
-            TitleExView(title: "Créer un Espace")
-
-        
-            ZStack {
+        NavigationView {
+            VStack {
+                TitleExView(title: "Créer un Espace")
                 
-                UnevenRoundedRectangle(topLeadingRadius: 40, bottomLeadingRadius: 0, bottomTrailingRadius: 0, topTrailingRadius: 40)
-                    .foregroundStyle(.mvLightGreen)
-                AuthentificationSelectionExView()
+                AuthentificationSelectionExView(selection: $selectedView)
+                    .padding()
                 
+                if selectedView == 0 {
+                    MyAccountLoginView()
+                } else {
+                    MyAccountRegisterView()
+                }
             }
+            .background(BackgroundExView(opacity: 0.8))
         }
-        .background(BackgroundExView(opacity: 0.8))
     }
-  
 }
 
 #Preview {

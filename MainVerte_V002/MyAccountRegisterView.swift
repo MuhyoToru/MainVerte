@@ -16,13 +16,24 @@ struct MyAccountRegisterView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            TextField("Nom", text: $nom)
-                .padding(10)
-                .background(RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen))
+            HStack {
+                Image(systemName: "person.fill")
+                    .foregroundStyle(.mvDarkGreen)
+                    .padding(.leading, 10)
                 
-
+                TextField("Nom", text: $nom)
+                    .font(.system(size: 18, weight: .bold))
+                    .padding(10)
+                    .foregroundStyle(Color.mvDarkGreen)
+                
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(lineWidth: 1)
+                    .foregroundStyle(Color.mvDarkGreen)
+                
+            )
+            
             Button(action: {
                 
             }) {
@@ -33,67 +44,50 @@ struct MyAccountRegisterView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .padding(5)
-    
+                
             }
-            .buttonStyle(.bordered)
-            
-            
-            SecureField("Mot de passe", text: $motDePasse)
-                .padding(10)
-                .background(RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen))
-            
-            SecureField("Confirmer mot de passe", text: $motDePasse)
-                .padding(10)
-                .background(RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen))
-           
+            .frame(maxWidth: .infinity)
+                         .padding(10)
+                         .background(Color.mvDarkGreen)
+                         .foregroundColor(.white)
+                         .cornerRadius(8)
+                         
             HStack {
-                Toggle("Se souvenir de moi", isOn: $souvenirDeMoi)
-                    .toggleStyle(CircularToggleStyle())
                 
+                Image(systemName: "lock.fill")
+                    .foregroundStyle(.mvDarkGreen)
+                    .padding(.leading, 10)
                 
-                
+                SecureField("Mot de passe", text: $motDePasse)
+                    .font(.system(size: 18, weight: .bold))
+                    .padding(10)
                 
             }
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                )
+            HStack {
+                
+                Image(systemName: "lock.fill")
+                    .foregroundStyle(.mvDarkGreen)
+                    .padding(.leading, 10)
+                
+                SecureField("Confirmer mot de passe", text: $motDePasse)
+                    .font(.system(size: 18, weight: .bold))
+                    .padding(10)
+            }
+                .background(RoundedRectangle(cornerRadius: 8)
+                    .stroke(lineWidth: 1)
+                    .foregroundStyle(Color.mvDarkGreen))
+                
         }
-
+        
         .foregroundStyle(.mvDarkGreen)
         .padding()
     }
 }
-    #Preview {
-        MyAccountRegisterView()
-    }
-
-
-
-import SwiftUI
-
-struct CircularToggleStyle: ToggleStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        HStack {
-            configuration.label
-            
-            Spacer()
-            
-            ZStack {
-                Circle()
-                    .fill(configuration.isOn ? Color.blue : Color.mvWhite)
-                    .strokeBorder(lineWidth: 2)
-                    .frame(width: 20, height: 20)
-                
-                if configuration.isOn {
-                    Image(systemName: "checkmark")
-                        .foregroundColor(.white)
-                        .font(.system(size: 10, weight: .bold))
-                }
-            }
-            .onTapGesture {
-                configuration.isOn.toggle()
-            }
-        }
-    }
+#Preview {
+    MyAccountRegisterView()
 }
