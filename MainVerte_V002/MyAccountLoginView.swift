@@ -8,11 +8,48 @@
 import SwiftUI
 
 struct MyAccountLoginView: View {
+    
+    @State private var nom = ""
+    @State private var motDePasse = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(spacing: 20) {
+            HStack {
+                Image(systemName: "person.fill")
+                    .foregroundStyle(.mvBlack)
+                    .padding(.leading, 10)
+                
+                TextField("Nom", text: $nom)
+                    .padding(10)
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(lineWidth: 1)
+                    .foregroundStyle(Color.mvDarkGreen)
+                
+            )
+            
+            HStack {
+                Image(systemName: "lock.fill")
+                    .foregroundStyle(.mvBlack)
+                    .padding(.leading, 10)
+                
+                SecureField("Mot de passe", text: $motDePasse)
+                    .padding(10)
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(lineWidth: 1)
+                    .foregroundStyle(Color.mvDarkGreen)
+                
+            )
+        }
+            .foregroundStyle(.mvDarkGreen)
+            .padding()
+        }
     }
-}
 
-#Preview {
-    MyAccountLoginView()
-}
+    #Preview {
+        MyAccountLoginView()
+    }
