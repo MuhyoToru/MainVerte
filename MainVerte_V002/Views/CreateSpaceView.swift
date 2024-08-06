@@ -15,11 +15,12 @@ struct CreateSpaceView: View {
     @State var isInside : Bool = true
     @State var isOutside : Bool = false
     
-    @State var asAnImage : Bool = false
+    @State var hasAnImage : Bool = false
     @State var listIsFold : Bool = true
     
     var colors : [ColorButton] = [ColorButton(color: .mvFilterRed, colorName: "Rouge"), ColorButton(color: .mvFilterBlue, colorName: "Bleu"), ColorButton(color: .mvFilterPink, colorName: "Rose"), ColorButton(color: .mvFilterGreen, colorName: "Vert"), ColorButton(color: .mvFilterWhite, colorName: "Blanc"), ColorButton(color: .mvFilterYellow, colorName: "Jaune")]
     var soils : [Soil] = SoilViewModel().soils
+    @Binding var mySpaces : [MySpace]
     
     var titleSize : CGFloat = 28
     var textSize : CGFloat = 18
@@ -32,13 +33,15 @@ struct CreateSpaceView: View {
     
     var body: some View {
         VStack {
-//            List {
-//                Picker("Picker Name", selection: $selectedSoil) {
-//                    ForEach(soils) { soil in
-//                        Text(soil.name)
-//                    }
-//                }.pickerStyle(.menu)
-//            }
+            HStack {
+                NavigationLink(destination: MySpacesView()) {
+                    Image(systemName: "chevron.left")
+                    Text("Mes Espaces")
+                }
+                .foregroundColor(Color.mvMediumGray)
+                .navigationBarBackButtonHidden(true)
+                Spacer()
+            }
             TitleExView(title: "Créer un Espace")
             ZStack {
                 UnevenRoundedRectangle(topLeadingRadius: 40, bottomLeadingRadius: 0, bottomTrailingRadius: 0, topTrailingRadius: 40)
@@ -82,16 +85,16 @@ struct CreateSpaceView: View {
                             }
                         }
                         .frame(height: 44)
-                        Button (action : {
+                        NavigationLink (destination : {
                             
                         }, label : {
                             ButtonAddExView(text: "Ajouter une Plante", iconName: "plus", fontSize: 12, cornerRadius: 5, textWeight: .bold, width: 160, height: 30)
                         })
-                        if !asAnImage {
+                        if !hasAnImage {
                             Button (action : {
                                 newSpace.image = "MVGarden01"
-                                if !asAnImage {
-                                    asAnImage = true
+                                if !hasAnImage {
+                                    hasAnImage = true
                                 }
                             }, label : {
                                 ButtonAddExView(text: "Ajouter une Photo", iconName: "camera", fontSize: 12, cornerRadius: 5, textWeight: .bold, width: 160, height: 30)
@@ -104,22 +107,11 @@ struct CreateSpaceView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
                         Button(action : {
-                            
+                            mySpaces.append(newSpace)
+                            print(mySpaces)
                         }, label: {
                             ZStack {
-                                RoundedRectangle(cornerRadius: cornerRadiusButton)
-                                    .foregroundStyle(.mvWhite)
-                                    .frame(width: widthButton * 2, height: heightButton * 1.5)
-                                RoundedRectangle(cornerRadius: cornerRadiusButton)
-                                    .strokeBorder(.mvDarkGreen, lineWidth: 1.5)
-                                    .frame(width: widthButton * 2, height: heightButton * 1.5)
-                                HStack {
-                                    Text("Valider")
-                                    Image(systemName: "checkmark")
-                                }
-                                .foregroundStyle(.mvDarkGreen)
-                                .bold()
-                                .font(.system(size: 24))
+                                ButtonAddExView(text: "Valider", iconName: "checkmark", fontSize: 24, cornerRadius: 5, textWeight: .bold, width: 134, height: 56)
                             }
                         })
                     }
@@ -133,5 +125,5 @@ struct CreateSpaceView: View {
 }
 
 #Preview {
-    CreateSpaceView()
+    CreateSpaceView(mySpaces: .constant(MySpaceViewModel().mySpaces))
 }

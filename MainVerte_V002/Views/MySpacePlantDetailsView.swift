@@ -9,60 +9,59 @@ import SwiftUI
 
 struct MySpacePlantDetailsView: View {
     
-    var plantation : Plantation
+    @State var plantation : Plantation
     let dateFormatter = DateFormatter()
     
     var body: some View {
         ZStack {
             VStack {
+                HStack {
+                    NavigationLink(destination: MySpacesView()) {
+                        Image(systemName: "chevron.left")
+                        Text("Mes Plantes")
+                    }
+                    .foregroundColor(Color.mvMediumGray)
+                    .navigationBarBackButtonHidden(true)
+                    Spacer()
+                }
                 TitleExView(title: plantation.plant.name)
                 LineSeparatorExView()
                 ScrollView {
-                    Image(plantation.plant.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width : 200, height: 200)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                    Text(plantation.plant.scientificName)
-                    Text(plantation.personalNotes)
-//                    Text(dateFormatter.string(from: plantation.plantedDate))
-                    Text("Une Date")
-                    if plantation.container == .inGround {
-                        Text("La plante est en terre")
-                    } else {
-                        Text("La plante est en pot")
-                    }
-                    Text(plantation.plant.difficulty)
-                    Text(plantation.plant.plantingMethod)
+                    MySpacePlantDetailsViewControllerRepresentable(plantation: plantation, spacing: 16)
+                        .frame(height: 500)
                     HStack {
-                        Text("Couleur(s) :")
+                        TitleExView(title: "Couleurs :", textSize: 26, textColor: .mvDarkGreen)
+                        Spacer()
+                    }
+                    HStack {
                         ForEach(plantation.plant.colors, id : \.self) { color in
+                            Spacer()
                             ZStack {
+                                Image(systemName: "leaf.fill")
+                                    .foregroundStyle(.mvWhite)
+                                    .font(.system(size: 36))
+                                    .offset(x : -3, y : 3)
                                 Image(systemName: "leaf.fill")
                                     .foregroundStyle(color)
                                     .font(.system(size: 36))
                             }
+                            Spacer()
                         }
+                    }
+                    HStack {
+                        TitleExView(title: "Maladies :", textSize: 26, textColor: .mvDarkGreen)
                         Spacer()
                     }
-                    Text("Maladie(s) :")
                     ForEach(plantation.plant.diseases) { disease in
-                        HStack {
-                            VStack {
-                                Image(disease.image)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width : 70, height: 70)
-                                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                                Text(disease.name)
-                                Spacer()
-                            }
-                            VStack(alignment : .leading) {
-                                Text(disease.description)
-                                Text(disease.cureMethod)
-                            }
-                        }
+                        DiseaseExView(disease: disease)
                     }
+                    HStack {
+                        TitleExView(title: "Notes :", textSize: 26, textColor: .mvDarkGreen)
+                        Spacer()
+                    }
+                    TextField("Note personnel", text: $plantation.personalNotes)
+                    Spacer()
+                        .frame(height: 16)
                 }
                 .padding(.horizontal, 16)
             }
