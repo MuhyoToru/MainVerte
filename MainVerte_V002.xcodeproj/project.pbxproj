@@ -56,7 +56,6 @@
 		E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7BD2C5B845F001579B2 /* LineSeparatorExView.swift */; };
 		E20AF7CD2C5B845F001579B2 /* FavoriteButtonExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7BE2C5B845F001579B2 /* FavoriteButtonExView.swift */; };
 		E20AF7CF2C5B846A001579B2 /* FiltersAndSortViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7CE2C5B846A001579B2 /* FiltersAndSortViewModal.swift */; };
-		E20AF7D12C5B847C001579B2 /* TestUIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7D02C5B847C001579B2 /* TestUIKitViewController.swift */; };
 		E20AF7D62C5B8491001579B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7D22C5B8491001579B2 /* ContentView.swift */; };
 		E20AF7D72C5B8491001579B2 /* FavoritesSpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7D32C5B8491001579B2 /* FavoritesSpacesView.swift */; };
 		E20AF7D82C5B8491001579B2 /* MySpaceAddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7D42C5B8491001579B2 /* MySpaceAddPlantView.swift */; };
@@ -66,14 +65,11 @@
 		E20AF7EE2C5B84A0001579B2 /* ListPlantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7DE2C5B84A0001579B2 /* ListPlantsView.swift */; };
 		E20AF7EF2C5B84A0001579B2 /* ListPlantAddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7DF2C5B84A0001579B2 /* ListPlantAddPlantView.swift */; };
 		E20AF7F02C5B84A0001579B2 /* IdeaSpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E02C5B84A0001579B2 /* IdeaSpacesView.swift */; };
-		E20AF7F12C5B84A0001579B2 /* CreateIdeaSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E12C5B84A0001579B2 /* CreateIdeaSpaceView.swift */; };
 		E20AF7F22C5B84A0001579B2 /* MySpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E22C5B84A0001579B2 /* MySpacesView.swift */; };
 		E20AF7F32C5B84A0001579B2 /* IdeaTipDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E32C5B84A0001579B2 /* IdeaTipDetailsView.swift */; };
 		E20AF7F42C5B84A0001579B2 /* CreateSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */; };
 		E20AF7F52C5B84A0001579B2 /* MySpacePlantDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */; };
 		E20AF7F62C5B84A0001579B2 /* IdeaQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E62C5B84A0001579B2 /* IdeaQuestionsView.swift */; };
-		E20AF7F72C5B84A0001579B2 /* CreateIdeaTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E72C5B84A0001579B2 /* CreateIdeaTipsView.swift */; };
-		E20AF7F82C5B84A0001579B2 /* CreateIdeaQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E82C5B84A0001579B2 /* CreateIdeaQuestionView.swift */; };
 		E20AF7F92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7E92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift */; };
 		E20AF7FA2C5B84A0001579B2 /* FavoritesPlantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7EA2C5B84A0001579B2 /* FavoritesPlantsView.swift */; };
 		E20AF7FB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7EB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift */; };
@@ -81,7 +77,6 @@
 		E20AF7FD2C5B84A0001579B2 /* FavoritesTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7ED2C5B84A0001579B2 /* FavoritesTipsView.swift */; };
 		E20AF8022C5B84A7001579B2 /* IdeaTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7FE2C5B84A7001579B2 /* IdeaTipsView.swift */; };
 		E20AF8032C5B84A7001579B2 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */; };
-		E20AF8042C5B84A7001579B2 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8002C5B84A7001579B2 /* ProfilView.swift */; };
 		E20AF8052C5B84A7001579B2 /* IdeasMyPublicatonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */; };
 		E20AF8092C5B92F6001579B2 /* InteriorOrExteriorExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */; };
 		E20AF80B2C5BA987001579B2 /* ExposureExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AF80A2C5BA987001579B2 /* ExposureExView.swift */; };
@@ -96,6 +91,11 @@
 		E2175E3E2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */; };
 		E2175E412C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E402C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift */; };
 		E2175E452C61007C0050F7C4 /* DiseaseExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E442C61007C0050F7C4 /* DiseaseExView.swift */; };
+		E284CE3D2C620E0600A89689 /* ImageDescriptionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */; };
+		E284CE412C620E2E00A89689 /* ImageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3E2C620E2E00A89689 /* ImageUIView.swift */; };
+		E284CE422C620E2E00A89689 /* ImageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */; };
+		E284CE462C620E3900A89689 /* JustifiedTextUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE432C620E3900A89689 /* JustifiedTextUIView.swift */; };
+		E284CE472C620E3900A89689 /* JustifiedTextViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE442C620E3900A89689 /* JustifiedTextViewContainer.swift */; };
 		E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */; };
 		E2A252032C5CDB3E0048E809 /* MessageBubbleExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */; };
 		E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */; };
@@ -160,7 +160,6 @@
 		E20AF7BD2C5B845F001579B2 /* LineSeparatorExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineSeparatorExView.swift; path = Views/ExView/LineSeparatorExView.swift; sourceTree = "<group>"; };
 		E20AF7BE2C5B845F001579B2 /* FavoriteButtonExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteButtonExView.swift; path = Views/ExView/FavoriteButtonExView.swift; sourceTree = "<group>"; };
 		E20AF7CE2C5B846A001579B2 /* FiltersAndSortViewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiltersAndSortViewModal.swift; path = Views/ModalView/FiltersAndSortViewModal.swift; sourceTree = "<group>"; };
-		E20AF7D02C5B847C001579B2 /* TestUIKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestUIKitViewController.swift; path = Views/ViewController/TestUIKitViewController.swift; sourceTree = "<group>"; };
 		E20AF7D22C5B8491001579B2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
 		E20AF7D32C5B8491001579B2 /* FavoritesSpacesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesSpacesView.swift; path = Views/FavoritesSpacesView.swift; sourceTree = "<group>"; };
 		E20AF7D42C5B8491001579B2 /* MySpaceAddPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySpaceAddPlantView.swift; path = Views/MySpaceAddPlantView.swift; sourceTree = "<group>"; };
@@ -170,14 +169,11 @@
 		E20AF7DE2C5B84A0001579B2 /* ListPlantsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListPlantsView.swift; path = Views/ListPlantsView.swift; sourceTree = "<group>"; };
 		E20AF7DF2C5B84A0001579B2 /* ListPlantAddPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListPlantAddPlantView.swift; path = Views/ListPlantAddPlantView.swift; sourceTree = "<group>"; };
 		E20AF7E02C5B84A0001579B2 /* IdeaSpacesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaSpacesView.swift; path = Views/IdeaSpacesView.swift; sourceTree = "<group>"; };
-		E20AF7E12C5B84A0001579B2 /* CreateIdeaSpaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateIdeaSpaceView.swift; path = Views/CreateIdeaSpaceView.swift; sourceTree = "<group>"; };
 		E20AF7E22C5B84A0001579B2 /* MySpacesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySpacesView.swift; path = Views/MySpacesView.swift; sourceTree = "<group>"; };
 		E20AF7E32C5B84A0001579B2 /* IdeaTipDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaTipDetailsView.swift; path = Views/IdeaTipDetailsView.swift; sourceTree = "<group>"; };
 		E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateSpaceView.swift; path = Views/CreateSpaceView.swift; sourceTree = "<group>"; };
 		E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySpacePlantDetailsView.swift; path = Views/MySpacePlantDetailsView.swift; sourceTree = "<group>"; };
 		E20AF7E62C5B84A0001579B2 /* IdeaQuestionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaQuestionsView.swift; path = Views/IdeaQuestionsView.swift; sourceTree = "<group>"; };
-		E20AF7E72C5B84A0001579B2 /* CreateIdeaTipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateIdeaTipsView.swift; path = Views/CreateIdeaTipsView.swift; sourceTree = "<group>"; };
-		E20AF7E82C5B84A0001579B2 /* CreateIdeaQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateIdeaQuestionView.swift; path = Views/CreateIdeaQuestionView.swift; sourceTree = "<group>"; };
 		E20AF7E92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaQuestionDetailsView.swift; path = Views/IdeaQuestionDetailsView.swift; sourceTree = "<group>"; };
 		E20AF7EA2C5B84A0001579B2 /* FavoritesPlantsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesPlantsView.swift; path = Views/FavoritesPlantsView.swift; sourceTree = "<group>"; };
 		E20AF7EB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaSpaceDetailsView.swift; path = Views/IdeaSpaceDetailsView.swift; sourceTree = "<group>"; };
@@ -185,7 +181,6 @@
 		E20AF7ED2C5B84A0001579B2 /* FavoritesTipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesTipsView.swift; path = Views/FavoritesTipsView.swift; sourceTree = "<group>"; };
 		E20AF7FE2C5B84A7001579B2 /* IdeaTipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaTipsView.swift; path = Views/IdeaTipsView.swift; sourceTree = "<group>"; };
 		E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesView.swift; path = Views/FavoritesView.swift; sourceTree = "<group>"; };
-		E20AF8002C5B84A7001579B2 /* ProfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilView.swift; path = Views/ProfilView.swift; sourceTree = "<group>"; };
 		E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeasMyPublicatonsView.swift; path = Views/IdeasMyPublicatonsView.swift; sourceTree = "<group>"; };
 		E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteriorOrExteriorExView.swift; sourceTree = "<group>"; };
 		E20AF80A2C5BA987001579B2 /* ExposureExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureExView.swift; sourceTree = "<group>"; };
@@ -201,6 +196,11 @@
 		E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpacePlantDetailsViewController.swift; sourceTree = "<group>"; };
 		E2175E402C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpacePlantDetailsViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		E2175E442C61007C0050F7C4 /* DiseaseExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseExView.swift; sourceTree = "<group>"; };
+		E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDescriptionExView.swift; sourceTree = "<group>"; };
+		E284CE3E2C620E2E00A89689 /* ImageUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUIView.swift; sourceTree = "<group>"; };
+		E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewContainer.swift; sourceTree = "<group>"; };
+		E284CE432C620E3900A89689 /* JustifiedTextUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustifiedTextUIView.swift; sourceTree = "<group>"; };
+		E284CE442C620E3900A89689 /* JustifiedTextViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustifiedTextViewContainer.swift; sourceTree = "<group>"; };
 		E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthentificationSelectionExView.swift; sourceTree = "<group>"; };
 		E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleExView.swift; sourceTree = "<group>"; };
 		E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountLoginView.swift; sourceTree = "<group>"; };
@@ -228,6 +228,9 @@
 		AF0DA1AE2C5D105A0060956C /* UIkit */ = {
 			isa = PBXGroup;
 			children = (
+				E284CE482C620E6400A89689 /* PlantDetailsView */,
+				E284CE452C620E3900A89689 /* JustifiedTextView */,
+				E284CE402C620E2E00A89689 /* ImageView */,
 				AF0DA1AF2C5D11A90060956C /* IdeaQuestionDetailViewinUIkit */,
 			);
 			name = UIkit;
@@ -285,80 +288,38 @@
 			isa = PBXGroup;
 			children = (
 				E20AF7D22C5B8491001579B2 /* ContentView.swift */,
-				E20AF7E82C5B84A0001579B2 /* CreateIdeaQuestionView.swift */,
-				E20AF7E12C5B84A0001579B2 /* CreateIdeaSpaceView.swift */,
-				E20AF7E72C5B84A0001579B2 /* CreateIdeaTipsView.swift */,
-				F65A29042C603C420021764A /* CreateIdeaView.swift */,
-				E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */,
-				E20AF7EA2C5B84A0001579B2 /* FavoritesPlantsView.swift */,
-				E20AF7DB2C5B8497001579B2 /* FavoritesQuestionsView.swift */,
-				E20AF7D32C5B8491001579B2 /* FavoritesSpacesView.swift */,
-				E20AF7ED2C5B84A0001579B2 /* FavoritesTipsView.swift */,
-				E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */,
-				F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */,
-				F65A28FE2C5E39CB0021764A /* IdeaListSpacesView.swift */,
-				F65A29002C5E96550021764A /* IdeaListTipsView.swift */,
-				E20AF7E92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift */,
-				E20AF7E62C5B84A0001579B2 /* IdeaQuestionsView.swift */,
-				E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */,
-				E20AF7EB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift */,
-				E20AF7E02C5B84A0001579B2 /* IdeaSpacesView.swift */,
-				E20AF7D52C5B8491001579B2 /* IdeasView.swift */,
-				E20AF7E32C5B84A0001579B2 /* IdeaTipDetailsView.swift */,
-				E20AF7FE2C5B84A7001579B2 /* IdeaTipsView.swift */,
-				E20AF7DF2C5B84A0001579B2 /* ListPlantAddPlantView.swift */,
-				E20AF7EC2C5B84A0001579B2 /* ListPlantDetailsView.swift */,
-				E20AF7DE2C5B84A0001579B2 /* ListPlantsView.swift */,
-				E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */,
-				E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */,
-				E2A252002C5CDB3E0048E809 /* MyAccountView.swift */,
-				E20AF7D42C5B8491001579B2 /* MySpaceAddPlantView.swift */,
-				E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */,
-				E20AF7DA2C5B8497001579B2 /* MySpacePlantsView.swift */,
-				E20AF7E22C5B84A0001579B2 /* MySpacesView.swift */,
-				E20AF8002C5B84A7001579B2 /* ProfilView.swift */,
-				E20AF7732C5B8373001579B2 /* ExView */,
+				E284CE4C2C620EF500A89689 /* FavoriteViews */,
+				E284CE4B2C620EE000A89689 /* IdeaViews */,
+				E284CE4D2C620F0C00A89689 /* ListPlantViews */,
+				E284CE4A2C620EB600A89689 /* MyAccountViews */,
+				E284CE492C620EA600A89689 /* MySpaceViews */,
+				E20AF7732C5B8373001579B2 /* GlobalExView */,
 				E20AF7742C5B837D001579B2 /* ModalView */,
 				AF0DA1AE2C5D105A0060956C /* UIkit */,
-				E20AF7752C5B8383001579B2 /* ViewController */,
-				E2175E3F2C60D37A0050F7C4 /* ViewControllerRepresentable */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
-		E20AF7732C5B8373001579B2 /* ExView */ = {
+		E20AF7732C5B8373001579B2 /* GlobalExView */ = {
 			isa = PBXGroup;
 			children = (
-				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
+				E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */,
 				E20AF7B22C5B845F001579B2 /* ActionButtonExView.swift */,
-				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
-				E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */,
 				E20AF7B02C5B845F001579B2 /* BackgroundExView.swift */,
 				E20AF7BA2C5B845F001579B2 /* ButtonAddExView.swift */,
-				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
-				E20AF7B32C5B845F001579B2 /* ComposedImagesExView.swift */,
-				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
-				E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */,
-				E20AF80A2C5BA987001579B2 /* ExposureExView.swift */,
-				E20AF7BE2C5B845F001579B2 /* FavoriteButtonExView.swift */,
 				E20AF7B82C5B845F001579B2 /* FilterAndSortButtonExView.swift */,
 				F65A28FC2C5D03060021764A /* ImageTextExView.swift */,
-				E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */,
-				E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */,
 				E2A251FF2C5CDB3E0048E809 /* JustifiedTextExView.swift */,
 				E20AF7BD2C5B845F001579B2 /* LineSeparatorExView.swift */,
 				E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */,
-				E20AF7B42C5B845F001579B2 /* MySpaceButtonExView.swift */,
-				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
 				E20AF7BB2C5B845F001579B2 /* ResearchAndFilterExView.swift */,
 				E20AF7B92C5B845F001579B2 /* ResearchBarExView.swift */,
 				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
-				E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */,
 				E2175E392C60B73B0050F7C4 /* SoilExView.swift */,
 				E20AF7B72C5B845F001579B2 /* TitleExView.swift */,
 				E2175E442C61007C0050F7C4 /* DiseaseExView.swift */,
 			);
-			name = ExView;
+			name = GlobalExView;
 			sourceTree = "<group>";
 		};
 		E20AF7742C5B837D001579B2 /* ModalView */ = {
@@ -367,15 +328,6 @@
 				E20AF7CE2C5B846A001579B2 /* FiltersAndSortViewModal.swift */,
 			);
 			name = ModalView;
-			sourceTree = "<group>";
-		};
-		E20AF7752C5B8383001579B2 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E20AF7D02C5B847C001579B2 /* TestUIKitViewController.swift */,
-				E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */,
-			);
-			name = ViewController;
 			sourceTree = "<group>";
 		};
 		E20AF7762C5B838F001579B2 /* Models */ = {
@@ -429,12 +381,188 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		E2175E3F2C60D37A0050F7C4 /* ViewControllerRepresentable */ = {
+		E284CE402C620E2E00A89689 /* ImageView */ = {
 			isa = PBXGroup;
 			children = (
+				E284CE3E2C620E2E00A89689 /* ImageUIView.swift */,
+				E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		E284CE452C620E3900A89689 /* JustifiedTextView */ = {
+			isa = PBXGroup;
+			children = (
+				E284CE432C620E3900A89689 /* JustifiedTextUIView.swift */,
+				E284CE442C620E3900A89689 /* JustifiedTextViewContainer.swift */,
+			);
+			path = JustifiedTextView;
+			sourceTree = "<group>";
+		};
+		E284CE482C620E6400A89689 /* PlantDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */,
 				E2175E402C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift */,
 			);
-			name = ViewControllerRepresentable;
+			path = PlantDetailsView;
+			sourceTree = "<group>";
+		};
+		E284CE492C620EA600A89689 /* MySpaceViews */ = {
+			isa = PBXGroup;
+			children = (
+				E284CE572C620FD300A89689 /* ExViews */,
+				E284CE562C620FC800A89689 /* Views */,
+			);
+			name = MySpaceViews;
+			sourceTree = "<group>";
+		};
+		E284CE4A2C620EB600A89689 /* MyAccountViews */ = {
+			isa = PBXGroup;
+			children = (
+				E284CE552C620F9A00A89689 /* ExViews */,
+				E284CE542C620F8F00A89689 /* Views */,
+			);
+			name = MyAccountViews;
+			sourceTree = "<group>";
+		};
+		E284CE4B2C620EE000A89689 /* IdeaViews */ = {
+			isa = PBXGroup;
+			children = (
+				E284CE512C620F5B00A89689 /* ExViews */,
+				E284CE502C620F4F00A89689 /* Views */,
+			);
+			name = IdeaViews;
+			sourceTree = "<group>";
+		};
+		E284CE4C2C620EF500A89689 /* FavoriteViews */ = {
+			isa = PBXGroup;
+			children = (
+				E284CE4F2C620F3E00A89689 /* ExViews */,
+				E284CE4E2C620F3300A89689 /* Views */,
+			);
+			name = FavoriteViews;
+			sourceTree = "<group>";
+		};
+		E284CE4D2C620F0C00A89689 /* ListPlantViews */ = {
+			isa = PBXGroup;
+			children = (
+				E284CE532C620F7B00A89689 /* ExViews */,
+				E284CE522C620F6500A89689 /* Views */,
+			);
+			name = ListPlantViews;
+			sourceTree = "<group>";
+		};
+		E284CE4E2C620F3300A89689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E20AF7EA2C5B84A0001579B2 /* FavoritesPlantsView.swift */,
+				E20AF7DB2C5B8497001579B2 /* FavoritesQuestionsView.swift */,
+				E20AF7D32C5B8491001579B2 /* FavoritesSpacesView.swift */,
+				E20AF7ED2C5B84A0001579B2 /* FavoritesTipsView.swift */,
+				E20AF7FF2C5B84A7001579B2 /* FavoritesView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E284CE4F2C620F3E00A89689 /* ExViews */ = {
+			isa = PBXGroup;
+			children = (
+				E20AF7BE2C5B845F001579B2 /* FavoriteButtonExView.swift */,
+			);
+			name = ExViews;
+			sourceTree = "<group>";
+		};
+		E284CE502C620F4F00A89689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F65A29042C603C420021764A /* CreateIdeaView.swift */,
+				F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */,
+				F65A28FE2C5E39CB0021764A /* IdeaListSpacesView.swift */,
+				F65A29002C5E96550021764A /* IdeaListTipsView.swift */,
+				E20AF7E92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift */,
+				E20AF7E62C5B84A0001579B2 /* IdeaQuestionsView.swift */,
+				E20AF8012C5B84A7001579B2 /* IdeasMyPublicatonsView.swift */,
+				E20AF7EB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift */,
+				E20AF7E02C5B84A0001579B2 /* IdeaSpacesView.swift */,
+				E20AF7D52C5B8491001579B2 /* IdeasView.swift */,
+				E20AF7E32C5B84A0001579B2 /* IdeaTipDetailsView.swift */,
+				E20AF7FE2C5B84A7001579B2 /* IdeaTipsView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E284CE512C620F5B00A89689 /* ExViews */ = {
+			isa = PBXGroup;
+			children = (
+				E20AF7B32C5B845F001579B2 /* ComposedImagesExView.swift */,
+			);
+			name = ExViews;
+			sourceTree = "<group>";
+		};
+		E284CE522C620F6500A89689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E20AF7DF2C5B84A0001579B2 /* ListPlantAddPlantView.swift */,
+				E20AF7EC2C5B84A0001579B2 /* ListPlantDetailsView.swift */,
+				E20AF7DE2C5B84A0001579B2 /* ListPlantsView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E284CE532C620F7B00A89689 /* ExViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ExViews;
+			sourceTree = "<group>";
+		};
+		E284CE542C620F8F00A89689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */,
+				E2A252012C5CDB3E0048E809 /* MyAccountRegisterView.swift */,
+				E2A252002C5CDB3E0048E809 /* MyAccountView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E284CE552C620F9A00A89689 /* ExViews */ = {
+			isa = PBXGroup;
+			children = (
+				E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */,
+			);
+			name = ExViews;
+			sourceTree = "<group>";
+		};
+		E284CE562C620FC800A89689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */,
+				E20AF7D42C5B8491001579B2 /* MySpaceAddPlantView.swift */,
+				E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */,
+				E20AF7DA2C5B8497001579B2 /* MySpacePlantsView.swift */,
+				E20AF7E22C5B84A0001579B2 /* MySpacesView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E284CE572C620FD300A89689 /* ExViews */ = {
+			isa = PBXGroup;
+			children = (
+				E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */,
+				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
+				E20AF7B42C5B845F001579B2 /* MySpaceButtonExView.swift */,
+				E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */,
+				E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */,
+				E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */,
+				E20AF80A2C5BA987001579B2 /* ExposureExView.swift */,
+				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
+				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
+				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
+				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
+			);
+			name = ExViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,13 +661,14 @@
 				E2175E412C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift in Sources */,
 				E20AF7F22C5B84A0001579B2 /* MySpacesView.swift in Sources */,
 				E20AF7942C5B83DD001579B2 /* DiseaseModel.swift in Sources */,
-				E20AF7D12C5B847C001579B2 /* TestUIKitViewController.swift in Sources */,
 				E20AF7FC2C5B84A0001579B2 /* ListPlantDetailsView.swift in Sources */,
 				AF4627D12C600C4B00679B13 /* ImageTextViewRepresentable.swift in Sources */,
+				E284CE3D2C620E0600A89689 /* ImageDescriptionExView.swift in Sources */,
 				E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */,
 				E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */,
 				E20AF7932C5B83DD001579B2 /* PlantContainerModel.swift in Sources */,
 				E20AF7C12C5B845F001579B2 /* ActionButtonExView.swift in Sources */,
+				E284CE412C620E2E00A89689 /* ImageUIView.swift in Sources */,
 				E20AF7FB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift in Sources */,
 				E20AF7F32C5B84A0001579B2 /* IdeaTipDetailsView.swift in Sources */,
 				E20AF7C22C5B845F001579B2 /* ComposedImagesExView.swift in Sources */,
@@ -551,7 +680,6 @@
 				F65A29032C5E9C130021764A /* IdeaListQuestionsView.swift in Sources */,
 				E20AF7DC2C5B8497001579B2 /* MySpacePlantsView.swift in Sources */,
 				E20AF7C72C5B845F001579B2 /* FilterAndSortButtonExView.swift in Sources */,
-				E20AF7F12C5B84A0001579B2 /* CreateIdeaSpaceView.swift in Sources */,
 				E20AF7AD2C5B8418001579B2 /* CommentViewModel.swift in Sources */,
 				E20AF7F62C5B84A0001579B2 /* IdeaQuestionsView.swift in Sources */,
 				E20AF7D72C5B8491001579B2 /* FavoritesSpacesView.swift in Sources */,
@@ -571,26 +699,26 @@
 				E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */,
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,
+				E284CE472C620E3900A89689 /* JustifiedTextViewContainer.swift in Sources */,
+				E284CE422C620E2E00A89689 /* ImageViewContainer.swift in Sources */,
 				AF0DA1B32C5D163B0060956C /* ClassImageTextView.swift in Sources */,
 				E2A252062C5CDB3E0048E809 /* MyAccountView.swift in Sources */,
 				E20AF8092C5B92F6001579B2 /* InteriorOrExteriorExView.swift in Sources */,
 				E20AF7972C5B83DD001579B2 /* MySpaceModel.swift in Sources */,
 				E20AF78C2C5B83DD001579B2 /* IdeaModel.swift in Sources */,
-				E20AF8042C5B84A7001579B2 /* ProfilView.swift in Sources */,
 				E2175E452C61007C0050F7C4 /* DiseaseExView.swift in Sources */,
 				E20AF78D2C5B83DD001579B2 /* IdeaTipModel.swift in Sources */,
 				E20AF7FD2C5B84A0001579B2 /* FavoritesTipsView.swift in Sources */,
 				E20AF7D82C5B8491001579B2 /* MySpaceAddPlantView.swift in Sources */,
 				E20AF80B2C5BA987001579B2 /* ExposureExView.swift in Sources */,
 				E20AF7CB2C5B845F001579B2 /* SegmentedButtonsExView.swift in Sources */,
+				E284CE462C620E3900A89689 /* JustifiedTextUIView.swift in Sources */,
 				E20AF8112C5BB271001579B2 /* AcceptedFaunaExView.swift in Sources */,
 				E20AF7902C5B83DD001579B2 /* MonthModel.swift in Sources */,
 				E20AF7922C5B83DD001579B2 /* ColorButtonModel.swift in Sources */,
-				E20AF7F82C5B84A0001579B2 /* CreateIdeaQuestionView.swift in Sources */,
 				E20AF8052C5B84A7001579B2 /* IdeasMyPublicatonsView.swift in Sources */,
 				E20AF7C62C5B845F001579B2 /* TitleExView.swift in Sources */,
 				E20AF7992C5B83DD001579B2 /* UserModel.swift in Sources */,
-				E20AF7F72C5B84A0001579B2 /* CreateIdeaTipsView.swift in Sources */,
 				E20AF7AF2C5B8418001579B2 /* IdeaTipViewModel.swift in Sources */,
 				E20AF80F2C5BB18D001579B2 /* DifficultyExView.swift in Sources */,
 				E20AF7912C5B83DD001579B2 /* FertilizerModel.swift in Sources */,
