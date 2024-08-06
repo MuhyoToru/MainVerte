@@ -13,8 +13,8 @@ struct FiltersAndSortViewModal: View {
     
     var body: some View {
         ZStack {
-            Color.red
-            Text("Work in Progress")
+            TitleExView(title: "Work in Progress")
+
         }
         .presentationDetents([.fraction(heightModal)])
     }
