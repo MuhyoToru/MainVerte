@@ -11,7 +11,7 @@ struct IdeaSpacesView: View {
     @Binding var showModal: Bool
     
     var body: some View {
-        VStack {
+        NavigationStack {
             ScrollView {
                 VStack {
                     NavigationLink(destination: IdeaListSpacesView()) {
@@ -51,8 +51,15 @@ struct IdeaSpacesView: View {
     }
 }
 
-
+struct IdeaSpacesView_Previews: PreviewProvider {
+    @State static var showModal = false
+    
+    static var previews: some View {
+        IdeaSpacesView(showModal: $showModal)
+    }
+}
 
 //#Preview {
 //    IdeaSpacesView()
 //}
+

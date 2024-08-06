@@ -32,6 +32,7 @@ class ImageTextView: UIView {
         textView.textAlignment = .justified
         textView.isEditable = false
         textView.isScrollEnabled = false
+        textView.backgroundColor = .clear //
         
         addSubview(imageView)
         addSubview(textView)

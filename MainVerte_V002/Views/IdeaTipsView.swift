@@ -50,6 +50,16 @@ struct IdeaTipsView: View {
     }
 }
 
+struct IdeaTipsView_Previews: PreviewProvider {
+    @State static var showModal = false
+    
+    static var previews: some View {
+        IdeaTipsView(showModal: $showModal)
+    }
+}
+
 //#Preview {
 //    IdeaTipsView()
 //}
+
+

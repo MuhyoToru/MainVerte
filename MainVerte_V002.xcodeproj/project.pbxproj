@@ -104,6 +104,11 @@
 		F65A29012C5E96550021764A /* IdeaListTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29002C5E96550021764A /* IdeaListTipsView.swift */; };
 		F65A29032C5E9C130021764A /* IdeaListQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */; };
 		F65A29052C603C430021764A /* CreateIdeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29042C603C420021764A /* CreateIdeaView.swift */; };
+		F65A294C2C6141980021764A /* JustifiedTextViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A294B2C6141980021764A /* JustifiedTextViewContainer.swift */; };
+		F65A294E2C6142610021764A /* JustifiedTextUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A294D2C6142610021764A /* JustifiedTextUIView.swift */; };
+		F65A29512C61715B0021764A /* ImageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29502C61715B0021764A /* ImageViewContainer.swift */; };
+		F65A29532C6171980021764A /* ImageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29522C6171980021764A /* ImageUIView.swift */; };
+		F65A29552C617AE30021764A /* ImageDescriptionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29542C617AE30021764A /* ImageDescriptionExView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -206,6 +211,11 @@
 		F65A29002C5E96550021764A /* IdeaListTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaListTipsView.swift; sourceTree = "<group>"; };
 		F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaListQuestionsView.swift; sourceTree = "<group>"; };
 		F65A29042C603C420021764A /* CreateIdeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIdeaView.swift; sourceTree = "<group>"; };
+		F65A294B2C6141980021764A /* JustifiedTextViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifiedTextViewContainer.swift; sourceTree = "<group>"; };
+		F65A294D2C6142610021764A /* JustifiedTextUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifiedTextUIView.swift; sourceTree = "<group>"; };
+		F65A29502C61715B0021764A /* ImageViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewContainer.swift; sourceTree = "<group>"; };
+		F65A29522C6171980021764A /* ImageUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUIView.swift; sourceTree = "<group>"; };
+		F65A29542C617AE30021764A /* ImageDescriptionExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDescriptionExView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +232,8 @@
 		AF0DA1AE2C5D105A0060956C /* UIkit */ = {
 			isa = PBXGroup;
 			children = (
+				F65A294F2C61710E0021764A /* ImageView */,
+				F65A294A2C61413F0021764A /* JustifiedTextView */,
 				AF0DA1AF2C5D11A90060956C /* IdeaQuestionDetailViewinUIkit */,
 			);
 			name = UIkit;
@@ -230,8 +242,8 @@
 		AF0DA1AF2C5D11A90060956C /* IdeaQuestionDetailViewinUIkit */ = {
 			isa = PBXGroup;
 			children = (
-				AF4627D02C600C4B00679B13 /* ImageTextViewRepresentable.swift */,
 				AF0DA1B22C5D163B0060956C /* ClassImageTextView.swift */,
+				AF4627D02C600C4B00679B13 /* ImageTextViewRepresentable.swift */,
 			);
 			path = IdeaQuestionDetailViewinUIkit;
 			sourceTree = "<group>";
@@ -349,6 +361,7 @@
 				E20AF7B92C5B845F001579B2 /* ResearchBarExView.swift */,
 				E20AF7BC2C5B845F001579B2 /* SegmentedButtonsExView.swift */,
 				E20AF7B72C5B845F001579B2 /* TitleExView.swift */,
+				F65A29542C617AE30021764A /* ImageDescriptionExView.swift */,
 			);
 			name = ExView;
 			sourceTree = "<group>";
@@ -418,6 +431,24 @@
 				E20AF8132C5BC0AB001579B2 /* Sumana-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F65A294A2C61413F0021764A /* JustifiedTextView */ = {
+			isa = PBXGroup;
+			children = (
+				F65A294B2C6141980021764A /* JustifiedTextViewContainer.swift */,
+				F65A294D2C6142610021764A /* JustifiedTextUIView.swift */,
+			);
+			path = JustifiedTextView;
+			sourceTree = "<group>";
+		};
+		F65A294F2C61710E0021764A /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F65A29502C61715B0021764A /* ImageViewContainer.swift */,
+				F65A29522C6171980021764A /* ImageUIView.swift */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +531,7 @@
 				E2175E3C2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift in Sources */,
 				E20AF7F02C5B84A0001579B2 /* IdeaSpacesView.swift in Sources */,
 				E20AF7D62C5B8491001579B2 /* ContentView.swift in Sources */,
+				F65A29552C617AE30021764A /* ImageDescriptionExView.swift in Sources */,
 				E20AF8022C5B84A7001579B2 /* IdeaTipsView.swift in Sources */,
 				E2A252052C5CDB3E0048E809 /* JustifiedTextExView.swift in Sources */,
 				E20AF7892C5B83DD001579B2 /* InteriorExteriorModel.swift in Sources */,
@@ -544,15 +576,19 @@
 				E20AF7A82C5B8418001579B2 /* DiseaseViewModel.swift in Sources */,
 				E20AF7FA2C5B84A0001579B2 /* FavoritesPlantsView.swift in Sources */,
 				E20AF7C82C5B845F001579B2 /* ResearchBarExView.swift in Sources */,
+				F65A29532C6171980021764A /* ImageUIView.swift in Sources */,
+				F65A29512C61715B0021764A /* ImageViewContainer.swift in Sources */,
 				E20AF7CD2C5B845F001579B2 /* FavoriteButtonExView.swift in Sources */,
 				E20AF81B2C5BC77E001579B2 /* IsInPotExView.swift in Sources */,
 				E20AF7AA2C5B8418001579B2 /* MySpaceViewModel.swift in Sources */,
 				F65A28FF2C5E39CB0021764A /* IdeaListSpacesView.swift in Sources */,
+				F65A294C2C6141980021764A /* JustifiedTextViewContainer.swift in Sources */,
 				E20AF7C52C5B845F001579B2 /* AddPlantExView.swift in Sources */,
 				F65A29012C5E96550021764A /* IdeaListTipsView.swift in Sources */,
 				E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */,
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,
+				F65A294E2C6142610021764A /* JustifiedTextUIView.swift in Sources */,
 				AF0DA1B32C5D163B0060956C /* ClassImageTextView.swift in Sources */,
 				E2A252062C5CDB3E0048E809 /* MyAccountView.swift in Sources */,
 				E20AF8092C5B92F6001579B2 /* InteriorOrExteriorExView.swift in Sources */,

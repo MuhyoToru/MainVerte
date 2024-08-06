@@ -40,12 +40,14 @@ struct IdeaListQuestionsView: View {
                     subtitle: "Zoha",
                     isFavoriteView: false
                     )
-                    ImageTextExView(
-                    image: "MVTipQuestionPest",
-                    title: "Comment protéger potager?",
-                    subtitle: "Zak",
-                    isFavoriteView: true
-                    )
+                    NavigationLink(destination: IdeaQuestionDetailsView()) {
+                        ImageTextExView(
+                            image: "MVTipQuestionPest",
+                            title: "Comment protéger potager?",
+                            subtitle: "Zak",
+                            isFavoriteView: true
+                        )
+                    }
                 }
             }
         }

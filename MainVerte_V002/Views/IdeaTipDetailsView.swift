@@ -30,14 +30,10 @@ struct IdeaTipDetailsView: View {
                 }
             }
             .padding(.horizontal, 5)
-            Image("MVTipMaintenancePestControl")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 176)
-                .cornerRadius(20)
-                .clipped()
-            JustifiedTextExView(text: "Les insectes, peuvent coloniser les plantes d’intérieur. Le savon insecticide, un produit naturel, est un traitement efficace et facile à utiliser. Pour débarrasser vos végétaux des cochenilles, tamponnez les tiges et les feuilles avec une boule de coton imbibée d’alcool, une fois par semaine jusqu’à disparition complète. D’autre part, lorsque des moucherons fongiques tournent autour de vos plantes, c’est le signe manifeste que celles-ci sont trop arrosées.")
-                .frame(height: 270)
+            ImageDescriptionExView(
+                image: UIImage(named: "MVTipMaintenancePestControl") ?? UIImage(),
+                text: "Les insectes, peuvent coloniser les plantes d’intérieur. Le savon insecticide, un produit naturel, est un traitement efficace et facile à utiliser. Pour débarrasser vos végétaux des cochenilles, tamponnez les tiges et les feuilles avec une boule de coton imbibée d’alcool, une fois par semaine jusqu’à disparition complète. D’autre part, lorsque des moucherons fongiques tournent autour de vos plantes, c’est le signe manifeste que celles-ci sont trop arrosées."
+            )
             HStack {
                 TitleExView(title: "Commentaires", textSize: 30, textColor: .mvDarkGreen)
                 Spacer()

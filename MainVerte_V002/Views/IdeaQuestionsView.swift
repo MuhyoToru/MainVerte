@@ -135,6 +135,15 @@ struct IdeaQuestionsView: View {
     }
 }
 
+struct IdeaQuestionsView_Previews: PreviewProvider {
+    @State static var showModal = false
+    
+    static var previews: some View {
+        IdeaQuestionsView(showModal: $showModal)
+    }
+}
+
 //#Preview {
 //    IdeaQuestionsView()
 //}
+

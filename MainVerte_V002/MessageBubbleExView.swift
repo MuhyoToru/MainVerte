@@ -27,6 +27,7 @@ struct MessageBubbleExView: View {
                         Text(text)
                             .padding(.horizontal)
                             .padding(.vertical, 10)
+                            .foregroundColor(.mvDarkGray)
                             .background(Color.white)
                             .clipShape(UnevenRoundedRectangle(
                                 bottomLeadingRadius: 10,
@@ -42,6 +43,7 @@ struct MessageBubbleExView: View {
                         Text(text)
                             .padding(.horizontal)
                             .padding(.vertical, 10)
+                            .foregroundColor(.mvDarkGray)
                             .background(Color.white)
                             .clipShape(UnevenRoundedRectangle(
                                 topLeadingRadius: 10, bottomLeadingRadius: 10,
