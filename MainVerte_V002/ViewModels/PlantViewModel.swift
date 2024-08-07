@@ -42,7 +42,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Carotte",
                 scientificName: "Daucus carota",
-                image: "",
+                image: "MVCarrot",
                 description: "Plante bisannuelle cultivée pour sa racine comestible.",
                 size: 0,
                 startSowingDate: Month.march,
@@ -69,7 +69,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Laitue",
                 scientificName: "Lactuca sativa",
-                image: "",
+                image: "MVLettuce",
                 description: "Plante annuelle cultivée pour ses feuilles tendres.",
                 size: 0,
                 startSowingDate: Month.march,
@@ -96,7 +96,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Poivron",
                 scientificName: "Capsicum annuum",
-                image: "",
+                image: "MVBellPepper",
                 description: "Plante annuelle cultivée pour ses fruits charnus.",
                 size: 0,
                 startSowingDate: Month.february,
@@ -123,7 +123,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Courgette",
                 scientificName: "Cucurbita pepo",
-                image: "",
+                image: "MVZucchini",
                 description: "Plante annuelle rampante ou grimpante, cultivée pour ses fruits comestibles.",
                 size: 0,
                 startSowingDate: Month.april,
@@ -150,7 +150,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Radis",
                 scientificName: "Raphanus sativus",
-                image: "",
+                image: "MVRadish",
                 description: "Plante annuelle ou bisannuelle cultivée pour sa racine comestible.",
                 size: 0,
                 startSowingDate: Month.march,
@@ -177,7 +177,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Épinard",
                 scientificName: "Spinacia oleracea",
-                image: "",
+                image: "MVSpinach",
                 description: "Plante annuelle ou bisannuelle cultivée pour ses feuilles comestibles.",
                 size: 0,
                 startSowingDate: Month.march,
@@ -204,7 +204,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Aubergine",
                 scientificName: "Solanum melongena",
-                image: "",
+                image: "MVEggplant",
                 description: "Plante annuelle cultivée pour ses fruits comestibles, généralement violets.",
                 size: 0,
                 startSowingDate: Month.february,
@@ -231,7 +231,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Basilic",
                 scientificName: "Ocimum basilicum",
-                image: "",
+                image: "MVBasil",
                 description: "Plante aromatique annuelle utilisée pour ses feuilles dans de nombreux plats.",
                 size: 0,
                 startSowingDate: Month.march,
@@ -258,7 +258,7 @@ class PlantViewModel: ObservableObject {
             Plant(
                 name: "Fraise",
                 scientificName: "Fragaria × ananassa",
-                image: "",
+                image: "MVStrawberry",
                 description: "Plante vivace cultivée pour ses fruits sucrés et juteux.",
                 size: 0,
                 startSowingDate: Month.february,

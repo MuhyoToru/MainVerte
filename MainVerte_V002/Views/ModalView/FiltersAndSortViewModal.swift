@@ -14,7 +14,6 @@ struct FiltersAndSortViewModal: View {
     var body: some View {
         ZStack {
             TitleExView(title: "Work in Progress")
-
         }
         .presentationDetents([.fraction(heightModal)])
     }

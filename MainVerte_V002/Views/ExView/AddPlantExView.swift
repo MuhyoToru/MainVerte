@@ -9,71 +9,67 @@ import SwiftUI
 
 struct AddPlantExView: View {
     
+    var plant : Plant
+    
     @State private var plantCounter = 0
     
-    var body: some View {
-        
-            HStack(spacing: 0) {
-                ZStack {
-                   UnevenRoundedRectangle(topLeadingRadius: 20, bottomLeadingRadius: 20, bottomTrailingRadius: 0, topTrailingRadius: 0)
-                        .foregroundStyle(Color.mvWhite)
-                        .frame(width: 297.5, height: 80)
-                        .foregroundStyle(Color.mvWhite)
+    var rectangleCornerRadius : CGFloat = 20
+    var imageCornerRadius : CGFloat = 15
+    var height : CGFloat = 88
     
-                    VStack {
-                        HStack {
-                            Image("MVSnowFairyRoseBush")
-                            VStack {
-                                Text("Rosier Fées des...")
-                                    .foregroundColor(.black)
-                                    .font(.headline)
-                                
-                                Text("Un rosier paysager...")
-                                    .foregroundColor(.gray)
-                                    .font(.subheadline)
-                                    .padding(.leading, 1)
-                            }
-                        }
+    var body: some View {
+        HStack(spacing: 0) {
+            ZStack {
+                UnevenRoundedRectangle(topLeadingRadius: rectangleCornerRadius, bottomLeadingRadius: rectangleCornerRadius)
+                    .foregroundStyle(.mvWhite)
+                UnevenRoundedRectangle(topLeadingRadius: rectangleCornerRadius, bottomLeadingRadius: rectangleCornerRadius)
+                    .strokeBorder(.mvLightBlue, lineWidth: 1.5)
+                HStack {
+                    Image(plant.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width : 60, height: 60)
+                        .clipShape(RoundedRectangle(cornerRadius: imageCornerRadius))
+                    VStack(alignment : .leading) {
+                        Text(plant.name)
+                            .foregroundColor(.black)
+                            .font(.headline)
+                        Text(plant.description)
+                            .foregroundColor(.gray)
+                            .font(.subheadline)
                     }
+                    .padding(.vertical, 10)
+                    Spacer()
                 }
-                
-                VStack {
-                    ZStack {
-                        UnevenRoundedRectangle(bottomTrailingRadius: 20, topTrailingRadius: 20)
-                            .fill(Color.mvLightBlue)
-                            .frame(width: 40 , height: 80)
-                        
-                        
-                        VStack(spacing: -4) {
-                            Button(action: {
-                                plantCounter += 1
-                            }) {
-                                Text("+")
-                                    .foregroundStyle(.mvWhite)
-                                    .font(.title)
-                            }
-                            Text("\(plantCounter)")
-                                .foregroundStyle(.mvWhite)
-                                .font(.title)
-                            
-                            Button(action: {
-                                if plantCounter > 0 {
-                                    plantCounter -= 1
-                                }
-                            }) {
-                                Text("-")
-                                    .foregroundStyle(.mvWhite)
-                                    .font(.title)
-                            }
-                        }
-                    }
-                }
-                
+                .padding(.horizontal, 16)
             }
-            .shadow(radius: 1)
+            ZStack {
+                UnevenRoundedRectangle(bottomTrailingRadius: rectangleCornerRadius, topTrailingRadius: rectangleCornerRadius)
+                    .foregroundStyle(.mvLightBlue)
+                    .frame(width: 40)
+                VStack {
+                    Button(action: {
+                        plantCounter += 1
+                    }, label : {
+                        Text("+")
+                    })
+                    Text("\(plantCounter)")
+                    Button(action: {
+                        if plantCounter > 0 {
+                            plantCounter -= 1
+                        }
+                    }, label : {
+                        Text("-")
+                    })
+                }
+                .foregroundStyle(.mvWhite)
+                .font(.system(size: 20))
+            }
+        }
+        .frame(height: height)
     }
 }
 
 #Preview {
-    AddPlantExView()
+    AddPlantExView(plant : Plant(name: "", scientificName: "", image: "", description: "", size: 0, startSowingDate: .april, endSowingDate: .april, startBloomDate: .april, endBloomDate: .april, minTemperature: 0, maxTemperature: 0, wateringFrequency: 0, wateringQuantity: 0, spacing: 0, plantingMethod: "", startHarvestDate: .april, endHarvestDate: .april, colors: [], difficulty: "", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [], containers: []))
 }

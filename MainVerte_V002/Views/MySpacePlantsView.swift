@@ -11,19 +11,23 @@ struct MySpacePlantsView: View {
     
     var mySpace : MySpace
     @State var researchText : String = ""
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         ZStack {
             VStack {
                 HStack {
-                    NavigationLink(destination: MySpacesView()) {
+                    Button(action: {
+                        dismiss()
+                    }, label : {
                         Image(systemName: "chevron.left")
                         Text("Mes Espaces")
-                    }
+                    })
                     .foregroundColor(Color.mvMediumGray)
                     .navigationBarBackButtonHidden(true)
                     Spacer()
                 }
+                .padding(.horizontal, 16)
                 TitleExView(title: mySpace.name)
                 ResearchAndFilterExView(researchText: $researchText)
                     .padding(.horizontal, 16)
@@ -40,7 +44,7 @@ struct MySpacePlantsView: View {
                 HStack {
                     Spacer()
                     NavigationLink(destination: {
-                        MySpaceAddPlantView()
+                        MySpaceAddPlantView(mySpace: mySpace)
                     }, label: {
                         ActionButtonExView()
                     })

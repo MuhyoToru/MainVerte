@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 
-
-
 struct MainVerte_V002App: App {
+    
+//    @StateObject var mySpacesViewModel = MySpaceViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+//        .environmentObject(mySpacesViewModel)
     }
 }

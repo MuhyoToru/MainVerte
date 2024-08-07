@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-class Plant {
+class Plant : Identifiable {
     let id: UUID = UUID()
     let name: String
     let scientificName: String

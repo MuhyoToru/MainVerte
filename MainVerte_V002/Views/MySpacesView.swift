@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MySpacesView: View {
     
-    @StateObject var mySpacesViewModel =  MySpaceViewModel()
+    @EnvironmentObject var mySpacesViewModel : MySpaceViewModel
     @State var researchText : String = ""
     
     var body: some View {
@@ -34,7 +34,7 @@ struct MySpacesView: View {
                     HStack {
                         Spacer()
                         NavigationLink(destination: {
-                            CreateSpaceView(mySpaces: $mySpacesViewModel.mySpaces)
+                            CreateSpaceView()
                         }, label: {
                             ActionButtonExView()
                         })

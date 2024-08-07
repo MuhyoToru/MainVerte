@@ -96,6 +96,12 @@
 		E284CE422C620E2E00A89689 /* ImageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */; };
 		E284CE462C620E3900A89689 /* JustifiedTextUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE432C620E3900A89689 /* JustifiedTextUIView.swift */; };
 		E284CE472C620E3900A89689 /* JustifiedTextViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE442C620E3900A89689 /* JustifiedTextViewContainer.swift */; };
+		E284CE592C621EF400A89689 /* MySpaceAddPlantAlreadyHereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE582C621EF400A89689 /* MySpaceAddPlantAlreadyHereView.swift */; };
+		E284CE5B2C6241AB00A89689 /* MySpaceAddPlantSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE5A2C6241AB00A89689 /* MySpaceAddPlantSearchView.swift */; };
+		E284CE5D2C62447400A89689 /* CreateSpaceAddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE5C2C62447400A89689 /* CreateSpaceAddPlantView.swift */; };
+		E284CE5F2C62471800A89689 /* CreateSpaceAddPlantSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE5E2C62471800A89689 /* CreateSpaceAddPlantSearchView.swift */; };
+		E284CE612C62478F00A89689 /* CreateSpaceAddPlantProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE602C62478F00A89689 /* CreateSpaceAddPlantProposalView.swift */; };
+		E284CE632C624F1400A89689 /* MySpaceAddPlantProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE622C624F1400A89689 /* MySpaceAddPlantProposalView.swift */; };
 		E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */; };
 		E2A252032C5CDB3E0048E809 /* MessageBubbleExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */; };
 		E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */; };
@@ -200,6 +206,12 @@
 		E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewContainer.swift; sourceTree = "<group>"; };
 		E284CE432C620E3900A89689 /* JustifiedTextUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustifiedTextUIView.swift; sourceTree = "<group>"; };
 		E284CE442C620E3900A89689 /* JustifiedTextViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustifiedTextViewContainer.swift; sourceTree = "<group>"; };
+		E284CE582C621EF400A89689 /* MySpaceAddPlantAlreadyHereView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceAddPlantAlreadyHereView.swift; sourceTree = "<group>"; };
+		E284CE5A2C6241AB00A89689 /* MySpaceAddPlantSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceAddPlantSearchView.swift; sourceTree = "<group>"; };
+		E284CE5C2C62447400A89689 /* CreateSpaceAddPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSpaceAddPlantView.swift; sourceTree = "<group>"; };
+		E284CE5E2C62471800A89689 /* CreateSpaceAddPlantSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSpaceAddPlantSearchView.swift; sourceTree = "<group>"; };
+		E284CE602C62478F00A89689 /* CreateSpaceAddPlantProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSpaceAddPlantProposalView.swift; sourceTree = "<group>"; };
+		E284CE622C624F1400A89689 /* MySpaceAddPlantProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceAddPlantProposalView.swift; sourceTree = "<group>"; };
 		E2A251FC2C5CDB3E0048E809 /* AuthentificationSelectionExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthentificationSelectionExView.swift; sourceTree = "<group>"; };
 		E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleExView.swift; sourceTree = "<group>"; };
 		E2A251FE2C5CDB3E0048E809 /* MyAccountLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountLoginView.swift; sourceTree = "<group>"; };
@@ -535,7 +547,13 @@
 		E284CE562C620FC800A89689 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E284CE602C62478F00A89689 /* CreateSpaceAddPlantProposalView.swift */,
+				E284CE5E2C62471800A89689 /* CreateSpaceAddPlantSearchView.swift */,
+				E284CE5C2C62447400A89689 /* CreateSpaceAddPlantView.swift */,
 				E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */,
+				E284CE582C621EF400A89689 /* MySpaceAddPlantAlreadyHereView.swift */,
+				E284CE622C624F1400A89689 /* MySpaceAddPlantProposalView.swift */,
+				E284CE5A2C6241AB00A89689 /* MySpaceAddPlantSearchView.swift */,
 				E20AF7D42C5B8491001579B2 /* MySpaceAddPlantView.swift */,
 				E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */,
 				E20AF7DA2C5B8497001579B2 /* MySpacePlantsView.swift */,
@@ -547,17 +565,17 @@
 		E284CE572C620FD300A89689 /* ExViews */ = {
 			isa = PBXGroup;
 			children = (
-				E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */,
-				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
-				E20AF7B42C5B845F001579B2 /* MySpaceButtonExView.swift */,
-				E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */,
-				E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */,
+				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
+				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
+				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
+				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
 				E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */,
 				E20AF80A2C5BA987001579B2 /* ExposureExView.swift */,
-				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
-				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
-				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
-				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
+				E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */,
+				E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */,
+				E20AF7B42C5B845F001579B2 /* MySpaceButtonExView.swift */,
+				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
+				E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */,
 			);
 			name = ExViews;
 			sourceTree = "<group>";
@@ -650,6 +668,7 @@
 				E20AF7C32C5B845F001579B2 /* MySpaceButtonExView.swift in Sources */,
 				E2A252032C5CDB3E0048E809 /* MessageBubbleExView.swift in Sources */,
 				E20AF7F92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift in Sources */,
+				E284CE5F2C62471800A89689 /* CreateSpaceAddPlantSearchView.swift in Sources */,
 				E20AF7AB2C5B8418001579B2 /* SoilViewModel.swift in Sources */,
 				E20AF78A2C5B83DD001579B2 /* ExposureModel.swift in Sources */,
 				E20AF7C42C5B845F001579B2 /* ColorButtonExView.swift in Sources */,
@@ -662,11 +681,13 @@
 				E284CE3D2C620E0600A89689 /* ImageDescriptionExView.swift in Sources */,
 				E2A252022C5CDB3E0048E809 /* AuthentificationSelectionExView.swift in Sources */,
 				E2A252042C5CDB3E0048E809 /* MyAccountLoginView.swift in Sources */,
+				E284CE632C624F1400A89689 /* MySpaceAddPlantProposalView.swift in Sources */,
 				E20AF7932C5B83DD001579B2 /* PlantContainerModel.swift in Sources */,
 				E20AF7C12C5B845F001579B2 /* ActionButtonExView.swift in Sources */,
 				E284CE412C620E2E00A89689 /* ImageUIView.swift in Sources */,
 				E20AF7FB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift in Sources */,
 				E20AF7F32C5B84A0001579B2 /* IdeaTipDetailsView.swift in Sources */,
+				E284CE5D2C62447400A89689 /* CreateSpaceAddPlantView.swift in Sources */,
 				E20AF7C22C5B845F001579B2 /* ComposedImagesExView.swift in Sources */,
 				E20AF8032C5B84A7001579B2 /* FavoritesView.swift in Sources */,
 				E20AF7A72C5B8418001579B2 /* PlantationViewModel.swift in Sources */,
@@ -687,11 +708,14 @@
 				E20AF7FA2C5B84A0001579B2 /* FavoritesPlantsView.swift in Sources */,
 				E20AF7C82C5B845F001579B2 /* ResearchBarExView.swift in Sources */,
 				E20AF7CD2C5B845F001579B2 /* FavoriteButtonExView.swift in Sources */,
+				E284CE5B2C6241AB00A89689 /* MySpaceAddPlantSearchView.swift in Sources */,
 				E20AF81B2C5BC77E001579B2 /* IsInPotExView.swift in Sources */,
 				E20AF7AA2C5B8418001579B2 /* MySpaceViewModel.swift in Sources */,
 				F65A28FF2C5E39CB0021764A /* IdeaListSpacesView.swift in Sources */,
+				E284CE612C62478F00A89689 /* CreateSpaceAddPlantProposalView.swift in Sources */,
 				E20AF7C52C5B845F001579B2 /* AddPlantExView.swift in Sources */,
 				F65A29012C5E96550021764A /* IdeaListTipsView.swift in Sources */,
+				E284CE592C621EF400A89689 /* MySpaceAddPlantAlreadyHereView.swift in Sources */,
 				E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */,
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,

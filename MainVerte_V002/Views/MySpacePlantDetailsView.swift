@@ -11,19 +11,23 @@ struct MySpacePlantDetailsView: View {
     
     @State var plantation : Plantation
     let dateFormatter = DateFormatter()
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         ZStack {
             VStack {
                 HStack {
-                    NavigationLink(destination: MySpacesView()) {
+                    Button(action: {
+                        dismiss()
+                    }, label : {
                         Image(systemName: "chevron.left")
                         Text("Mes Plantes")
-                    }
+                    })
                     .foregroundColor(Color.mvMediumGray)
                     .navigationBarBackButtonHidden(true)
                     Spacer()
                 }
+                .padding(.horizontal, 16)
                 TitleExView(title: plantation.plant.name)
                 LineSeparatorExView()
                 ScrollView {
