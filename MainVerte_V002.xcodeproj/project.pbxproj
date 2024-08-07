@@ -91,6 +91,12 @@
 		E2175E3E2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */; };
 		E2175E412C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E402C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift */; };
 		E2175E452C61007C0050F7C4 /* DiseaseExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2175E442C61007C0050F7C4 /* DiseaseExView.swift */; };
+		E22A70AE2C637E2500E644D7 /* CreateSpaceAddPlantSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70A82C637E2500E644D7 /* CreateSpaceAddPlantSearchView.swift */; };
+		E22A70AF2C637E2500E644D7 /* MySpaceAddPlantAlreadyHereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70A92C637E2500E644D7 /* MySpaceAddPlantAlreadyHereView.swift */; };
+		E22A70B02C637E2500E644D7 /* CreateSpaceAddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70AA2C637E2500E644D7 /* CreateSpaceAddPlantView.swift */; };
+		E22A70B12C637E2500E644D7 /* MySpaceAddPlantProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70AB2C637E2500E644D7 /* MySpaceAddPlantProposalView.swift */; };
+		E22A70B22C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70AC2C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift */; };
+		E22A70B32C637E2500E644D7 /* MySpaceAddPlantSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70AD2C637E2500E644D7 /* MySpaceAddPlantSearchView.swift */; };
 		E284CE3D2C620E0600A89689 /* ImageDescriptionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */; };
 		E284CE412C620E2E00A89689 /* ImageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3E2C620E2E00A89689 /* ImageUIView.swift */; };
 		E284CE422C620E2E00A89689 /* ImageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */; };
@@ -198,6 +204,12 @@
 		E2175E3D2C60CE7F0050F7C4 /* MySpacePlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpacePlantDetailsViewController.swift; sourceTree = "<group>"; };
 		E2175E402C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpacePlantDetailsViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		E2175E442C61007C0050F7C4 /* DiseaseExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseExView.swift; sourceTree = "<group>"; };
+		E22A70A82C637E2500E644D7 /* CreateSpaceAddPlantSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSpaceAddPlantSearchView.swift; sourceTree = "<group>"; };
+		E22A70A92C637E2500E644D7 /* MySpaceAddPlantAlreadyHereView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpaceAddPlantAlreadyHereView.swift; sourceTree = "<group>"; };
+		E22A70AA2C637E2500E644D7 /* CreateSpaceAddPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSpaceAddPlantView.swift; sourceTree = "<group>"; };
+		E22A70AB2C637E2500E644D7 /* MySpaceAddPlantProposalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpaceAddPlantProposalView.swift; sourceTree = "<group>"; };
+		E22A70AC2C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSpaceAddPlantProposalView.swift; sourceTree = "<group>"; };
+		E22A70AD2C637E2500E644D7 /* MySpaceAddPlantSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpaceAddPlantSearchView.swift; sourceTree = "<group>"; };
 		E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDescriptionExView.swift; sourceTree = "<group>"; };
 		E284CE3E2C620E2E00A89689 /* ImageUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUIView.swift; sourceTree = "<group>"; };
 		E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewContainer.swift; sourceTree = "<group>"; };
@@ -543,6 +555,12 @@
 		E284CE562C620FC800A89689 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E22A70AC2C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift */,
+				E22A70A82C637E2500E644D7 /* CreateSpaceAddPlantSearchView.swift */,
+				E22A70AA2C637E2500E644D7 /* CreateSpaceAddPlantView.swift */,
+				E22A70A92C637E2500E644D7 /* MySpaceAddPlantAlreadyHereView.swift */,
+				E22A70AB2C637E2500E644D7 /* MySpaceAddPlantProposalView.swift */,
+				E22A70AD2C637E2500E644D7 /* MySpaceAddPlantSearchView.swift */,
 				E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */,
 				E20AF7D42C5B8491001579B2 /* MySpaceAddPlantView.swift */,
 				E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */,
@@ -664,9 +682,11 @@
 				F684409B2C629C5D00DF562B /* CustomTextFieldCoordinator.swift in Sources */,
 				E20AF78F2C5B83DD001579B2 /* IdeaQuestionModel.swift in Sources */,
 				E20AF7A52C5B8418001579B2 /* FertilizerViewModel.swift in Sources */,
+				E22A70B32C637E2500E644D7 /* MySpaceAddPlantSearchView.swift in Sources */,
 				E20AF7C02C5B845F001579B2 /* PlantationButtonExView.swift in Sources */,
 				E20AF7C32C5B845F001579B2 /* MySpaceButtonExView.swift in Sources */,
 				E2A252032C5CDB3E0048E809 /* MessageBubbleExView.swift in Sources */,
+				E22A70AE2C637E2500E644D7 /* CreateSpaceAddPlantSearchView.swift in Sources */,
 				F65A29572C6258970021764A /* IdeaMyPublicationCreatedView.swift in Sources */,
 				E20AF7F92C5B84A0001579B2 /* IdeaQuestionDetailsView.swift in Sources */,
 				E20AF7AB2C5B8418001579B2 /* SoilViewModel.swift in Sources */,
@@ -687,7 +707,9 @@
 				E20AF7FB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift in Sources */,
 				E20AF7F32C5B84A0001579B2 /* IdeaTipDetailsView.swift in Sources */,
 				F684409D2C629D1D00DF562B /* CustomTextFieldUIView.swift in Sources */,
+				E22A70B22C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift in Sources */,
 				E20AF7C22C5B845F001579B2 /* ComposedImagesExView.swift in Sources */,
+				E22A70B02C637E2500E644D7 /* CreateSpaceAddPlantView.swift in Sources */,
 				E20AF8032C5B84A7001579B2 /* FavoritesView.swift in Sources */,
 				E20AF7A72C5B8418001579B2 /* PlantationViewModel.swift in Sources */,
 				E2175E3B2C60B73B0050F7C4 /* SoilExView.swift in Sources */,
@@ -698,6 +720,7 @@
 				E20AF7C72C5B845F001579B2 /* FilterAndSortButtonExView.swift in Sources */,
 				E20AF7AD2C5B8418001579B2 /* CommentViewModel.swift in Sources */,
 				E20AF7F62C5B84A0001579B2 /* IdeaQuestionsView.swift in Sources */,
+				E22A70B12C637E2500E644D7 /* MySpaceAddPlantProposalView.swift in Sources */,
 				E20AF7D72C5B8491001579B2 /* FavoritesSpacesView.swift in Sources */,
 				F65A29052C603C430021764A /* CreateIdeaView.swift in Sources */,
 				E2A252072C5CDB3E0048E809 /* MyAccountRegisterView.swift in Sources */,
@@ -716,6 +739,7 @@
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,
 				E284CE472C620E3900A89689 /* JustifiedTextViewContainer.swift in Sources */,
+				E22A70AF2C637E2500E644D7 /* MySpaceAddPlantAlreadyHereView.swift in Sources */,
 				E284CE422C620E2E00A89689 /* ImageViewContainer.swift in Sources */,
 				AF0DA1B32C5D163B0060956C /* ClassImageTextView.swift in Sources */,
 				E2A252062C5CDB3E0048E809 /* MyAccountView.swift in Sources */,
