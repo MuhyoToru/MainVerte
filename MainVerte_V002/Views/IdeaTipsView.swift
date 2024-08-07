@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct IdeaTipsView: View {
-    @Binding var showModal: Bool
 
     var body: some View {
         VStack{
@@ -36,30 +35,19 @@ struct IdeaTipsView: View {
             }
             HStack {
                 Spacer()
-                Button(action: {
-                    withAnimation {
-                        showModal = true
-                    }
-                }) {
+                NavigationLink(destination: CreateIdeaView()) {
                     ActionButtonExView(action: "plus")
                 }
+                
             }
         }
         .padding(.horizontal)
-        .padding(.bottom, 12)
+        .padding(.bottom)
     }
 }
 
-struct IdeaTipsView_Previews: PreviewProvider {
-    @State static var showModal = false
-    
-    static var previews: some View {
-        IdeaTipsView(showModal: $showModal)
-    }
+#Preview {
+    IdeaTipsView()
 }
-
-//#Preview {
-//    IdeaTipsView()
-//}
 
 

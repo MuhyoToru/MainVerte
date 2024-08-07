@@ -44,3 +44,4 @@ struct ImageTextExView: View {
         ImageTextExView(isFavoriteView: true)
     }
 }
+

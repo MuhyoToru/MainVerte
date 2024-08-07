@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct IdeaSpacesView: View {
-    @Binding var showModal: Bool
-    
     var body: some View {
-        NavigationStack {
+        VStack {
             ScrollView {
-                VStack {
+                VStack(alignment: .leading){
                     NavigationLink(destination: IdeaListSpacesView()) {
                         ComposedImagesExView(
                             leftImage: "MVBathroom01",
@@ -36,30 +34,20 @@ struct IdeaSpacesView: View {
             }
             HStack {
                 Spacer()
-                Button(action: {
-                    withAnimation {
-                        showModal = true
-                    }
-                }) {
+                NavigationLink(destination: CreateIdeaView()) {
                     ActionButtonExView(action: "plus")
                 }
             }
         }
         .padding(.horizontal)
-        .padding(.bottom, 12)
-        
+        .padding(.bottom)
     }
 }
 
-struct IdeaSpacesView_Previews: PreviewProvider {
-    @State static var showModal = false
-    
-    static var previews: some View {
-        IdeaSpacesView(showModal: $showModal)
-    }
+
+
+#Preview {
+    IdeaSpacesView()
 }
 
-//#Preview {
-//    IdeaSpacesView()
-//}
 

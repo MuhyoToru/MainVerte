@@ -24,12 +24,14 @@ struct FavoritesTipsView: View {
                     subtitle: "Marc",
                     isFavoriteView: true
                     )
-                    ImageTextExView(
-                    image: "MVTipMaintenancePestControl",
-                    title: "Insecte nuisible",
-                    subtitle: "Oriane",
-                    isFavoriteView: true
-                    )
+                    NavigationLink(destination: IdeaTipDetailsView()) {
+                        ImageTextExView(
+                            image: "MVTipMaintenancePestControl",
+                            title: "Insecte nuisible",
+                            subtitle: "Oriane",
+                            isFavoriteView: true
+                        )
+                    }
                 }
             }
         }

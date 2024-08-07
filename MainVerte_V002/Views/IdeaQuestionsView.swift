@@ -8,51 +8,6 @@
 import SwiftUI
 
 //struct IdeaQuestionsView: View {
-//    @State private var navigateToCreateIdeaQuestionView = false
-//
-//    var body: some View {
-//        VStack {
-//            ScrollView {
-//                VStack(alignment: .leading){
-//                    ComposedImagesExView(
-//                        leftImage: "MVTipQuestionRecycleWater",
-//                        topImage: "MVTipQuestionDeadPlant",
-//                        bottomImage: "MVTipQuestionMidge",
-//                        rightImage: "MVTipQuestionPlantThirsty",
-//                        title: "Plantes Intérieurs",
-//                        subtitle: "4 Questions"
-//                    )
-//                    ComposedImagesExView(
-//                        leftImage: "MVTipQuestionRomarin",
-//                        topImage: "MVTipQuestionLaurier",
-//                        bottomImage: "MVTipQuestionZucchini",
-//                        rightImage: "MVTipQuestionPest",
-//                        title: "Plantes Extérieurs",
-//                        subtitle: "6 Questions"
-//                    )
-//                }
-//            }
-//            HStack {
-//                Spacer()
-//                Button {
-//                    navigateToCreateIdeaQuestionView = true
-//                } label: {
-//                    ActionButtonExView(action: "plus")
-//                }
-//            }
-//        }
-//        .padding(.horizontal)
-//        .padding(.bottom, 12)
-//        .navigationDestination(isPresented: $navigateToCreateIdeaQuestionView) {
-//            CreateIdeaQuestionView()
-//            .navigationBarBackButtonHidden(true)
-//        }
-//    }
-//}
-
-
-//struct IdeaQuestionsView: View {
-//    @Binding var isPresentingModal: Bool
 //
 //    var body: some View {
 //        VStack {
@@ -66,48 +21,55 @@ import SwiftUI
 //                        title: "Plantes Intérieurs",
 //                        subtitle: "4 Questions"
 //                    )
-//                    ComposedImagesExView(
-//                        leftImage: "MVTipQuestionRomarin",
-//                        topImage: "MVTipQuestionLaurier",
-//                        bottomImage: "MVTipQuestionZucchini",
-//                        rightImage: "MVTipQuestionPest",
-//                        title: "Plantes Extérieurs",
-//                        subtitle: "6 Questions"
-//                    )
+//                    NavigationLink(destination: IdeaListQuestionsView()) {
+//                        ComposedImagesExView(
+//                            leftImage: "MVTipQuestionRomarin",
+//                            topImage: "MVTipQuestionLaurier",
+//                            bottomImage: "MVTipQuestionZucchini",
+//                            rightImage: "MVTipQuestionPest",
+//                            title: "Plantes Extérieurs",
+//                            subtitle: "6 Questions"
+//                        )
+//                    }
 //                }
 //            }
 //            HStack {
 //                Spacer()
-//                Button(action: {
-//                    isPresentingModal = true
-//                }) {
+//                NavigationLink(destination: CreateIdeaView()) {
 //                    ActionButtonExView(action: "plus")
 //                }
-//                .padding()
 //            }
 //        }
 //        .padding(.horizontal)
-//        .padding(.bottom, 12)
+//        .padding(.bottom)
 //    }
 //}
+//
+//#Preview {
+//    IdeaQuestionsView()
+//}
 
+import SwiftUI
 
 struct IdeaQuestionsView: View {
-    @Binding var showModal: Bool
-
     var body: some View {
         VStack {
             ScrollView {
                 VStack(alignment: .leading) {
-                    ComposedImagesExView(
-                        leftImage: "MVTipQuestionRecycleWater",
-                        topImage: "MVTipQuestionDeadPlant",
-                        bottomImage: "MVTipQuestionMidge",
-                        rightImage: "MVTipQuestionPlantThirsty",
-                        title: "Plantes Intérieurs",
-                        subtitle: "4 Questions"
-                    )
-                    NavigationLink(destination: IdeaListQuestionsView()) {
+                    // Naviguer vers la Version 1
+                    NavigationLink(destination: IdeaListQuestionsView(selectedVersion: "Version 1")) {
+                        ComposedImagesExView(
+                            leftImage: "MVTipQuestionRecycleWater",
+                            topImage: "MVTipQuestionDeadPlant",
+                            bottomImage: "MVTipQuestionMidge",
+                            rightImage: "MVTipQuestionPlantThirsty",
+                            title: "Plantes Intérieurs",
+                            subtitle: "4 Questions"
+                        )
+                    }
+
+                    // Naviguer vers la Version 2
+                    NavigationLink(destination: IdeaListQuestionsView(selectedVersion: "Version 2")) {
                         ComposedImagesExView(
                             leftImage: "MVTipQuestionRomarin",
                             topImage: "MVTipQuestionLaurier",
@@ -121,29 +83,16 @@ struct IdeaQuestionsView: View {
             }
             HStack {
                 Spacer()
-                Button(action: {
-                    withAnimation {
-                        showModal = true
-                    }
-                }) {
+                NavigationLink(destination: CreateIdeaView()) {
                     ActionButtonExView(action: "plus")
                 }
             }
         }
         .padding(.horizontal)
-        .padding(.bottom, 12)
+        .padding(.bottom)
     }
 }
 
-struct IdeaQuestionsView_Previews: PreviewProvider {
-    @State static var showModal = false
-    
-    static var previews: some View {
-        IdeaQuestionsView(showModal: $showModal)
-    }
+#Preview {
+    IdeaQuestionsView()
 }
-
-//#Preview {
-//    IdeaQuestionsView()
-//}
-

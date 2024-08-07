@@ -13,17 +13,25 @@ struct FavoritesQuestionsView: View {
             ScrollView {
                 VStack {
                     ImageTextExView(
-                    image: "MVTipQuestionDeadPlant",
-                    title: "Si une plante est morte ?",
-                    subtitle: "Élie",
-                    isFavoriteView: true
+                        image: "MVTipQuestionDeadPlant",
+                        title: "Si une plante est morte ?",
+                        subtitle: "Élie",
+                        isFavoriteView: true
                     )
                     ImageTextExView(
-                    image: "MVTipQuestionRomarin",
-                    title: "Romarin envahi par doryphores",
-                    subtitle: "Patrice",
-                    isFavoriteView: true
+                        image: "MVTipQuestionRomarin",
+                        title: "Romarin envahi par doryphores",
+                        subtitle: "Patrice",
+                        isFavoriteView: true
                     )
+                    NavigationLink(destination: IdeaSpaceDetailsView()) {
+                        ImageTextExView(
+                            image: "MVTipQuestionPest",
+                            title: "Romarin envahi par doryphores",
+                            subtitle: "Patrice",
+                            isFavoriteView: true
+                        )
+                    }
                 }
             }
         }

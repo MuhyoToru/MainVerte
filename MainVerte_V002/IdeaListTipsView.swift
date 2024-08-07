@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct IdeaListTipsView: View {
-    @State private var showModal = false
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         VStack {
             HStack {
-                NavigationLink(destination: IdeasView(segmentedSelection: 1)) {
-                    Image(systemName: "chevron.left")
-                    Text("Idées")
+                Button(action: {
+                    dismiss()
+                }) {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                        Text("Idées")
+                    }
+                    .foregroundColor(Color.mvMediumGray)
                 }
-                .foregroundColor(Color.mvMediumGray)
                 .navigationBarBackButtonHidden(true)
-               Spacer()
+                Spacer()
            }
             ScrollView {
                 VStack {
@@ -31,7 +36,7 @@ struct IdeaListTipsView: View {
                     ImageTextExView(
                     image: "MVTipMaintenanceCleaningLeaves",
                     title: "Enlever la poussière des plantes",
-                    subtitle: "Amandine",
+                    subtitle: "Haiying",
                     isFavoriteView: false
                     )
                     NavigationLink(destination: IdeaTipDetailsView()) {
