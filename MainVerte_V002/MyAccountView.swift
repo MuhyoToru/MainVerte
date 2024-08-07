@@ -13,19 +13,38 @@ struct MyAccountView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                TitleExView(title: "Créer un Espace")
+            ZStack {
+                BackgroundExView(opacity: 0.8)
                 
-                AuthentificationSelectionExView(selection: $selectedView)
-                    .padding()
-                
-                if selectedView == 0 {
-                    MyAccountLoginView()
-                } else {
-                    MyAccountRegisterView()
+                VStack {
+                    
+                    TitleExView(title: "Authentification")
+                    
+                    AuthentificationSelectionExView(selection: $selectedView)
+                        .padding()
+                    
+                    if selectedView == 0 {
+                        MyAccountLoginView()
+                    } else {
+                        MyAccountRegisterView()
+                    }
+                    Button(action: {
+                        
+                    }) {
+                        Text("Confirmer")
+                            .foregroundStyle(.mvWhite)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.mvDarkGreen)
+                            .cornerRadius(10)
+                    }
+                    
                 }
+                .background(
+                    Color.mvLightGreen.opacity(5)
+                        .edgesIgnoringSafeArea(.all))
+                .cornerRadius(50)
             }
-            .background(BackgroundExView(opacity: 0.8))
         }
     }
 }

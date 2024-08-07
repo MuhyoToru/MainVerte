@@ -22,7 +22,7 @@ struct MyAccountLoginView: View {
                     .padding(.leading, 10)
                 
                 TextField("Nom", text: $nom)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 18, weight: .regular))
                     .padding(10)
                 
             }
@@ -40,7 +40,6 @@ struct MyAccountLoginView: View {
                 
                 
                 SecureField("Mot de passe", text: $motDePasse)
-                    .font(.system(size: 18, weight: .bold))
                     .padding(10)
             }
             .background(
