@@ -5,49 +5,17 @@
 //  Created by Apprenant 166 on 05/08/2024.
 //
 
-//import SwiftUI
-//
-//struct JustifiedTextUIView: UIViewRepresentable {
-//    var text: String
-//    var minHeight: CGFloat = 40
-//    var maxHeight: CGFloat = 200
-//    var fontSize: CGFloat = 18
-//    var fontWeight: UIFont.Weight = .regular
-//    var textColor: UIColor = .mvBlack
-//    var backgroundColor: UIColor = .clear
-//
-//    func makeUIView(context: Context) -> JustifiedTextViewContainer {
-//        let textUIView = JustifiedTextViewContainer(frame: .zero, minHeight: minHeight, maxHeight: maxHeight, fontSize: fontSize, fontWeight: fontWeight, textColor: textColor, backgroundColor: backgroundColor)
-//        textUIView.setText(text)
-//        return textUIView
-//    }
-//
-//    func updateUIView(_ uiView: JustifiedTextViewContainer, context: Context) {
-//        uiView.setText(text)
-//    }
-//}
-//
-//#Preview {
-//    VStack {
-//        JustifiedTextUIView(text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser", fontSize: 20, fontWeight: .medium, textColor: .white, backgroundColor: .black)
-//            .fixedSize(horizontal: false, vertical: true)
-//        
-//        JustifiedTextUIView(text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pestiQuels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pestiQuels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pestiQuels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pestiQuels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pestiQuels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pestiQuels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pestiQuels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesti")
-//            .fixedSize(horizontal: false, vertical: true)
-//    }
-//    .padding()
-//}
-
 import SwiftUI
 
 struct JustifiedTextUIView: UIViewRepresentable {
     var text: String
     var minHeight: CGFloat = 40
-    var maxHeight: CGFloat = 200
+    var maxHeight: CGFloat = 270
     var fontSize: CGFloat = 18
     var fontWeight: UIFont.Weight = .regular
     var textColor: UIColor = .mvBlack
     var backgroundColor: UIColor = .clear
+    var isEditable: Bool = false
     var topLeftRadius: CGFloat = 0
     var topRightRadius: CGFloat = 0
     var bottomLeftRadius: CGFloat = 0
@@ -61,7 +29,8 @@ struct JustifiedTextUIView: UIViewRepresentable {
             fontSize: fontSize,
             fontWeight: fontWeight,
             textColor: textColor,
-            backgroundColor: .clear // Important
+            backgroundColor: .clear,
+            isEditable: isEditable
         )
         textUIView.setText(text)
         return textUIView
@@ -103,12 +72,12 @@ struct JustifiedTextUIView_Previews: PreviewProvider {
             .fixedSize(horizontal: false, vertical: true)
             
             JustifiedTextUIView(
-                text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides.Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides.Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides.Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides."
+                text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides.Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides.Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides.Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides.",
+                isEditable: true
             )
             .fixedSize(horizontal: false, vertical: true)
         }
         .padding()
         .background(Color.red)
     }
-    
 }

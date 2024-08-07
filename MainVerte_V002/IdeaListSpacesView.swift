@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct IdeaListSpacesView: View {
-    @State private var showModal = false
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         VStack {
             HStack {
-                NavigationLink(destination: IdeasView(segmentedSelection: 0)) {
-                    Image(systemName: "chevron.left")
-                    Text("Idées")
+                Button(action: {
+                    dismiss()
+                }) {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                        Text("Idées")
+                    }
+                    .foregroundColor(Color.mvMediumGray)
                 }
-                .foregroundColor(Color.mvMediumGray)
                 .navigationBarBackButtonHidden(true)
-               Spacer()
+                Spacer()
            }
             ScrollView {
                 VStack {
