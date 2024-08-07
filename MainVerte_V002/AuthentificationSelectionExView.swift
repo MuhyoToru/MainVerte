@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AuthentificationSelectionExView: View {
     
-    @State private var selection = 0
+    @Binding var selection: Int
     let options = ["Se connecter", "S'inscrire"]
     
     
@@ -38,6 +38,10 @@ struct AuthentificationSelectionExView: View {
         .shadow(radius: 2)
     }
 }
-#Preview {
-    AuthentificationSelectionExView()
+struct AuthentificationSelectionExView_Previews: PreviewProvider {
+    @State static var selection = 0
+    
+    static var previews: some View {
+        AuthentificationSelectionExView(selection: $selection)
+    }
 }
