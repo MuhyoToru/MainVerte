@@ -113,6 +113,19 @@ struct FiltersAndSortViewModal: View {
                                 .foregroundStyle(.mvDarkGreen)
                         }
                     }
+                    HStack {
+                        ZStack {
+                            Capsule()
+                                .foregroundStyle(.mvWhite)
+                                .frame(width: 100, height: 40)
+                            Capsule()
+                                .stroke(.mvDarkGreen)
+                                .foregroundStyle(.mvWhite)
+                                .frame(width: 100, height: 40)
+                            Text("Automne")
+                                .foregroundStyle(.mvDarkGreen)
+                        }
+                    }
                 }
             }
         }
