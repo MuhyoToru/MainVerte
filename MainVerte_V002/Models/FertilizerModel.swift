@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Fertilizer {
+class Fertilizer : Identifiable {
     let id: UUID = UUID()
     let name: String
     let description: String

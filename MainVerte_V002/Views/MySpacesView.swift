@@ -42,7 +42,7 @@ struct MySpacesView: View {
                 }
                 .padding()
             }
-            .background(BackgroundExView(opacity: 0.8))
+            .background(BackgroundExView(opacity: 0.9))
             .navigationBarBackButtonHidden(true)
         }
     }

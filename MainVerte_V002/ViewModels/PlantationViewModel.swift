@@ -13,7 +13,7 @@ import Observation
     
     init() {
         plantations = [
-            Plantation(personalNotes: "", plantedDate: Date.now, plant: PlantViewModel().plants[0], container: PlantContainer.inGround)
+            Plantation(personalNotes: "Ceci est une note personnel", plantedDate: Date.now, plant: PlantViewModel().plants[0], container: PlantContainer.inGround)
         ]
     }
 }

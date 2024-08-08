@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct ListPlantsView: View {
+    
+    @State var researchText : String = ""
+    var plantViewModel : PlantViewModel = PlantViewModel()
+    
     var body: some View {
-        TitleExView(title: "Work in Progress")
+        NavigationStack {
+            VStack {
+                TitleExView(title: "Recherche de Plante")
+                ResearchAndFilterExView(researchText: $researchText)
+                    .padding(.horizontal, 16)
+                LineSeparatorExView()
+                ScrollView {
+                    VStack(spacing : 16) {
+                        ForEach(plantViewModel.plants) { plant in
+                            PlantButtonExView(plant: plant)
+                        }
+                    }
+                }
+                .padding(.horizontal, 16)
+            }
+            .background(BackgroundExView(opacity: 0.9))
+        }
     }
 }
 
