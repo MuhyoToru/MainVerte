@@ -22,15 +22,19 @@ struct MyAccountLoginView: View {
                     .padding(.leading, 10)
                 
                 TextField("Nom", text: $nom)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 18, weight: .regular))
                     .padding(10)
                 
             }
             .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen)
-                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                }
             )
             
             HStack {
@@ -40,14 +44,17 @@ struct MyAccountLoginView: View {
                 
                 
                 SecureField("Mot de passe", text: $motDePasse)
-                    .font(.system(size: 18, weight: .bold))
                     .padding(10)
             }
             .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen)
-
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                }
             )
             HStack {
                 Toggle("Se souvenir de moi", isOn: $souvenirDeMoi)

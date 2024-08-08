@@ -13,19 +13,51 @@ struct MyAccountView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                TitleExView(title: "Créer un Espace")
+            ZStack {
                 
-                AuthentificationSelectionExView(selection: $selectedView)
-                    .padding()
-                
-                if selectedView == 0 {
-                    MyAccountLoginView()
-                } else {
-                    MyAccountRegisterView()
+
+                VStack {
+                    
+                    TitleExView(title: "Authentification")
+
+                    VStack {
+                        
+                        Spacer()
+
+                        AuthentificationSelectionExView(selection: $selectedView)
+                            .padding()
+                        
+                        if selectedView == 0 {
+                            MyAccountLoginView()
+                        } else {
+                            MyAccountRegisterView()
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            
+                        }) {
+                            Text("Confirmer")
+                                .foregroundStyle(.mvWhite)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.mvDarkGreen)
+                                .cornerRadius(10)
+                        }
+                        .padding()
+                        Spacer()
+                        
+                    }
+                    .background(
+                        Color.mvLightGreen.opacity(5)
+                            .edgesIgnoringSafeArea(.all))
+                    .clipShape(UnevenRoundedRectangle(topLeadingRadius: 20, topTrailingRadius: 20))
                 }
             }
-            .background(BackgroundExView(opacity: 0.8))
+            .background(
+                BackgroundExView(opacity: 0.8)
+            )
         }
     }
 }

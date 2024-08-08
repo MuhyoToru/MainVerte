@@ -22,16 +22,20 @@ struct MyAccountRegisterView: View {
                     .padding(.leading, 10)
                 
                 TextField("Nom", text: $nom)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 18, weight: .regular))
                     .padding(10)
                     .foregroundStyle(Color.mvDarkGreen)
                 
             }
             .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen)
-                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                }
             )
             
             Button(action: {
@@ -43,15 +47,14 @@ struct MyAccountRegisterView: View {
                     
                 }
                 .frame(maxWidth: .infinity)
-                .padding(5)
+                .padding(15)
+                .background(Color.mvDarkGreen)
+                .foregroundColor(.white)
+                .cornerRadius(8)
                 
             }
-            .frame(maxWidth: .infinity)
-                         .padding(10)
-                         .background(Color.mvDarkGreen)
-                         .foregroundColor(.white)
-                         .cornerRadius(8)
-                         
+            
+            
             HStack {
                 
                 Image(systemName: "lock.fill")
@@ -59,15 +62,20 @@ struct MyAccountRegisterView: View {
                     .padding(.leading, 10)
                 
                 SecureField("Mot de passe", text: $motDePasse)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 18, weight: .regular))
                     .padding(10)
                 
             }
             .background(
-                RoundedRectangle(cornerRadius: 8)
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
                         .stroke(lineWidth: 1)
                         .foregroundStyle(Color.mvDarkGreen)
-                )
+                }
+            )
             HStack {
                 
                 Image(systemName: "lock.fill")
@@ -75,13 +83,25 @@ struct MyAccountRegisterView: View {
                     .padding(.leading, 10)
                 
                 SecureField("Confirmer mot de passe", text: $motDePasse)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 18, weight: .regular))
                     .padding(10)
-            }
-                .background(RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen))
                 
+            }
+            .background(
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                }
+            )
+            
+//          HStack {
+//                Toggle("Se souvenir de moi", isOn: $souvenirDeMoi)
+//                    .toggleStyle(CircularToggleStyle())
+//            }
         }
         
         .foregroundStyle(.mvDarkGreen)
