@@ -22,7 +22,8 @@ class IdeaSpaceViewModel: ObservableObject {
                     Comment(text: "Magnifique!", creationDate: Date(), modificationDate: Date(), image: "MVProfil01"),
                     Comment(text: "J'adore cette idée!", creationDate: Date(), modificationDate: Date(), image: "MVProfil02"),
                     Comment(text: "Merci!", creationDate: Date(), modificationDate: Date(), image: "MVProfil02", isCurrentUser: true)
-                ]
+                ],
+                isFavorite: true
             ),
             IdeaSpace(
                 title: "Douche Jardinée",
@@ -38,7 +39,7 @@ class IdeaSpaceViewModel: ObservableObject {
                 subCategory: "Salle de bain"
             ),
             IdeaSpace(
-                title: "Douche Élégance Monochrome",
+                title: "Douche Élégance",
                 subtitle: "Audrey",
                 images: "MVBathroom04",
                 description: "Cette douche moderne et élégante intègre des plantes suspendues au-dessus de la douche, créant une ambiance de jungle urbaine. Les parois sombres en béton ciré contrastent avec la verdure, tandis que les équipements en laiton ajoutent une touche raffinée.",
@@ -49,17 +50,19 @@ class IdeaSpaceViewModel: ObservableObject {
                 subtitle: "Pierre",
                 images: "MVBathroom05",
                 description: "Cette salle de bain lumineuse et spacieuse offre un véritable havre de paix. Des plantes en pot de différentes tailles ajoutent de la fraîcheur et de la vitalité à l'espace, tandis que les plantes suspendues complètent l'ensemble en ajoutant une dimension verticale.",
-                subCategory: "Salle de bain"
+                subCategory: "Salle de bain",
+                isFavorite: true
             ),
             IdeaSpace(
                 title: "Jardin Apaisant",
                 subtitle: "Sofiane",
                 images: "MVGarden01",
                 description: "Ce coin repas extérieur est niché dans un jardin intime, entouré de plantes tropicales et d'orchidées. Une grande table ronde en métal, accompagnée de chaises assorties, offre un espace convivial pour les repas en plein air. La verdure dense et les murs en pierre créent une ambiance intime et sereine.",
-                subCategory: "Jardin"
+                subCategory: "Jardin",
+                isFavorite: true
             ),
             IdeaSpace(
-                title: "Mur Végétal et Nichoirs",
+                title: "Mur Végétal",
                 subtitle: "Décoratif et Fonctionnel",
                 images: "MVGarden02",
                 description: "Ce mur végétal décoratif combine la beauté des plantes suspendues avec des nichoirs colorés, ajoutant une touche de charme et de fonctionnalité au jardin. Les plantes grimpantes et les fleurs entourent les nichoirs, créant une scène vivante et accueillante pour les oiseaux.",
@@ -82,6 +85,7 @@ class IdeaSpaceViewModel: ObservableObject {
         ]
     }
 }
+
 
 
 

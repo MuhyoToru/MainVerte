@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct IdeaSpaceDetailsView: View {
-    let isHorizontal: Bool = true
     @Environment(\.dismiss) private var dismiss
-    var ideaSpace: IdeaSpace //
-
+    let isHorizontal: Bool = true
+    var ideaSpace: IdeaSpace
     
     var body: some View {
         VStack {
@@ -29,20 +28,17 @@ struct IdeaSpaceDetailsView: View {
                 Spacer()
            }
             ZStack{
-//                TitleExView(title: "Oasis de Sérénité")
                 TitleExView(title: ideaSpace.title)
                 HStack {
                     Spacer()
-                    FavoriteButtonExView(isFavorite: true)
+                    FavoriteButtonExView(isFavorite: ideaSpace.isFavorite)
                         .offset(y: 5)
                 }
             }
             .padding(.horizontal, 5)
             ScrollView {
-            ImageDescriptionExView(
-//                image: UIImage(named: "MVBathroom01") ?? UIImage(),
-//                text: "Transformer la salle de bain en un véritable havre de paix. L'ajout de végétation autour de la baignoire crée une ambiance apaisante et naturelle. Les plantes suspendues et les pots disposés de manière stratégique non seulement purifient l'air mais ajoutent également une touche d'esthétique organique."
-                image: UIImage(named: ideaSpace.images) ?? UIImage(), text: ideaSpace.description
+                ImageDescriptionExView(
+                    image: UIImage(named: ideaSpace.images) ?? UIImage(), text: ideaSpace.description
             )
             HStack {
                 TitleExView(title: "Commentaires", textSize: 30, textColor: .mvDarkGreen)

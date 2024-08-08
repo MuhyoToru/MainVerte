@@ -32,18 +32,22 @@ struct FavoritesSpacesView: View {
                             isFavorite: true
                         )
                     }
-                    ImageTextExView(
-                    image: "MVBathroom05",
-                    title: "Évasion au Spa",
-                    subtitle: "Pierre",
-                    isFavorite: true
-                    )
-                    ImageTextExView(
-                    image: "MVGarden01",
-                    title: "Jardin Apaisant",
-                    subtitle: "Sofiane",
-                    isFavorite: true
-                    )
+                    NavigationLink(destination: IdeaSpaceDetailsView(ideaSpace: ideaSpace)) {
+                        ImageTextExView(
+                            image: "MVBathroom05",
+                            title: "Évasion au Spa",
+                            subtitle: "Pierre",
+                            isFavorite: true
+                        )
+                    }
+                    NavigationLink(destination: IdeaSpaceDetailsView(ideaSpace: ideaSpace)) {
+                        ImageTextExView(
+                            image: "MVGarden01",
+                            title: "Jardin Apaisant",
+                            subtitle: "Sofiane",
+                            isFavorite: true
+                        )
+                    }
                 }
             }
         }

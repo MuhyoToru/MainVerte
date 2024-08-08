@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct IdeaQuestionDetailsView: View {
-    let isHorizontal: Bool = true
     @Environment(\.dismiss) private var dismiss
+    let isHorizontal: Bool = true
+    var ideaQuestion: IdeaQuestion
     
     var body: some View {
         VStack {
@@ -27,10 +28,10 @@ struct IdeaQuestionDetailsView: View {
                 Spacer()
            }
             ZStack {
-                TitleExView(title: "Protéger le Potager")
+                TitleExView(title: ideaQuestion.title)
                 HStack {
                     Spacer()
-                    FavoriteButtonExView(isFavorite: true)
+                    FavoriteButtonExView(isFavorite: ideaQuestion.isFavorite)
                         .offset(y: 5)
                 }
             }
@@ -41,9 +42,8 @@ struct IdeaQuestionDetailsView: View {
 //                text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides chimiques ?"
 //            )
 //                .frame(height: 284)
-            ImageDescriptionExView(
-                image: UIImage(named: "MVTipQuestionPest") ?? UIImage(),
-                text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides chimiques ?"
+                ImageDescriptionExView(
+                    image: UIImage(named: ideaQuestion.images) ?? UIImage(), text: ideaQuestion.description
             )
             HStack {
                 TitleExView(title: "Commentaires", textSize: 30, textColor: .mvDarkGreen)
@@ -52,9 +52,11 @@ struct IdeaQuestionDetailsView: View {
                     .offset(y: 5)
             }
             
-                    MessageBubbleExView(text: "Planter des herbes aromatiques comme la menthe, le basilic et la ciboulette autour de votre potager. Ces plantes dégagent des odeurs que beaucoup de nuisibles n'aiment pas. De plus, elles sont utiles en cuisine !", photo: "MVProfil01", isCurrentUser: false)
-                    MessageBubbleExView(text: "Merci!", photo: "MVProfil04", isCurrentUser: true)
-                
+//                    MessageBubbleExView(text: "Planter des herbes aromatiques comme la menthe, le basilic et la ciboulette autour de votre potager. Ces plantes dégagent des odeurs que beaucoup de nuisibles n'aiment pas. De plus, elles sont utiles en cuisine !", photo: "MVProfil01", isCurrentUser: false)
+//                    MessageBubbleExView(text: "Merci!", photo: "MVProfil04", isCurrentUser: true)ForEach(ideaQuestion.comments) { comment in
+                ForEach(ideaQuestion.comments) { comment in
+                    MessageBubbleExView(text: comment.text, photo: comment.image, isCurrentUser: comment.isCurrentUser)
+                }
             }
         }
         .padding(.horizontal)
@@ -62,8 +64,8 @@ struct IdeaQuestionDetailsView: View {
     }
 }
 
-#Preview {
-    IdeaQuestionDetailsView()
-}
-
+//#Preview {
+//    IdeaQuestionDetailsView()
+//}
+//
 

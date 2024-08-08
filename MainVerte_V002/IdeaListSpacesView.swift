@@ -34,7 +34,8 @@ struct IdeaListSpacesView: View {
                             ImageTextExView(
                                 image: ideaSpace.images,
                                 title: ideaSpace.title,
-                                subtitle: ideaSpace.subtitle
+                                subtitle: ideaSpace.subtitle,
+                                isFavorite: ideaSpace.isFavorite
                             )
                         }
                     }

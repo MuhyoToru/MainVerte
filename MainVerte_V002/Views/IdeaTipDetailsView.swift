@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct IdeaTipDetailsView: View {
-    let isHorizontal: Bool = true
     @Environment(\.dismiss) private var dismiss
+    let isHorizontal: Bool = true
+    var ideaTip: IdeaTip
     
     var body: some View {
         VStack {
@@ -27,18 +28,17 @@ struct IdeaTipDetailsView: View {
                 Spacer()
            }
             ZStack {
-                TitleExView(title: "Insecte nuisible")
+                TitleExView(title: ideaTip.title)
                 HStack {
                     Spacer()
-                    FavoriteButtonExView(isFavorite: true)
+                    FavoriteButtonExView(isFavorite: ideaTip.isFavorite)
                         .offset(y: 5)
                 }
             }
             .padding(.horizontal, 5)
             ScrollView {
-            ImageDescriptionExView(
-                image: UIImage(named: "MVTipMaintenancePestControl") ?? UIImage(),
-                text: "Les insectes, peuvent coloniser les plantes d’intérieur. Le savon insecticide, un produit naturel, est un traitement efficace et facile à utiliser. Pour débarrasser vos végétaux des cochenilles, tamponnez les tiges et les feuilles avec une boule de coton imbibée d’alcool, une fois par semaine jusqu’à disparition complète. D’autre part, lorsque des moucherons fongiques tournent autour de vos plantes, c’est le signe manifeste que celles-ci sont trop arrosées."
+                ImageDescriptionExView(
+                    image: UIImage(named: ideaTip.images) ?? UIImage(), text: ideaTip.description
             )
             HStack {
                 TitleExView(title: "Commentaires", textSize: 30, textColor: .mvDarkGreen)
@@ -57,8 +57,8 @@ struct IdeaTipDetailsView: View {
     }
 }
 
-#Preview {
-    IdeaTipDetailsView()
-}
+//#Preview {
+//    IdeaTipDetailsView()
+//}
 
 

@@ -30,11 +30,12 @@ struct IdeaListTipsView: View {
             ScrollView {
                 VStack {
                     ForEach(ideaTipViewModel.ideaTips.filter { $0.subCategory == category }) { ideaTip in
-                        NavigationLink(destination: IdeaTipDetailsView()) {
+                        NavigationLink(destination: IdeaTipDetailsView(ideaTip: ideaTip)) {
                             ImageTextExView(
                                 image: ideaTip.images,
                                 title: ideaTip.title,
-                                subtitle: ideaTip.subtitle
+                                subtitle: ideaTip.subtitle,
+                                isFavorite: ideaTip.isFavorite
                             )
                         }
                     }

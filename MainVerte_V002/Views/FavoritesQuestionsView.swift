@@ -8,38 +8,36 @@
 import SwiftUI
 
 struct FavoritesQuestionsView: View {
-    var ideaSpace =  IdeaSpace(
-        title: "Oasis de Sérénité",
-        subtitle: "Haiying",
-        images: "MVBathroom01",
-        description: "Transformer la salle de bain en un véritable havre de paix. L'ajout de végétation autour de la baignoire crée une ambiance apaisante et naturelle. Les plantes suspendues et les pots disposés de manière stratégique non seulement purifient l'air mais ajoutent également une touche d'esthétique organique.",
-        subCategory: "Salle de bain",
-        comments: [
-            Comment(text: "Magnifique!", creationDate: Date(), modificationDate: Date(), image: "MVProfil01"),
-            Comment(text: "J'adore cette idée!", creationDate: Date(), modificationDate: Date(), image: "MVProfil02"),
-            Comment(text: "Merci!", creationDate: Date(), modificationDate: Date(), image: "MVProfil02", isCurrentUser: true)
-        ]
-    )
+    var ideaQuestion =  IdeaQuestion(
+        title: "Problèmes avec Romarin",
+        subtitle: "Patrice",
+        images: "MVTipQuestionRomarin",
+        description: "Romarin en pot envahi par des doryphores, quel traitement naturel ?",
+        subCategory: "Plantes Extérieurs")
     var body: some View {
         VStack {
             ScrollView {
                 VStack {
-                    ImageTextExView(
-                        image: "MVTipQuestionDeadPlant",
-                        title: "Si une plante est morte ?",
-                        subtitle: "Elie",
-                        isFavorite: true
-                    )
-                    ImageTextExView(
-                        image: "MVTipQuestionRomarin",
-                        title: "Romarin envahi par doryphores",
-                        subtitle: "Patrice",
-                        isFavorite: true
-                    )
-                    NavigationLink(destination: IdeaSpaceDetailsView(ideaSpace: ideaSpace)) {
+                    NavigationLink(destination: IdeaQuestionDetailsView(ideaQuestion: ideaQuestion)) {
+                        ImageTextExView(
+                            image: "MVTipQuestionDeadPlant",
+                            title: "Plante est morte ?",
+                            subtitle: "Elie",
+                            isFavorite: true
+                        )
+                    }
+                    NavigationLink(destination: IdeaQuestionDetailsView(ideaQuestion: ideaQuestion)) {
+                        ImageTextExView(
+                            image: "MVTipQuestionRomarin",
+                            title: "Romarin envahi par doryphores",
+                            subtitle: "Patrice",
+                            isFavorite: true
+                        )
+                    }
+                    NavigationLink(destination: IdeaQuestionDetailsView(ideaQuestion: ideaQuestion)) {
                         ImageTextExView(
                             image: "MVTipQuestionPest",
-                            title: "Romarin envahi par doryphores",
+                            title: "Protéger Potager",
                             subtitle: "Patrice",
                             isFavorite: true
                         )

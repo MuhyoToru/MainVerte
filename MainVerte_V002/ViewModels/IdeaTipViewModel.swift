@@ -13,11 +13,12 @@ class IdeaTipViewModel: ObservableObject {
     init() {
         ideaTips = [
             IdeaTip(
-                title: "Culture Patates Gazon",
+                title: "Patates Gazon",
                 subtitle: "Kanita",
                 images: "MVTipPlantationPotato",
                 description: "Une alternative intéressante à la méthode traditionnelle est la culture des pommes de terre sous gazon. C’est une technique qui demande moins de travail et qui donne des résultats tout aussi bons, voire meilleurs. Commencez par choisir un endroit bien ensoleillé, puis déposez vos tubercules sur le sol. Recouvrez-les ensuite d’une couche de gazon tondue d’environ 15 cm d’épaisseur. L’avantage de cette méthode est qu’elle permet d’éviter le buttage et limite le besoin d’arrosage tout en enrichissant le sol.",
-                subCategory: "Plantation"
+                subCategory: "Plantation",
+                isFavorite: true
             ),
             IdeaTip(
                 title: "Planter Arbustes",
@@ -27,7 +28,7 @@ class IdeaTipViewModel: ObservableObject {
                 subCategory: "Plantation"
             ),
             IdeaTip(
-                title: "Semer la salade efficacement",
+                title: "Semer Salade",
                 subtitle: "Sophie",
                 images: "MVTipPlantationSalad",
                 description: "Pour les salades, il est recommandé d’opter pour un sol riche en matière organique et bien drainé. Un mélange de compost et de terreau horticole peut être idéal pour nourrir vos plants tout au long de leur croissance.Désherbez le terrain soigneusement et bêchez-le légèrement pour aérer la terre. N’oubliez pas d’ajouter une bonne dose de compost ou fumier bien décomposé pour enrichir votre sol. Testez l’acidité du sol avec un pH-mètre : les salades apprécient les terres neutres (pH entre 6 et 7). Les graines doivent être semées à faible profondeur, environ 1 cm sous la surface du sol. Espacez-les d’environ 10 cm puis recouvrez-les délicatement de terre. Arrosez ensuite régulièrement sans détremper le sol.",
@@ -41,14 +42,15 @@ class IdeaTipViewModel: ObservableObject {
                 subCategory: "Plantation"
             ),
             IdeaTip(
-                title: "Rempotage: Préparation du Pot",
+                title: "Préparation du Pot",
                 subtitle: "Marc",
                 images: "MVTipMaintenancePotting",
                 description: "Le pot doit contenir un trou et son diamètre doit être légèrement supérieur à l’ancien pot. Un pot trop grand risque de perturber la plante et elle serait complètement désorientée. Si vous avez choisi un pot en terre cuite, prenez le temps de le faire tremper dans l’eau, durant une heure au moins avant le rempotage. Il faut penser à couvrir le trou avec un caillou ou un morceau de pot cassé pour que les racines n’obstruent pas le pot. Déposez ensuite au fond du pot un lit de graviers ou de billes d’argile sur une épaisseur de 3 à 4 cm, cela permet d’obtenir une couche drainante. Une bonne astuce consiste à mettre sur la couche de graviers ou de billes d’argile un feutre drainant pour éviter que ce lit se mélange à la terre par la suite. Le morceau de feutre doit être imputrescible et perméable. Déposez au-dessus de la couche drainante quelques centimètres de terreau que vous aurez choisi avec soin pour qu’il soit parfaitement adapté à votre plante.",
-                subCategory: "Entretien"
+                subCategory: "Entretien",
+                isFavorite: true
             ),
             IdeaTip(
-                title: "Enlever la poussière des plantes",
+                title: "Enlever Poussière",
                 subtitle: "Estelle",
                 images: "MVTipMaintenanceCleaningLeaves",
                 description: "Un chiffon imbibé de bière blonde pour faire briller les feuilles tout en les débarrassant de la poussière. Un truc qu’utilisent régulièrement les fleuristes pour redonner de l’éclat aux plantes et garantir une couleur bien verte. Attention, tout de même, à essuyer avec délicatesse, une main en renfort derrière la feuille pour éviter d’abîmer la plante. Les feuilles des plantes vertes aiment aussi le lait. On prépare un mélange moitié eau, moitié lait, avant d’en imbiber un chiffon pour essuyer les feuilles une par une, toujours avec délicatesse. Les jardinier·e·s les plus patient·e·s pourront terminer par un lustrage en règle avec un chiffon doux pour booster la brillance des plantes.",
@@ -59,10 +61,11 @@ class IdeaTipViewModel: ObservableObject {
                 subtitle: "Oriane",
                 images: "MVTipMaintenancePestControl",
                 description: "Les insectes, peuvent coloniser les plantes d’intérieur. Le savon insecticide, un produit naturel, est un traitement efficace et facile à utiliser. Pour débarrasser vos végétaux des cochenilles, tamponnez les tiges et les feuilles avec une boule de coton imbibée d’alcool, une fois par semaine jusqu’à disparition complète. D’autre part, lorsque des moucherons fongiques tournent autour de vos plantes, c’est le signe manifeste que celles-ci sont trop arrosées.",
-                subCategory: "Entretien"
+                subCategory: "Entretien",
+                isFavorite: true
             ),
             IdeaTip(
-                title: "Arroser pendant Vacances",
+                title: "Vacances Arrosage",
                 subtitle: "Zak",
                 images: "MVTipMaintenanceAbsent",
                 description: "Utiliser de la laine imbibée. Placez une grande bassine d'eau en hauteur sur une chaise, et reliez le fil de laine de la bassine jusqu'au cœur de chaque plante. Par capillarité, vos plantes recevront un apport d'eau régulier et seront épanouies à votre retour de vacances. Si vous avez une grande surface à arroser, optez pour un système automatique goutte-à-goutte. Procurez-vous des kits d'arrosage goutte-à-goutte automatisés et programmés, et équipez-en chaque pot, en procédant aux réglages en fonction des besoins de chaque plante, puis en les reliant à un programmateur raccordé à la robinetterie. Les Oyas sont des diffuseurs d'eau en argile très appréciés. Enterrez-les près de vos plantations et remplissez-les d'eau. Ces pots en céramique micro-poreuse laissent échapper l'eau progressivement, permettant aux plantes d'absorber l'humidité dont elles ont besoin.",
