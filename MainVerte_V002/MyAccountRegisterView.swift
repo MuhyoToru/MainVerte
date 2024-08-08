@@ -28,10 +28,14 @@ struct MyAccountRegisterView: View {
                 
             }
             .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen)
-                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                }
             )
             
             Button(action: {
@@ -50,7 +54,7 @@ struct MyAccountRegisterView: View {
                 
             }
             
-                         
+            
             HStack {
                 
                 Image(systemName: "lock.fill")
@@ -63,10 +67,15 @@ struct MyAccountRegisterView: View {
                 
             }
             .background(
-                RoundedRectangle(cornerRadius: 8)
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
                         .stroke(lineWidth: 1)
                         .foregroundStyle(Color.mvDarkGreen)
-                )
+                }
+            )
             HStack {
                 
                 Image(systemName: "lock.fill")
@@ -76,11 +85,23 @@ struct MyAccountRegisterView: View {
                 SecureField("Confirmer mot de passe", text: $motDePasse)
                     .font(.system(size: 18, weight: .regular))
                     .padding(10)
-            }
-                .background(RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen))
                 
+            }
+            .background(
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                }
+            )
+            
+//          HStack {
+//                Toggle("Se souvenir de moi", isOn: $souvenirDeMoi)
+//                    .toggleStyle(CircularToggleStyle())
+//            }
         }
         
         .foregroundStyle(.mvDarkGreen)

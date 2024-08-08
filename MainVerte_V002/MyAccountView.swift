@@ -14,37 +14,50 @@ struct MyAccountView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                BackgroundExView(opacity: 0.8)
                 
+
                 VStack {
                     
                     TitleExView(title: "Authentification")
-                    
-                    AuthentificationSelectionExView(selection: $selectedView)
-                        .padding()
-                    
-                    if selectedView == 0 {
-                        MyAccountLoginView()
-                    } else {
-                        MyAccountRegisterView()
-                    }
-                    Button(action: {
+
+                    VStack {
                         
-                    }) {
-                        Text("Confirmer")
-                            .foregroundStyle(.mvWhite)
+                        Spacer()
+
+                        AuthentificationSelectionExView(selection: $selectedView)
                             .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.mvDarkGreen)
-                            .cornerRadius(10)
+                        
+                        if selectedView == 0 {
+                            MyAccountLoginView()
+                        } else {
+                            MyAccountRegisterView()
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            
+                        }) {
+                            Text("Confirmer")
+                                .foregroundStyle(.mvWhite)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.mvDarkGreen)
+                                .cornerRadius(10)
+                        }
+                        .padding()
+                        Spacer()
+                        
                     }
-                    
+                    .background(
+                        Color.mvLightGreen.opacity(5)
+                            .edgesIgnoringSafeArea(.all))
+                    .clipShape(UnevenRoundedRectangle(topLeadingRadius: 20, topTrailingRadius: 20))
                 }
-                .background(
-                    Color.mvLightGreen.opacity(5)
-                        .edgesIgnoringSafeArea(.all))
-                .cornerRadius(50)
             }
+            .background(
+                BackgroundExView(opacity: 0.8)
+            )
         }
     }
 }

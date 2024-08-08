@@ -27,10 +27,14 @@ struct MyAccountLoginView: View {
                 
             }
             .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen)
-                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                }
             )
             
             HStack {
@@ -43,10 +47,14 @@ struct MyAccountLoginView: View {
                     .padding(10)
             }
             .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Color.mvDarkGreen)
-
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundStyle(Color.mvWhite)
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                        .foregroundStyle(Color.mvDarkGreen)
+                }
             )
             HStack {
                 Toggle("Se souvenir de moi", isOn: $souvenirDeMoi)

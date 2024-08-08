@@ -32,10 +32,9 @@ struct AuthentificationSelectionExView: View {
         .background(Color.mvWhite)
         .overlay(
             RoundedRectangle(cornerRadius: 40)
-                .stroke(Color.mvDarkGreen, lineWidth: 1)
+                .stroke(Color.mvDarkGreen, lineWidth: 3)
         )
         .cornerRadius(40)
-        .shadow(radius: 2)
     }
 }
 struct AuthentificationSelectionExView_Previews: PreviewProvider {
