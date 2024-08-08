@@ -52,7 +52,7 @@ struct MySpacePlantsView: View {
             }
             .padding()
         }
-        .background(BackgroundExView(opacity: 0.8))
+        .background(BackgroundExView(opacity: 0.9))
     }
 }
 

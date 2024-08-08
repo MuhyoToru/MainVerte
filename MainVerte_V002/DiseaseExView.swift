@@ -12,22 +12,27 @@ struct DiseaseExView: View {
     var disease : Disease
     
     var body: some View {
-        HStack {
-            VStack {
-                Image(disease.image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width : 70, height: 70)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                Text(disease.name)
-                    .bold()
-                Spacer()
+        ZStack {
+            RoundedRectangle(cornerRadius: 15)
+                .foregroundStyle(.mvWhite)
+            HStack {
+                VStack {
+                    Image(disease.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width : 70, height: 70)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                    Text(disease.name)
+                        .bold()
+                    Spacer()
+                }
+                VStack(alignment : .leading) {
+                    Text("Description : " + disease.description)
+                    Text("")
+                    Text("Méthode de soin : " + disease.cureMethod)
+                }
             }
-            VStack(alignment : .leading) {
-                Text("Description : " + disease.description)
-                Text("")
-                Text("Méthode de soin : " + disease.cureMethod)
-            }
+            .padding(8)
         }
     }
 }

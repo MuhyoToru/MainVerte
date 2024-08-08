@@ -50,7 +50,7 @@ struct MySpaceAddPlantView: View {
                 }
                 .padding(.horizontal, 16)
             }
-            .background(BackgroundExView(opacity: 0.8))
+            .background(BackgroundExView(opacity: 0.9))
     }
 }
 

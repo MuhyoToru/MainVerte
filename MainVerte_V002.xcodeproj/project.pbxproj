@@ -97,6 +97,7 @@
 		E22A70B12C637E2500E644D7 /* MySpaceAddPlantProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70AB2C637E2500E644D7 /* MySpaceAddPlantProposalView.swift */; };
 		E22A70B22C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70AC2C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift */; };
 		E22A70B32C637E2500E644D7 /* MySpaceAddPlantSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70AD2C637E2500E644D7 /* MySpaceAddPlantSearchView.swift */; };
+		E22A70B52C639A2E00E644D7 /* PlantButtonExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A70B42C639A2E00E644D7 /* PlantButtonExView.swift */; };
 		E284CE3D2C620E0600A89689 /* ImageDescriptionExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */; };
 		E284CE412C620E2E00A89689 /* ImageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3E2C620E2E00A89689 /* ImageUIView.swift */; };
 		E284CE422C620E2E00A89689 /* ImageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */; };
@@ -211,6 +212,7 @@
 		E22A70AB2C637E2500E644D7 /* MySpaceAddPlantProposalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpaceAddPlantProposalView.swift; sourceTree = "<group>"; };
 		E22A70AC2C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSpaceAddPlantProposalView.swift; sourceTree = "<group>"; };
 		E22A70AD2C637E2500E644D7 /* MySpaceAddPlantSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpaceAddPlantSearchView.swift; sourceTree = "<group>"; };
+		E22A70B42C639A2E00E644D7 /* PlantButtonExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantButtonExView.swift; sourceTree = "<group>"; };
 		E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDescriptionExView.swift; sourceTree = "<group>"; };
 		E284CE3E2C620E2E00A89689 /* ImageUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUIView.swift; sourceTree = "<group>"; };
 		E284CE3F2C620E2E00A89689 /* ImageViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewContainer.swift; sourceTree = "<group>"; };
@@ -533,6 +535,7 @@
 		E284CE532C620F7B00A89689 /* ExViews */ = {
 			isa = PBXGroup;
 			children = (
+				E22A70B42C639A2E00E644D7 /* PlantButtonExView.swift */,
 			);
 			name = ExViews;
 			sourceTree = "<group>";
@@ -561,10 +564,10 @@
 				E22A70AC2C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift */,
 				E22A70A82C637E2500E644D7 /* CreateSpaceAddPlantSearchView.swift */,
 				E22A70AA2C637E2500E644D7 /* CreateSpaceAddPlantView.swift */,
+				E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */,
 				E22A70A92C637E2500E644D7 /* MySpaceAddPlantAlreadyHereView.swift */,
 				E22A70AB2C637E2500E644D7 /* MySpaceAddPlantProposalView.swift */,
 				E22A70AD2C637E2500E644D7 /* MySpaceAddPlantSearchView.swift */,
-				E20AF7E42C5B84A0001579B2 /* CreateSpaceView.swift */,
 				E20AF7D42C5B8491001579B2 /* MySpaceAddPlantView.swift */,
 				E20AF7E52C5B84A0001579B2 /* MySpacePlantDetailsView.swift */,
 				E20AF7DA2C5B8497001579B2 /* MySpacePlantsView.swift */,
@@ -576,17 +579,17 @@
 		E284CE572C620FD300A89689 /* ExViews */ = {
 			isa = PBXGroup;
 			children = (
-				E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */,
-				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
-				E20AF7B42C5B845F001579B2 /* MySpaceButtonExView.swift */,
-				E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */,
-				E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */,
+				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
+				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
+				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
+				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
 				E20AF80E2C5BB18D001579B2 /* DifficultyExView.swift */,
 				E20AF80A2C5BA987001579B2 /* ExposureExView.swift */,
-				E20AF8182C5BC497001579B2 /* CreateSpaceGlobalButtonDisplayExView.swift */,
-				E20AF7B52C5B845F001579B2 /* ColorButtonExView.swift */,
-				E20AF7B62C5B845F001579B2 /* AddPlantExView.swift */,
-				E20AF8102C5BB271001579B2 /* AcceptedFaunaExView.swift */,
+				E20AF8082C5B92F6001579B2 /* InteriorOrExteriorExView.swift */,
+				E20AF81A2C5BC77E001579B2 /* IsInPotExView.swift */,
+				E20AF7B42C5B845F001579B2 /* MySpaceButtonExView.swift */,
+				E20AF7B12C5B845F001579B2 /* PlantationButtonExView.swift */,
+				E2175E3A2C60B73B0050F7C4 /* SoilButtonSelectionExView.swift */,
 			);
 			name = ExViews;
 			sourceTree = "<group>";
@@ -695,6 +698,7 @@
 				E20AF7AB2C5B8418001579B2 /* SoilViewModel.swift in Sources */,
 				E20AF78A2C5B83DD001579B2 /* ExposureModel.swift in Sources */,
 				E20AF7C42C5B845F001579B2 /* ColorButtonExView.swift in Sources */,
+				E22A70B52C639A2E00E644D7 /* PlantButtonExView.swift in Sources */,
 				E20AF7F52C5B84A0001579B2 /* MySpacePlantDetailsView.swift in Sources */,
 				E2175E412C60D3AE0050F7C4 /* MySpacePlantDetailsViewControllerRepresentable.swift in Sources */,
 				E20AF7F22C5B84A0001579B2 /* MySpacesView.swift in Sources */,

@@ -14,7 +14,7 @@ class MySpacePlantDetailsViewController : UIViewController {
     var plantPlantationDateLabel : UILabel = UILabel()
     var plantIsInPotOrNotLabel : UILabel = UILabel()
     var plantDifficultyLabel : UILabel = UILabel()
-    var plantPlantingMethodTextView : UITextView = UITextView()
+    var personnalNotesTextView : UITextView = UITextView()
     
     var spacing : CGFloat = 16
     
@@ -41,7 +41,7 @@ class MySpacePlantDetailsViewController : UIViewController {
         
         self.view.addSubview(globalInformationLabel)
         globalInformationLabel.translatesAutoresizingMaskIntoConstraints = false
-        globalInformationLabel.text = "Information de la plante :"
+        globalInformationLabel.text = "Information de la plantation :"
         globalInformationLabel.font = UIFont(name: "Sumana-Regular", size: 26)
         globalInformationLabel.textColor = .mvDarkGreen
         globalInformationLabel.heightAnchor.constraint(equalToConstant: 26 * 1.8).isActive = true
@@ -56,13 +56,13 @@ class MySpacePlantDetailsViewController : UIViewController {
         
         self.view.addSubview(plantDifficultyLabel)
         plantDifficultyLabel.translatesAutoresizingMaskIntoConstraints = false
-        plantDifficultyLabel.text = "Difficulté d'entretien : \(plantation.plant.difficulty)"
+        plantDifficultyLabel.text = "Note personnel :"
         
-        self.view.addSubview(plantPlantingMethodTextView)
-        plantPlantingMethodTextView.translatesAutoresizingMaskIntoConstraints = false
-        plantPlantingMethodTextView.text = "Méthode de semi : " + plantation.plant.plantingMethod
-        plantPlantingMethodTextView.font = UIFont.systemFont(ofSize: 18, weight: .regular)
-        plantPlantingMethodTextView.backgroundColor = .clear
+        self.view.addSubview(personnalNotesTextView)
+        personnalNotesTextView.translatesAutoresizingMaskIntoConstraints = false
+        personnalNotesTextView.text = plantation.personalNotes
+        personnalNotesTextView.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        personnalNotesTextView.backgroundColor = .clear
         
         NSLayoutConstraint.activate([
             plantImageView.topAnchor.constraint(equalTo: self.view.topAnchor),
@@ -90,10 +90,10 @@ class MySpacePlantDetailsViewController : UIViewController {
             plantDifficultyLabel.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             plantDifficultyLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor),
             
-            plantPlantingMethodTextView.topAnchor.constraint(equalTo: plantDifficultyLabel.bottomAnchor, constant: spacing/2),
-            plantPlantingMethodTextView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
-            plantPlantingMethodTextView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
-            plantPlantingMethodTextView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+            personnalNotesTextView.topAnchor.constraint(equalTo: plantDifficultyLabel.bottomAnchor, constant: spacing/2),
+            personnalNotesTextView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            personnalNotesTextView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            personnalNotesTextView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         ])
     }
 }
