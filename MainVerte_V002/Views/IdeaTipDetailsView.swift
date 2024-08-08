@@ -30,7 +30,7 @@ struct IdeaTipDetailsView: View {
                 TitleExView(title: "Insecte nuisible")
                 HStack {
                     Spacer()
-                    FavoriteButtonExView()
+                    FavoriteButtonExView(isFavorite: true)
                         .offset(y: 5)
                 }
             }
@@ -60,3 +60,5 @@ struct IdeaTipDetailsView: View {
 #Preview {
     IdeaTipDetailsView()
 }
+
+

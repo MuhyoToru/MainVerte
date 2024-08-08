@@ -115,6 +115,7 @@
 		F65A29572C6258970021764A /* IdeaMyPublicationCreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29562C6258970021764A /* IdeaMyPublicationCreatedView.swift */; };
 		F684409B2C629C5D00DF562B /* CustomTextFieldCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684409A2C629C5D00DF562B /* CustomTextFieldCoordinator.swift */; };
 		F684409D2C629D1D00DF562B /* CustomTextFieldUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684409C2C629D1D00DF562B /* CustomTextFieldUIView.swift */; };
+		F697B2D92C64341F009EBA82 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697B2D82C64341F009EBA82 /* CollectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,6 +229,7 @@
 		F65A29562C6258970021764A /* IdeaMyPublicationCreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaMyPublicationCreatedView.swift; sourceTree = "<group>"; };
 		F684409A2C629C5D00DF562B /* CustomTextFieldCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldCoordinator.swift; sourceTree = "<group>"; };
 		F684409C2C629D1D00DF562B /* CustomTextFieldUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldUIView.swift; sourceTree = "<group>"; };
+		F697B2D82C64341F009EBA82 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,12 +322,12 @@
 		E20AF7732C5B8373001579B2 /* GlobalExView */ = {
 			isa = PBXGroup;
 			children = (
-				E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */,
 				E20AF7B22C5B845F001579B2 /* ActionButtonExView.swift */,
 				E20AF7B02C5B845F001579B2 /* BackgroundExView.swift */,
 				E20AF7BA2C5B845F001579B2 /* ButtonAddExView.swift */,
-				E20AF7B82C5B845F001579B2 /* FilterAndSortButtonExView.swift */,
+				E284CE3C2C620E0600A89689 /* ImageDescriptionExView.swift */,
 				F65A28FC2C5D03060021764A /* ImageTextExView.swift */,
+				E20AF7B82C5B845F001579B2 /* FilterAndSortButtonExView.swift */,
 				E20AF7BD2C5B845F001579B2 /* LineSeparatorExView.swift */,
 				E2A251FD2C5CDB3E0048E809 /* MessageBubbleExView.swift */,
 				E20AF7BB2C5B845F001579B2 /* ResearchAndFilterExView.swift */,
@@ -366,6 +368,7 @@
 				E20AF77A2C5B83DD001579B2 /* PlantModel.swift */,
 				E20AF7872C5B83DD001579B2 /* SoilModel.swift */,
 				E20AF7882C5B83DD001579B2 /* UserModel.swift */,
+				F697B2D82C64341F009EBA82 /* CollectionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -382,7 +385,6 @@
 				E20AF79F2C5B8418001579B2 /* MySpaceViewModel.swift */,
 				E20AF79C2C5B8418001579B2 /* PlantationViewModel.swift */,
 				E20AF7A12C5B8418001579B2 /* PlantViewModel.swift */,
-				E20AF7A02C5B8418001579B2 /* SoilViewModel.swift */,
 				E20AF79B2C5B8418001579B2 /* UserViewModel.swift */,
 			);
 			path = ViewModels;
@@ -484,6 +486,7 @@
 		E284CE4F2C620F3E00A89689 /* ExViews */ = {
 			isa = PBXGroup;
 			children = (
+				E20AF7A02C5B8418001579B2 /* SoilViewModel.swift */,
 				E20AF7BE2C5B845F001579B2 /* FavoriteButtonExView.swift */,
 			);
 			name = ExViews;
@@ -728,6 +731,7 @@
 				E20AF7C92C5B845F001579B2 /* ButtonAddExView.swift in Sources */,
 				E20AF7A82C5B8418001579B2 /* DiseaseViewModel.swift in Sources */,
 				E20AF7FA2C5B84A0001579B2 /* FavoritesPlantsView.swift in Sources */,
+				F697B2D92C64341F009EBA82 /* CollectionModel.swift in Sources */,
 				E20AF7C82C5B845F001579B2 /* ResearchBarExView.swift in Sources */,
 				E20AF7CD2C5B845F001579B2 /* FavoriteButtonExView.swift in Sources */,
 				E20AF81B2C5BC77E001579B2 /* IsInPotExView.swift in Sources */,

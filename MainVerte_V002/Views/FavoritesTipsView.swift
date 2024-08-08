@@ -16,20 +16,20 @@ struct FavoritesTipsView: View {
                     image: "MVTipPlantationPotato",
                     title: "Culture Patates Gazon",
                     subtitle: "Kanita",
-                    isFavoriteView: true
+                    isFavorite: true
                     )
                     ImageTextExView(
                     image: "MVTipMaintenancePotting",
                     title: "Rempotage: Préparation du Pot",
                     subtitle: "Marc",
-                    isFavoriteView: true
+                    isFavorite: true
                     )
                     NavigationLink(destination: IdeaTipDetailsView()) {
                         ImageTextExView(
                             image: "MVTipMaintenancePestControl",
                             title: "Insecte nuisible",
                             subtitle: "Oriane",
-                            isFavoriteView: true
+                            isFavorite: true
                         )
                     }
                 }

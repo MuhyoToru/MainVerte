@@ -8,28 +8,25 @@
 import SwiftUI
 
 struct IdeaTipsView: View {
-
+    @EnvironmentObject var ideaTipViewModel: IdeaTipViewModel
+    
     var body: some View {
-        VStack{
+        VStack {
             ScrollView {
-                VStack(alignment: .leading){
-                        ComposedImagesExView(
-                            leftImage: "MVTipPlantationPotato",
-                            topImage: "MVTipPlantationShrub",
-                            bottomImage: "MVTipPlantationSalad",
-                            rightImage: "MVTipPlantationHortensia",
-                            title: "Plantation",
-                            subtitle: "15 Astuces"
-                        )
-                    NavigationLink(destination: IdeaListTipsView()) {
-                        ComposedImagesExView(
-                            leftImage: "MVTipMaintenancePotting",
-                            topImage: "MVTipMaintenanceCleaningLeaves",
-                            bottomImage: "MVTipMaintenancePestControl",
-                            rightImage: "MVTipMaintenanceAbsent",
-                            title: "Entretien",
-                            subtitle: "4 Astuces"
-                        )
+                VStack(alignment: .leading) {
+                    ForEach(groupedIdeaTips.keys.sorted(), id: \.self) { category in
+                        if let ideas = groupedIdeaTips[category] {
+                            NavigationLink(destination: IdeaListTipsView(category: category).environmentObject(ideaTipViewModel)) {
+                                ComposedImagesExView(
+                                    leftImage: ideas[safe: 0]?.images ?? "",
+                                    topImage: ideas[safe: 1]?.images ?? "",
+                                    bottomImage: ideas[safe: 2]?.images ?? "",
+                                    rightImage: ideas[safe: 3]?.images ?? "",
+                                    title: category,
+                                    subtitle: "\(ideas.count) Idées"
+                                )
+                            }
+                        }
                     }
                 }
             }
@@ -38,16 +35,19 @@ struct IdeaTipsView: View {
                 NavigationLink(destination: CreateIdeaView()) {
                     ActionButtonExView(action: "plus")
                 }
-                
             }
         }
         .padding(.horizontal)
         .padding(.bottom)
     }
+    
+    // Group ideas by subCategory
+    private var groupedIdeaTips: [String: [IdeaTip]] {
+        Dictionary(grouping: ideaTipViewModel.ideaTips, by: { $0.subCategory })
+    }
 }
 
 #Preview {
     IdeaTipsView()
+        .environmentObject(IdeaTipViewModel())
 }
-
-

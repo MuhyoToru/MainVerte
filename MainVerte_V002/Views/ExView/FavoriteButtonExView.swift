@@ -37,5 +37,10 @@ struct FavoriteButtonExView: View {
 }
 
 #Preview {
-    FavoriteButtonExView()
+    VStack {
+        FavoriteButtonExView()
+        FavoriteButtonExView(isFavorite: true)
+    }
 }
+
+

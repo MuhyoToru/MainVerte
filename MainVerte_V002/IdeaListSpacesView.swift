@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct IdeaListSpacesView: View {
+    @EnvironmentObject var viewModel: IdeaSpaceViewModel
+    var category: String
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -24,41 +26,18 @@ struct IdeaListSpacesView: View {
                 }
                 .navigationBarBackButtonHidden(true)
                 Spacer()
-           }
+            }
             ScrollView {
                 VStack {
-                    NavigationLink(destination: IdeaSpaceDetailsView()) {
-                        ImageTextExView(
-                            image: "MVBathroom01",
-                            title: "Oasis de Sérénité",
-                            subtitle: "Haiying",
-                            isFavoriteView: true
-                        )
+                    ForEach(viewModel.ideaSpaces.filter { $0.subCategory == category }) { ideaSpace in
+                        NavigationLink(destination: IdeaSpaceDetailsView(ideaSpace: ideaSpace)) {
+                            ImageTextExView(
+                                image: ideaSpace.images,
+                                title: ideaSpace.title,
+                                subtitle: ideaSpace.subtitle
+                            )
+                        }
                     }
-                    ImageTextExView(
-                    image: "MVBathroom02",
-                    title: "Douche Jardinée",
-                    subtitle: "Estelle",
-                    isFavoriteView: false
-                    )
-                    ImageTextExView(
-                    image: "MVBathroom03",
-                    title: "Douche Botanique",
-                    subtitle: "Aurélien",
-                    isFavoriteView: false
-                    )
-                    ImageTextExView(
-                    image: "MVBathroom04",
-                    title: "Douche Élégance Monochrome",
-                    subtitle: "Audrey",
-                    isFavoriteView: false
-                    )
-                    ImageTextExView(
-                        image: "MVBathroom05",
-                        title: "Évasion au Spa",
-                        subtitle: "Pierre",
-                        isFavoriteView: true
-                    )
                 }
             }
         }
@@ -68,5 +47,8 @@ struct IdeaListSpacesView: View {
 }
 
 #Preview {
-    IdeaListSpacesView()
+    IdeaListSpacesView(category: "Salle de bain")
+        .environmentObject(IdeaSpaceViewModel())
 }
+
+

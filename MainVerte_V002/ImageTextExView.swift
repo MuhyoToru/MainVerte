@@ -11,7 +11,7 @@ struct ImageTextExView: View {
     var image: String = "MVBathroom05"
     var title: String = "Salle de bain"
     var subtitle: String = "Pierre"
-    var isFavoriteView: Bool = false
+    var isFavorite: Bool = false
 
     var body: some View {
         VStack (alignment: .leading) {
@@ -24,8 +24,12 @@ struct ImageTextExView: View {
             HStack {
                 TitleExView(title: title, textSize: 20, textColor: .mvDarkGreen, textWeight: .bold)
                 Spacer()
-                if isFavoriteView {
+                if isFavorite {
                     FavoriteButtonExView(isFavorite: true)
+                        .offset(y: 5)
+                }
+                else {
+                    FavoriteButtonExView()
                         .offset(y: 5)
                 }
             }
@@ -41,7 +45,9 @@ struct ImageTextExView: View {
 #Preview {
     VStack {
         ImageTextExView()
-        ImageTextExView(isFavoriteView: true)
+        ImageTextExView(isFavorite: true)
     }
 }
+
+
 

@@ -16,13 +16,13 @@ struct FavoritesPlantsView: View {
                     image: "MVTomato",
                     title: "Tomate",
                     subtitle: "Solannm Lycopersicum",
-                    isFavoriteView: true
+                    isFavorite: true
                     )
                     ImageTextExView(
                     image: "MVLavender",
                     title: "Lavande",
                     subtitle: "Lavandula",
-                    isFavoriteView: true
+                    isFavorite: true
                     )
                 }
             }

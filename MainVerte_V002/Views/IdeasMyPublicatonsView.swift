@@ -16,15 +16,12 @@ var body: some View {
                     ImageTextExView(
                     image: "MVBathroom02",
                     title: "Douche Jardinée",
-                    subtitle: "03/06/2024",
-                    isFavoriteView: false
+                    subtitle: "03/06/2024"
                     )
-                    
                     ImageTextExView(
                     image: "MVTipMaintenanceCleaningLeaves",
                     title: "Enlever la poussière des plantes",
-                    subtitle: "07/07/2024",
-                    isFavoriteView: false
+                    subtitle: "07/07/2024"
                     )
                 }
             }

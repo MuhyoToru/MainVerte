@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct IdeaListTipsView: View {
+    @EnvironmentObject var ideaTipViewModel: IdeaTipViewModel
+    var category: String
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -24,35 +26,18 @@ struct IdeaListTipsView: View {
                 }
                 .navigationBarBackButtonHidden(true)
                 Spacer()
-           }
+            }
             ScrollView {
                 VStack {
-                    ImageTextExView(
-                    image: "MVTipMaintenancePotting",
-                    title: "Rempotage: Préparation du Pot",
-                    subtitle: "Marc",
-                    isFavoriteView: false
-                    )
-                    ImageTextExView(
-                    image: "MVTipMaintenanceCleaningLeaves",
-                    title: "Enlever la poussière des plantes",
-                    subtitle: "Haiying",
-                    isFavoriteView: false
-                    )
-                    NavigationLink(destination: IdeaTipDetailsView()) {
-                        ImageTextExView(
-                            image: "MVTipMaintenancePestControl",
-                            title: "Insecte nuisible",
-                            subtitle: "Oriane",
-                            isFavoriteView: true
-                        )
+                    ForEach(ideaTipViewModel.ideaTips.filter { $0.subCategory == category }) { ideaTip in
+                        NavigationLink(destination: IdeaTipDetailsView()) {
+                            ImageTextExView(
+                                image: ideaTip.images,
+                                title: ideaTip.title,
+                                subtitle: ideaTip.subtitle
+                            )
+                        }
                     }
-                    ImageTextExView(
-                    image: "MVTipMaintenanceAbsent",
-                    title: "Quand on est absent",
-                    subtitle: "Zak",
-                    isFavoriteView: false
-                    )
                 }
             }
         }
@@ -62,5 +47,6 @@ struct IdeaListTipsView: View {
 }
 
 #Preview {
-    IdeaListTipsView()
+    IdeaListTipsView(category: "Entretien")
+        .environmentObject(IdeaTipViewModel())
 }

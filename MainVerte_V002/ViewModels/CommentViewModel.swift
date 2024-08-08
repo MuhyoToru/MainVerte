@@ -8,12 +8,23 @@
 import Foundation
 import Observation
 
+//@Observable class CommentViewModel {
+//    var comments : [Comment] = []
+//    
+//    init() {
+//        comments = [
+//            Comment(text: "", creationDate: Date.now, modificationDate: Date.now)
+//        ]
+//    }
+//}
+
+
 @Observable class CommentViewModel {
-    var comments : [Comment] = []
-    
+    var comments: [Comment] = []
+
     init() {
         comments = [
-            Comment(text: "", creationDate: Date.now, modificationDate: Date.now)
+            Comment(text: "", creationDate: Date.now, modificationDate: Date.now, image: "defaultImage")
         ]
     }
 }

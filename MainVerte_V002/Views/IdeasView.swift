@@ -43,4 +43,5 @@ struct IdeasView: View {
 
 #Preview {
     IdeasView()
+        .environmentObject(IdeaSpaceViewModel())
 }
