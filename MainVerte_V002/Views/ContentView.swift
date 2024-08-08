@@ -52,10 +52,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var mySpacesViewModel = MySpaceViewModel()
-    @StateObject var ideaSpaceViewModel = IdeaSpaceViewModel()
-    @StateObject var ideaTipViewModel = IdeaTipViewModel()
-    @StateObject var ideaQuestionViewModel = IdeaQuestionViewModel()
     
     var body: some View {
         TabView {
@@ -84,10 +80,6 @@ struct ContentView: View {
             .toolbarBackground(Color("MVVeryDarkGreen"), for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
         }
-        .environmentObject(mySpacesViewModel)
-        .environmentObject(ideaSpaceViewModel)
-        .environmentObject(ideaTipViewModel)
-        .environmentObject(ideaQuestionViewModel)
     }
 }
 

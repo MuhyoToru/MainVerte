@@ -51,4 +51,5 @@ struct MySpacesView: View {
 
 #Preview {
     MySpacesView()
+        .environmentObject(MySpaceViewModel())
 }

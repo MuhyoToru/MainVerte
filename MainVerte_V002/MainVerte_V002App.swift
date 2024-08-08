@@ -12,11 +12,19 @@ import SwiftUI
 struct MainVerte_V002App: App {
     
 //    @StateObject var mySpacesViewModel = MySpaceViewModel()
+    @StateObject var mySpacesViewModel = MySpaceViewModel()
+    @StateObject var ideaSpaceViewModel = IdeaSpaceViewModel()
+    @StateObject var ideaTipViewModel = IdeaTipViewModel()
+    @StateObject var ideaQuestionViewModel = IdeaQuestionViewModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
 //        .environmentObject(mySpacesViewModel)
+        .environmentObject(mySpacesViewModel)
+        .environmentObject(ideaSpaceViewModel)
+        .environmentObject(ideaTipViewModel)
+        .environmentObject(ideaQuestionViewModel)
     }
 }

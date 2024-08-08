@@ -20,7 +20,7 @@ struct FilterAndSortButtonExView: View {
                 .font(.system(size: 28))
         })
         .sheet(isPresented: $modalIsVisible) {
-        } content: { FiltersAndSortViewModal(heightModal: 0.5, isVisible: $modalIsVisible)
+        } content: { FiltersAndSortViewModal(heightModal: 0.8, isVisible: $modalIsVisible)
         }
     }
 }
