@@ -43,32 +43,31 @@ struct JustifiedTextUIView: UIViewRepresentable {
 
 struct JustifiedTextUIView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
-            JustifiedTextUIView(
-                text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser",
-                fontSize: 20,
-                fontWeight: .black,
-                textColor: .white,
-                backgroundColor: .black
-            )
-            .background(Color.black)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .fixedSize(horizontal: false, vertical: true)
-            
+        VStack(spacing: 24) {
             JustifiedTextUIView(
                 text: "Merci",
                 fontSize: 17,
-                textColor: .mvDarkGray,
-                backgroundColor: .black
+                fontWeight: .black,
+                textColor: .white
             )
             .padding(.horizontal)
             .padding(.vertical, 10)
-            .background(Color.white)
+            .background(Color.mvDarkGray)
             .clipShape(UnevenRoundedRectangle(
                 bottomLeadingRadius: 10,
                 bottomTrailingRadius: 10,
                 topTrailingRadius: 10
             ))
+            .fixedSize(horizontal: false, vertical: true)
+            
+            JustifiedTextUIView(
+                text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser",
+                fontSize: 20,
+                textColor: .mvDarkGreen
+            )
+            .padding()
+            .background(Color.mvLightGray)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
             .fixedSize(horizontal: false, vertical: true)
             
             JustifiedTextUIView(
@@ -78,6 +77,6 @@ struct JustifiedTextUIView_Previews: PreviewProvider {
             .fixedSize(horizontal: false, vertical: true)
         }
         .padding()
-        .background(Color.red)
+//        .background(Color.red)
     }
 }

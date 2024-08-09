@@ -5,45 +5,6 @@
 //  Created by Apprenant 166 on 06/08/2024.
 //
 
-//import SwiftUI
-//
-//struct CustomTextFieldUIView: UIViewRepresentable {
-//    @Binding var text: String
-//    var placeholder: String
-//
-//    func makeUIView(context: Context) -> UITextField {
-//        let textField = UITextField()
-//        textField.delegate = context.coordinator
-//        textField.placeholder = placeholder
-//        textField.borderStyle = .none
-//        textField.textAlignment = .center
-//        textField.font = UIFont(name: "Sumana-Regular", size: 32)
-//        textField.textColor = UIColor(named: "mvVeryDarkGreen")
-//        textField.tintColor = .mvDarkGreen
-//        return textField
-//    }
-//
-//    func updateUIView(_ uiView: UITextField, context: Context) {
-//        uiView.text = text
-//    }
-//    
-//    func makeCoordinator() -> CustomTextFieldCoordinator {
-//        CustomTextFieldCoordinator(parent: self)
-//    }
-//}
-//
-//struct CustomTextFieldUIView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CustomTextFieldUIView(
-//            text: .constant("Example Text"),
-//            placeholder: "Enter text"
-//        )
-//        .padding()
-//        .previewLayout(.sizeThatFits)
-//    }
-//}
-
-
 import SwiftUI
 
 struct CustomTextFieldUIView: UIViewRepresentable {
