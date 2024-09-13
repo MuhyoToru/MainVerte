@@ -80,7 +80,7 @@ struct MySpacePlantDetailsView: View {
                         }
                         TitleExView(title: "Maladies :", textSize: 26, textColor: .mvDarkGreen)
                         ForEach(plantation.plant.diseases!) { disease in
-                            DiseaseExView(disease: disease)
+                            DiseaseExView(disease: Disease(id: UUID().uuidString ,name: "cekdfbcvf", image: "vudsov", description: "udrv", cureMethod: "vfouerhv"))
                         }
                         TitleExView(title: "Exposition(s) :", textSize: 26, textColor: .mvDarkGreen)
                         ForEach(plantation.plant.exposures!, id : \.self) { exposure in

@@ -4,7 +4,6 @@
 //
 //  Created by Apprenant 141 on 05/08/2024.
 //
-
 import SwiftUI
 
 struct DiseaseExView: View {
@@ -27,16 +26,17 @@ struct DiseaseExView: View {
                     Spacer()
                 }
                 VStack(alignment : .leading) {
-                    Text("Description : " + disease.description)
+                    Text("Description : \(disease.description)")
                     Text("")
-                    Text("Méthode de soin : " + disease.cureMethod)
+                    Text("Méthode de soin : \(disease.cureMethod)")
                 }
             }
             .padding(8)
         }
     }
 }
-
 #Preview {
-    DiseaseExView(disease: Disease(id : UUID(), name: "Mildiou", image: "MVMildew", description: "Test", cureMethod: "Test"))
+    DiseaseExView(disease: Disease(id: UUID().uuidString ,name: "utdefzu", image: "MVTomato", description: "bfuces", cureMethod: "bfedubfv"))
 }
+
+

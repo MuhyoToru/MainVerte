@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListPlantDetailsView: View {
     @StateObject private var fertilizerViewModel = FertilizerViewModel()
+    @StateObject private var diseaseViewModel = DiseaseViewModel()
     
     var plant : Plant
     @Environment(\.dismiss) private var dismiss
@@ -100,7 +101,7 @@ struct ListPlantDetailsView: View {
                         }
                         TitleExView(title: "Difficulté d'entretien :", textSize: 26, textColor: .mvDarkGreen)
                         Text(plant.difficulty)
-//                        TitleExView(title: "Fertilisant(s) :", textSize: 26, textColor: .mvDarkGreen)
+                        TitleExView(title: "Fertilisant(s) :", textSize: 26, textColor: .mvDarkGreen)
 //                        if plant.fertilizers != nil {
 //                            ForEach(plant.fertilizers!) { fertilizer in
 //                                Text(fertilizer.name)
@@ -113,12 +114,15 @@ struct ListPlantDetailsView: View {
                             
                         }
                         TitleExView(title: "Maladies :", textSize: 26, textColor: .mvDarkGreen)
-                        if plant.diseases != nil {
-                            ForEach(plant.diseases!) { disease in
-                                DiseaseExView(disease: disease)
-                            }
-                        } else {
-                            ErrorExView()
+//                        if plant.diseases != nil {
+//                            ForEach(plant.diseases!) { disease in
+//                                DiseaseExView(disease: disease)
+//                            }
+//                        } else {
+//                            ErrorExView()
+//                        }
+                        ForEach(diseaseViewModel.diseases) { disease in
+                            DiseaseExView(disease: disease)
                         }
                         TitleExView(title: "Exposition(s) :", textSize: 26, textColor: .mvDarkGreen)
                         if plant.exposures != nil {
@@ -174,6 +178,7 @@ struct ListPlantDetailsView: View {
         .background(BackgroundExView(opacity: 0.9))
         .onAppear {
             fertilizerViewModel.fetchFertilizers()
+            diseaseViewModel.fetchDiseases()
         }
     }
 }
