@@ -79,7 +79,7 @@ struct Triangle: Shape {
 struct MessageBubbleExView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
-            Color.red
+//            Color.red
             VStack{
                 MessageBubbleExView(text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides chimiques ?", photo: "MVProfil01", isCurrentUser: false)
                 MessageBubbleExView(text: "Merci", photo: "MVProfil01", isCurrentUser: true)

@@ -45,5 +45,5 @@ struct ColorButtonExView: View {
 
 
 #Preview {
-    ColorButtonExView(colorButton : ColorButton(color: .mvFilterRed, colorName: "Red"), newSpace: .constant(MySpace(name: "", image: "", city: "", difficulty: "", area: 0, acceptedFauna: true, color: [], exposure: .fullShade, soil: [], interiorExterior: .interior, existingPlant: [], createdDate: Date.now, personalNotes: "")))
+    ColorButtonExView(colorButton : ColorButton(color: .mvFilterRed, colorName: "Red"), newSpace: .constant(MySpace(name: "Test", image: "MVTomato", city: "Test", difficulty: "Test", area: 0, acceptedFauna: true, color: [], exposure: .fullShade, soil: [], interiorExterior: .interior, existingPlant: [], createdDate: Date.now, personalNotes: "Test")))
 }

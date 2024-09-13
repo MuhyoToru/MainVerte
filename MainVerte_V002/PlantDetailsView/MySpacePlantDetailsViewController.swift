@@ -18,7 +18,7 @@ class MySpacePlantDetailsViewController : UIViewController {
     
     var spacing : CGFloat = 16
     
-    var plantation : Plantation = Plantation(personalNotes: "", plantedDate: Date.now, plant: Plant(name: "", scientificName: "", image: "", description: "", size: 0, startSowingDate: .january, endSowingDate: .january, startBloomDate: .january, endBloomDate: .january, minTemperature: 0, maxTemperature: 0, wateringFrequency: 0, wateringQuantity: 0, spacing: 0, plantingMethod: "", startHarvestDate: .january, endHarvestDate: .january, colors: [], difficulty: "", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [], containers: []), container: .inGround)
+    var plantation : Plantation = Plantation(personalNotes: "", plantedDate: Date.now, plant: Plant(id : UUID().uuidString, name: "", scientificName: "", image: "", description: "", size: 0, startSowingDate: .january, endSowingDate: .january, startBloomDate: .january, endBloomDate: .january, minTemperature: 0, maxTemperature: 0, wateringFrequency: 0, wateringQuantity: 0, spacing: 0, plantingMethod: "", startHarvestDate: .january, endHarvestDate: .january, colors: [], difficulty: "", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [], containers: []), container: .inGround)
     
     override func viewDidLoad() {
         super.viewDidLoad()

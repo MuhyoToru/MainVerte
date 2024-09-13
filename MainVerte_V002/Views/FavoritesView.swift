@@ -42,4 +42,5 @@ struct FavoritesView: View {
 
 #Preview {
     FavoritesView()
+        .environmentObject(IdeaSpaceViewModel())
 }

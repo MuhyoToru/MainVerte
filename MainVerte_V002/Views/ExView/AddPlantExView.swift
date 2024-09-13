@@ -71,5 +71,5 @@ struct AddPlantExView: View {
 }
 
 #Preview {
-    AddPlantExView(plant : Plant(name: "", scientificName: "", image: "", description: "", size: 0, startSowingDate: .april, endSowingDate: .april, startBloomDate: .april, endBloomDate: .april, minTemperature: 0, maxTemperature: 0, wateringFrequency: 0, wateringQuantity: 0, spacing: 0, plantingMethod: "", startHarvestDate: .april, endHarvestDate: .april, colors: [], difficulty: "", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [], containers: []))
+    AddPlantExView(plant : Plant(id : UUID().uuidString, name: "Test", scientificName: "Test", image: "MVTomato", description: "Test", size: 0, startSowingDate: .april, endSowingDate: .april, startBloomDate: .april, endBloomDate: .april, minTemperature: 0, maxTemperature: 0, wateringFrequency: 0, wateringQuantity: 0, spacing: 0, plantingMethod: "Test", startHarvestDate: .april, endHarvestDate: .april, colors: [], difficulty: "Test", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [], containers: []))
 }

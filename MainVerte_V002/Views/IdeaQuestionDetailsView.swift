@@ -37,11 +37,6 @@ struct IdeaQuestionDetailsView: View {
             }
             .padding(.horizontal, 5)
             ScrollView {
-//            ImageTextViewRepresentable(
-//                image: UIImage(named: "MVTipQuestionPest") ?? UIImage(),
-//                text: "Quels sont les meilleurs moyens naturels pour protéger un potager extérieur contre les nuisibles sans utiliser de pesticides chimiques ?"
-//            )
-//                .frame(height: 284)
                 ImageDescriptionExView(
                     image: UIImage(named: ideaQuestion.images) ?? UIImage(), text: ideaQuestion.description
             )
@@ -51,9 +46,6 @@ struct IdeaQuestionDetailsView: View {
                 ActionButtonExView(isHorizontal: isHorizontal)
                     .offset(y: 5)
             }
-            
-//                    MessageBubbleExView(text: "Planter des herbes aromatiques comme la menthe, le basilic et la ciboulette autour de votre potager. Ces plantes dégagent des odeurs que beaucoup de nuisibles n'aiment pas. De plus, elles sont utiles en cuisine !", photo: "MVProfil01", isCurrentUser: false)
-//                    MessageBubbleExView(text: "Merci!", photo: "MVProfil04", isCurrentUser: true)ForEach(ideaQuestion.comments) { comment in
                 ForEach(ideaQuestion.comments) { comment in
                     MessageBubbleExView(text: comment.text, photo: comment.image, isCurrentUser: comment.isCurrentUser)
                 }
@@ -64,8 +56,8 @@ struct IdeaQuestionDetailsView: View {
     }
 }
 
-//#Preview {
-//    IdeaQuestionDetailsView()
-//}
-//
+#Preview {
+    IdeaQuestionDetailsView(ideaQuestion: IdeaQuestion(title: "Test", subtitle: "Test", images: "MVTomato", description: "Test", subCategory: "Test"))
+}
+
 

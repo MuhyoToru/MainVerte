@@ -10,6 +10,7 @@ import SwiftUI
 struct CreateSpaceAddPlantProposalView: View {
     var body: some View {
         AddPlantExView(plant: Plant(
+            id : UUID().uuidString,
             name: "Oignon",
             scientificName: "",
             image: "MVOnion",
@@ -37,6 +38,7 @@ struct CreateSpaceAddPlantProposalView: View {
             containers: []
         ))
         AddPlantExView(plant: Plant(
+            id : UUID().uuidString,
             name: "Choux",
             scientificName: "",
             image: "MVCabbage",
@@ -64,6 +66,7 @@ struct CreateSpaceAddPlantProposalView: View {
             containers: []
         ))
         AddPlantExView(plant: Plant(
+            id : UUID().uuidString, 
             name: "Lavande",
             scientificName: "",
             image: "MVLavender",

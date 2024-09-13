@@ -19,5 +19,5 @@ struct MySpaceAddPlantAlreadyHereView: View {
 }
 
 #Preview {
-    MySpaceAddPlantAlreadyHereView(mySpace: MySpace(name: "", image: "", city: "", difficulty: "", area: 0, acceptedFauna: true, color: [], exposure: .fullShade, soil: [], interiorExterior: .exterior, createdDate: Date.now, personalNotes: ""))
+    MySpaceAddPlantAlreadyHereView(mySpace: MySpace(name: "Test", image: "Test", city: "Test", difficulty: "Test", area: 0, acceptedFauna: true, color: [], exposure: .fullShade, soil: [], interiorExterior: .exterior, createdDate: Date.now, personalNotes: "Test"))
 }

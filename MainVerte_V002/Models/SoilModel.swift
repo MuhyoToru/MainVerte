@@ -7,13 +7,14 @@
 
 import Foundation
 
-class Soil : Identifiable, Equatable {
-    let id: UUID = UUID()
+class Soil : Identifiable, Equatable, Codable {
+    let id: UUID /*= UUID()*/
     let name: String
     let description: String
     let characteristics: String
     
-    init(name: String, description: String, characteristics: String) {
+    init(id: UUID, name: String, description: String, characteristics: String) {
+        self.id = id
         self.name = name
         self.description = description
         self.characteristics = characteristics

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ListPlantDetailsView: View {
+    @StateObject private var fertilizerViewModel = FertilizerViewModel()
     
     var plant : Plant
     @Environment(\.dismiss) private var dismiss
@@ -42,11 +43,23 @@ struct ListPlantDetailsView: View {
                         TitleExView(title: "Taille :", textSize: 26, textColor: .mvDarkGreen)
                         Text("\(String(plant.size))cm")
                         TitleExView(title: "Semis :", textSize: 26, textColor: .mvDarkGreen)
-                        Text("Mois de début de semi : \(plant.startSowingDate.rawValue)")
-                        Text("Mois de fin de semi : \(plant.endSowingDate.rawValue)")
+                        Text("Mois de début de semi : \(plant.startSowingDate?.rawValue ?? "")")
+                        if plant.startSowingDate == nil {
+                            ErrorExView()
+                        }
+                        Text("Mois de fin de semi : \(plant.endSowingDate?.rawValue ?? "")")
+                        if plant.startSowingDate == nil {
+                            ErrorExView()
+                        }
                         TitleExView(title: "Floraison :", textSize: 26, textColor: .mvDarkGreen)
-                        Text("Mois de début de floraison : \(plant.startBloomDate.rawValue)")
-                        Text("Mois de fin de floraison : \(plant.endBloomDate.rawValue)")
+                        Text("Mois de début de floraison : \(plant.startBloomDate?.rawValue ?? "")")
+                        if plant.startSowingDate == nil {
+                            ErrorExView()
+                        }
+                        Text("Mois de fin de floraison : \(plant.endBloomDate?.rawValue ?? "")")
+                        if plant.startSowingDate == nil {
+                            ErrorExView()
+                        }
                         TitleExView(title: "Température :", textSize: 26, textColor: .mvDarkGreen)
                         Text("Température Minimum : \(plant.minTemperature, specifier: "%.2f")°C")
                         Text("Température Maximum : \(plant.maxTemperature, specifier: "%.2f")°C")
@@ -57,61 +70,99 @@ struct ListPlantDetailsView: View {
                         Text("Espacement entre 2 plantes : \(plant.spacing, specifier: "%.2f")cm")
                         Text("Méthode de plantation : \(plant.plantingMethod)")
                         TitleExView(title: "Récolte :", textSize: 26, textColor: .mvDarkGreen)
-                        Text("Mois de début de récolte : \(plant.startHarvestDate)")
-                        Text("Mois de fin de récolte : \(plant.endHarvestDate)")
+                        Text("Mois de début de récolte : \(plant.startHarvestDate?.rawValue ?? "")")
+                        if plant.startSowingDate == nil {
+                            ErrorExView()
+                        }
+                        Text("Mois de fin de récolte : \(plant.endHarvestDate?.rawValue ?? "")")
+                        if plant.startSowingDate == nil {
+                            ErrorExView()
+                        }
                         TitleExView(title: "Couleur(s) :", textSize: 26, textColor: .mvDarkGreen)
                         HStack {
-                            ForEach(plant.colors, id : \.self) { color in
-                                Spacer()
-                                ZStack {
-                                    Image(systemName: "leaf.fill")
-                                        .foregroundStyle(.mvWhite)
-                                        .font(.system(size: 36))
-                                        .offset(x : -3, y : 3)
-                                    Image(systemName: "leaf.fill")
-                                        .foregroundStyle(color)
-                                        .font(.system(size: 36))
+                            if plant.colors != nil {
+                                ForEach(plant.colors!, id : \.self) { color in
+                                    Spacer()
+                                    ZStack {
+                                        Image(systemName: "leaf.fill")
+                                            .foregroundStyle(.mvWhite)
+                                            .font(.system(size: 36))
+                                            .offset(x : -3, y : 3)
+                                        Image(systemName: "leaf.fill")
+                                            .foregroundStyle(color)
+                                            .font(.system(size: 36))
+                                    }
+                                    Spacer()
                                 }
-                                Spacer()
+                            } else {
+                                ErrorExView()
                             }
                         }
                         TitleExView(title: "Difficulté d'entretien :", textSize: 26, textColor: .mvDarkGreen)
                         Text(plant.difficulty)
-                        TitleExView(title: "Fertilisant(s) :", textSize: 26, textColor: .mvDarkGreen)
-                        ForEach(plant.fertilizers) { fertilizer in
+//                        TitleExView(title: "Fertilisant(s) :", textSize: 26, textColor: .mvDarkGreen)
+//                        if plant.fertilizers != nil {
+//                            ForEach(plant.fertilizers!) { fertilizer in
+//                                Text(fertilizer.name)
+//                            }
+//                        } else {
+//                            ErrorExView()
+//                        }
+                        ForEach(fertilizerViewModel.fertilizers) { fertilizer in
                             Text(fertilizer.name)
+                            
                         }
                         TitleExView(title: "Maladies :", textSize: 26, textColor: .mvDarkGreen)
-                        ForEach(plant.diseases) { disease in
-                            DiseaseExView(disease: disease)
+                        if plant.diseases != nil {
+                            ForEach(plant.diseases!) { disease in
+                                DiseaseExView(disease: disease)
+                            }
+                        } else {
+                            ErrorExView()
                         }
                         TitleExView(title: "Exposition(s) :", textSize: 26, textColor: .mvDarkGreen)
-                        ForEach(plant.exposures, id : \.self) { exposure in
-                            Text(exposure.rawValue)
+                        if plant.exposures != nil {
+                            ForEach(plant.exposures!, id : \.self) { exposure in
+                                Text(exposure.rawValue)
+                            }
+                        } else {
+                            ErrorExView()
                         }
                         TitleExView(title: "Sol(s) :", textSize: 26, textColor: .mvDarkGreen)
-                        ForEach(plant.soils) { soil in
-                            Text(soil.name)
+                        if plant.soils != nil {
+                            ForEach(plant.soils!) { soil in
+                                Text(soil.name)
+                            }
+                        } else {
+                            ErrorExView()
                         }
                         TitleExView(title: "Intérieur ou Extérieur ?", textSize: 26, textColor: .mvDarkGreen)
-                        if plant.interiorExterior.count >= 2 {
-                            Text("Intérieur ou Extérieur")
-                        } else {
-                            if plant.interiorExterior[0] == .exterior {
-                                Text("Extérieur")
+                        if plant.interiorExterior != nil {
+                            if plant.interiorExterior!.count >= 2 {
+                                Text("Intérieur ou Extérieur")
                             } else {
-                                Text("Intérieur")
+                                if plant.interiorExterior![0] == .exterior {
+                                    Text("Extérieur")
+                                } else {
+                                    Text("Intérieur")
+                                }
                             }
+                        } else {
+                            ErrorExView()
                         }
                         TitleExView(title: "Conteneur :", textSize: 26, textColor: .mvDarkGreen)
-                        if plant.containers.count >= 2 {
-                            Text("En pot ou En terre")
-                        } else {
-                            if plant.containers[0] == .inGround {
-                                Text("En terre")
+                        if plant.containers != nil {
+                            if plant.containers!.count >= 2 {
+                                Text("En pot ou En terre")
                             } else {
-                                Text("En pot")
+                                if plant.containers![0] == .inGround {
+                                    Text("En terre")
+                                } else {
+                                    Text("En pot")
+                                }
                             }
+                        } else {
+                            ErrorExView()
                         }
                     }
                     Spacer()
@@ -121,9 +172,12 @@ struct ListPlantDetailsView: View {
             }
         }
         .background(BackgroundExView(opacity: 0.9))
+        .onAppear {
+            fertilizerViewModel.fetchFertilizers()
+        }
     }
 }
 
 #Preview {
-    ListPlantDetailsView(plant: PlantViewModel().plants[0])
+    ListPlantDetailsView(plant: Plant(id: UUID().uuidString, name: "Test", scientificName: "Test", image: "MVTomato", description: "Test", size: 1, startSowingDate: .april, endSowingDate: .april, startBloomDate: .april, endBloomDate: .april, minTemperature: 1, maxTemperature: 1, wateringFrequency: 1, wateringQuantity: 1, spacing: 1, plantingMethod: "Test", startHarvestDate: .april, endHarvestDate: .april, colors: [], difficulty: "Facile", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [.exterior], containers: [.inGround]))
 }
