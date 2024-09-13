@@ -6,14 +6,35 @@
 //
 
 import Foundation
-import Observation
+import SwiftUI
 
-@Observable class DiseaseViewModel {
-    var diseases : [Disease] = []
+class DiseaseViewModel: ObservableObject {
     
-    init() {
-        diseases = [
-            Disease(id : UUID(), name: "Mildiou", image: "MVMildew", description: "Provoque l'apparition de taches vertes pâles à brunes qui s'étendent peu à peu. Les tissus finissent par se dessécher", cureMethod: "Semer ou planter à bonne distance pour favoriser la circulation de l'air et aérer régulièrement les abris. Certains conseillent d'espacer les plants d'1 mètre car le champignon se développera moins facilement.")
-        ]
+    @Published var diseases : [Disease] = []
+    
+    
+    func fetchDiseases() {
+        
+        guard let url = URL(string: "http://10.80.55.36:3000/diseases") else {
+            print("Invalid URL")
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let data = data {
+                do {
+                    let decodedDiseases = try JSONDecoder().decode([Disease].self, from: data)
+                    
+                    DispatchQueue.main.async {
+                        self.diseases = decodedDiseases
+                    }
+                } catch {
+                    print("Error decoding data: \(error)")
+                }
+            }
+            else if let error = error {
+                print("Error fetching data: \(error)")
+            }
+        } .resume()
     }
 }
