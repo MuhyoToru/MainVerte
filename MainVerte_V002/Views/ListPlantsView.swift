@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListPlantsView: View {
-    
+
     @State var researchText : String = ""
     @StateObject var plantViewModel : PlantViewModel = PlantViewModel()
     
