@@ -7,12 +7,13 @@
 
 import Foundation
 
-class Fertilizer : Identifiable {
-    let id: UUID = UUID()
+class Fertilizer : Codable, Identifiable {
+    let id: String
     let name: String
     let description: String
     
-    init(name: String, description: String) {
+    init(id: String, name: String, description: String) {
+        self.id = id
         self.name = name
         self.description = description
     }

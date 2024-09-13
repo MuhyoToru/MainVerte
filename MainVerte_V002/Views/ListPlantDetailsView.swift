@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ListPlantDetailsView: View {
+    @StateObject private var fertilizerViewModel = FertilizerViewModel()
     
     var plant : Plant
     @Environment(\.dismiss) private var dismiss
@@ -77,9 +78,11 @@ struct ListPlantDetailsView: View {
                         }
                         TitleExView(title: "Difficulté d'entretien :", textSize: 26, textColor: .mvDarkGreen)
                         Text(plant.difficulty)
+                        // //
                         TitleExView(title: "Fertilisant(s) :", textSize: 26, textColor: .mvDarkGreen)
-                        ForEach(plant.fertilizers) { fertilizer in
+                        ForEach(fertilizerViewModel.fertilizers) { fertilizer in
                             Text(fertilizer.name)
+                            
                         }
                         TitleExView(title: "Maladies :", textSize: 26, textColor: .mvDarkGreen)
                         ForEach(plant.diseases) { disease in
@@ -119,6 +122,9 @@ struct ListPlantDetailsView: View {
                 }
                 .padding(.horizontal, 16)
             }
+        }
+        .onAppear {
+            fertilizerViewModel.fetchFertilizers()
         }
         .background(BackgroundExView(opacity: 0.9))
     }
