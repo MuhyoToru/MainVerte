@@ -22,3 +22,6 @@ class Disease: Codable, Identifiable {
         self.cureMethod = cureMethod
     }
 }
+
+
+

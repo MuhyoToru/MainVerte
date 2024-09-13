@@ -12,7 +12,6 @@ class DiseaseViewModel: ObservableObject {
     
     @Published var diseases : [Disease] = []
     
-    
     func fetchDiseases() {
         
         guard let url = URL(string: "http://10.80.55.36:3000/diseases") else {
@@ -38,3 +37,5 @@ class DiseaseViewModel: ObservableObject {
         } .resume()
     }
 }
+
+
