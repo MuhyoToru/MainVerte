@@ -14,29 +14,19 @@ struct MyAccountView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                
-
                 VStack {
-                    
                     TitleExView(title: "Authentification")
-
                     VStack {
-                        
                         Spacer()
-
                         AuthentificationSelectionExView(selection: $selectedView)
                             .padding()
-                        
                         if selectedView == 0 {
                             MyAccountLoginView()
                         } else {
                             MyAccountRegisterView()
                         }
-                        
                         Spacer()
-                        
                         Button(action: {
-                            
                         }) {
                             Text("Confirmer")
                                 .foregroundStyle(.mvWhite)
@@ -47,7 +37,6 @@ struct MyAccountView: View {
                         }
                         .padding()
                         Spacer()
-                        
                     }
                     .background(
                         Color.mvLightGreen.opacity(5)

@@ -23,7 +23,6 @@ struct IdeasMyPublicatonsView: View {
                             image: "MVBathroom02",
                             title: "Douche Jardinée",
                             subtitle: "03/06/2024"
-//                            isFavorite: false
                         )
                     }
                     NavigationLink(destination: IdeaTipDetailsView(ideaTip: IdeaTip(

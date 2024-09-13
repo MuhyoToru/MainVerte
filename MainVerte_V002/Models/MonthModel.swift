@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Month: String {
+enum Month: String, Codable {
     case january = "Janvier"
     case february = "Février"
     case march = "Mars"

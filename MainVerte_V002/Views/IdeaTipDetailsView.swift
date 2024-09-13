@@ -57,8 +57,8 @@ struct IdeaTipDetailsView: View {
     }
 }
 
-//#Preview {
-//    IdeaTipDetailsView()
-//}
+#Preview {
+    IdeaTipDetailsView(ideaTip: IdeaTip(title: "Test", subtitle: "Test", images: "Test", description: "Test", subCategory: "Test"))
+}
 
 

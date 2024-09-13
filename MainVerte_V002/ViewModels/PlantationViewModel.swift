@@ -13,7 +13,7 @@ import Observation
     
     init() {
         plantations = [
-            Plantation(personalNotes: "Ceci est une note personnel", plantedDate: Date.now, plant: PlantViewModel().plants[0], container: PlantContainer.inGround)
+            Plantation(personalNotes: "Ceci est une note personnel", plantedDate: Date.now, plant: Plant(id: UUID().uuidString, name: "Test", scientificName: "Test", image: "MVTomato", description: "Test", size: 1, startSowingDate: .april, endSowingDate: .april, startBloomDate: .april, endBloomDate: .april, minTemperature: 1, maxTemperature: 1, wateringFrequency: 1, wateringQuantity: 1, spacing: 1, plantingMethod: "Test", startHarvestDate: .april, endHarvestDate: .april, colors: [.red], difficulty: "Test", fertilizers: [], diseases: [], exposures: [.fullShade], soils: [SoilViewModel().soils[0]], interiorExterior: [.exterior], containers: [.inGround]), container: PlantContainer.inGround)
         ]
     }
 }

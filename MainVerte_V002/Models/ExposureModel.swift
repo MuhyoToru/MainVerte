@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Exposure: String {
+enum Exposure: String, Codable {
     case fullSun = "Plein Soleil"
     case partialShade = "Mi-Ombre"
     case fullShade = "Ombre Totale"

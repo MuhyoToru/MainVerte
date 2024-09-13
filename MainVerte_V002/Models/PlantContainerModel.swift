@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum PlantContainer: String {
+enum PlantContainer: String, Codable {
     case inPot = "En pot"
     case inGround = "Pleine terre"
 }

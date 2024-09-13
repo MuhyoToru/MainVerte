@@ -10,7 +10,7 @@ import SwiftUI
 struct ListPlantsView: View {
     
     @State var researchText : String = ""
-    var plantViewModel : PlantViewModel = PlantViewModel()
+    @StateObject var plantViewModel : PlantViewModel = PlantViewModel()
     
     var body: some View {
         NavigationStack {
@@ -30,6 +30,9 @@ struct ListPlantsView: View {
             }
             .background(BackgroundExView(opacity: 0.9))
         }
+        .onAppear(perform: {
+            plantViewModel.fetchPlants()
+        })
     }
 }
 

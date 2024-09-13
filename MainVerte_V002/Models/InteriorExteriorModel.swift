@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum InteriorExterior: String {
+enum InteriorExterior: String, Codable {
     case interior = "Intérieur"
     case exterior = "Extérieur"
 }

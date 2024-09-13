@@ -97,13 +97,7 @@ struct MyAccountRegisterView: View {
                         .foregroundStyle(Color.mvDarkGreen)
                 }
             )
-            
-//          HStack {
-//                Toggle("Se souvenir de moi", isOn: $souvenirDeMoi)
-//                    .toggleStyle(CircularToggleStyle())
-//            }
         }
-        
         .foregroundStyle(.mvDarkGreen)
         .padding()
     }

@@ -9,34 +9,28 @@ import SwiftUI
 
 struct FavoriteButtonExView: View {
     var isFavorite: Bool
-//    init(isFavorite: Bool = false) {
-//            self._isFavorite = State(initialValue: isFavorite)
-//        }
     var body: some View {
-            ZStack {
-                if isFavorite {
-                    Image(systemName: "heart.fill")
-                        .resizable()
-                        .frame(width: 22, height: 22)
-                        .foregroundColor(Color.mvMediumBlue)
-                }
-                Image(systemName: "heart")
+        ZStack {
+            if isFavorite {
+                Image(systemName: "heart.fill")
                     .resizable()
                     .frame(width: 22, height: 22)
-                    .foregroundColor(Color.mvDarkGreen)
-                Image(systemName: "heart")
-                    .resizable()
-                    .frame(width: 24, height: 24)
-                    .foregroundColor(Color.mvDarkGreen)
+                    .foregroundColor(Color.mvMediumBlue)
             }
+            Image(systemName: "heart")
+                .resizable()
+                .frame(width: 22, height: 22)
+                .foregroundColor(Color.mvDarkGreen)
+            Image(systemName: "heart")
+                .resizable()
+                .frame(width: 24, height: 24)
+                .foregroundColor(Color.mvDarkGreen)
+        }
     }
 }
 
-//#Preview {
-//    VStack {
-//        FavoriteButtonExView()
-//        FavoriteButtonExView(isFavorite: true)
-//    }
-//}
+#Preview {
+    FavoriteButtonExView(isFavorite: true)
+}
 
 

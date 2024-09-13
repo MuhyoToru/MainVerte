@@ -58,8 +58,8 @@ struct IdeaSpaceDetailsView: View {
     }
 }
 
-//#Preview {
-//    IdeaSpaceDetailsView()
-//}
+#Preview {
+    IdeaSpaceDetailsView(ideaSpace: IdeaSpace(title: "Test", subtitle: "Test", images: "MVTomato", description: "Test", subCategory: "Test"))
+}
 
 

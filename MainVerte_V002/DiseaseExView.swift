@@ -38,5 +38,5 @@ struct DiseaseExView: View {
 }
 
 #Preview {
-    DiseaseExView(disease: Disease(name: "Mildiou", image: "MVMildew", description: "Test", cureMethod: "Test"))
+    DiseaseExView(disease: Disease(id : UUID(), name: "Mildiou", image: "MVMildew", description: "Test", cureMethod: "Test"))
 }

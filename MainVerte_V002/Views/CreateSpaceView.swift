@@ -82,7 +82,6 @@ struct CreateSpaceView: View {
                         }
                         .disabled(isInside)
                         .opacity(isInside ? 0.4 : 1)
-                        //                        .animation(.easeInOut, value: isOutside)
                         DifficultyExView(newSpace: $newSpace, widthButton: widthButton, heightButton: heightButton, cornerRadiusButton: cornerRadiusButton, minimalButtonTextSize: minimalButtonTextSize, maximalButtonTextSize: maximalButtonTextSize, widthText: widthText)
                         LazyVGrid(columns : [GridItem(.adaptive(minimum: 50))]) {
                             ForEach(colors) { colorButton in

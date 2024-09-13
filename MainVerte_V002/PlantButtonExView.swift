@@ -46,5 +46,5 @@ struct PlantButtonExView: View {
 }
 
 #Preview {
-    PlantButtonExView(plant: PlantViewModel().plants[0])
+    PlantButtonExView(plant: Plant(id: UUID().uuidString, name: "Test Nom", scientificName: "Test Nom Scientifique", image: "MVTomato", description: "Ceci est une description", size: 1, startSowingDate: .april, endSowingDate: .april, startBloomDate: .april, endBloomDate: .april, minTemperature: 1, maxTemperature: 1, wateringFrequency: 1, wateringQuantity: 1, spacing: 1, plantingMethod: "Ceci est une méthode de plantation", startHarvestDate: .april, endHarvestDate: .april, colors: [], difficulty: "Facile", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [], containers: []))
 }
