@@ -90,7 +90,7 @@ struct ListPlantDetailsView: View {
                                             .font(.system(size: 36))
                                             .offset(x : -3, y : 3)
                                         Image(systemName: "leaf.fill")
-                                            .foregroundStyle(color)
+                                            .foregroundStyle(ColorConverter().colorConvertionFor(oneColor: color))
                                             .font(.system(size: 36))
                                     }
                                     Spacer()
@@ -184,5 +184,5 @@ struct ListPlantDetailsView: View {
 }
 
 #Preview {
-    ListPlantDetailsView(plant: Plant(id: UUID().uuidString, name: "Test", scientificName: "Test", image: "MVTomato", description: "Test", size: 1, startSowingDate: .april, endSowingDate: .april, startBloomDate: .april, endBloomDate: .april, minTemperature: 1, maxTemperature: 1, wateringFrequency: 1, wateringQuantity: 1, spacing: 1, plantingMethod: "Test", startHarvestDate: .april, endHarvestDate: .april, colors: [], difficulty: "Facile", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [.exterior], containers: [.inGround]))
+    ListPlantDetailsView(plant: Plant(id: UUID().uuidString, name: "Test", scientificName: "Test", image: "MVTomato", description: "Test", size: 1, startSowingDate: .april, endSowingDate: .april, startBloomDate: .april, endBloomDate: .april, minTemperature: 1, maxTemperature: 1, wateringFrequency: 1, wateringQuantity: 1, spacing: 1, plantingMethod: "Test", startHarvestDate: .april, endHarvestDate: .april, colors: [.red, .yellow, .green, .purple], difficulty: "Facile", fertilizers: [], diseases: [], exposures: [], soils: [], interiorExterior: [.exterior], containers: [.inGround]))
 }
