@@ -9,7 +9,7 @@ import SwiftUI
 import Foundation
 
 class Plant : Codable, Identifiable {
-    let id: String /*= UUID()*/
+    let id: String
     let name: String
     let scientificName: String
     let image: String
