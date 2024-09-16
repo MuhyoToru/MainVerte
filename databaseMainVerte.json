@@ -1,0 +1,450 @@
+{
+    "plants": [
+        {
+            "id": "fezf",
+            "name": "Laitue",
+            "scientificName": "Lactuca sativa",
+            "image": "MVLettuce",
+            "description": "Plante annuelle cultivée pour ses feuilles tendres.",
+            "size": 30,
+            "minTemperature": 5,
+            "maxTemperature": 25,
+            "wateringFrequency": 3,
+            "wateringQuantity": 1.0,
+            "spacing": 25,
+            "plantingMethod": "Semis en ligne à 0,5 cm de profondeur, éclaircir après levée.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "fegfcfzef",
+            "name": "Poivron",
+            "scientificName": "Capsicum annuum",
+            "image": "MVBellPepper",
+            "description": "Plante annuelle cultivée pour ses fruits charnus.",
+            "size": 60,
+            "minTemperature": 10,
+            "maxTemperature": 35,
+            "wateringFrequency": 3,
+            "wateringQuantity": 1.0,
+            "spacing": 50,
+            "plantingMethod": "Semis en godet, repiquer en pleine terre après les dernières gelées.",
+            "difficulty": "Moyenne"
+        },
+        {
+            "id": "feguzgfcz",
+            "name": "Courgette",
+            "scientificName": "Cucurbita pepo",
+            "image": "MVZucchini",
+            "description": "Plante annuelle rampante ou grimpante, cultivée pour ses fruits comestibles.",
+            "size": 80,
+            "minTemperature": 10,
+            "maxTemperature": 30,
+            "wateringFrequency": 3,
+            "wateringQuantity": 2.0,
+            "spacing": 80,
+            "plantingMethod": "Semis direct en pleine terre à 2-3 cm de profondeur.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "sazsadlsjh",
+            "name": "Radis",
+            "scientificName": "Raphanus sativus",
+            "image": "MVRadish",
+            "description": "Plante annuelle ou bisannuelle cultivée pour sa racine comestible.",
+            "size": 15,
+            "minTemperature": 5,
+            "maxTemperature": 30,
+            "wateringFrequency": 2,
+            "wateringQuantity": 0.5,
+            "spacing": 5,
+            "plantingMethod": "Semis en ligne à 1 cm de profondeur, éclaircir après levée.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "adzpihzud",
+            "name": "Épinard",
+            "scientificName": "Spinacia oleracea",
+            "image": "MVSpinach",
+            "description": "Plante annuelle ou bisannuelle cultivée pour ses feuilles comestibles.",
+            "size": 30,
+            "minTemperature": 5,
+            "maxTemperature": 25,
+            "wateringFrequency": 4,
+            "wateringQuantity": 1.0,
+            "spacing": 20,
+            "plantingMethod": "Semis en ligne à 1 cm de profondeur, éclaircir après levée.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "douzegdc",
+            "name": "Aubergine",
+            "scientificName": "Solanum melongena",
+            "image": "MVEggplant",
+            "description": "Plante annuelle cultivée pour ses fruits comestibles, généralement violets.",
+            "size": 100,
+            "minTemperature": 10,
+            "maxTemperature": 35,
+            "wateringFrequency": 3,
+            "wateringQuantity": 1.5,
+            "spacing": 50,
+            "plantingMethod": "Semis en godet, repiquer en pleine terre après les dernières gelées.",
+            "difficulty": "Moyenne"
+        },
+        {
+            "id": "cziohdcz",
+            "name": "Basilic",
+            "scientificName": "Ocimum basilicum",
+            "image": "MVBasil",
+            "description": "Plante aromatique annuelle utilisée pour ses feuilles dans de nombreux plats.",
+            "size": 45,
+            "minTemperature": 10,
+            "maxTemperature": 35,
+            "wateringFrequency": 2,
+            "wateringQuantity": 1.0,
+            "spacing": 25,
+            "plantingMethod": "Semis en godet, repiquer en pleine terre après les dernières gelées.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "ipadjpa",
+            "name": "Fraise",
+            "scientificName": "Fragaria × ananassa",
+            "image": "MVStrawberry",
+            "description": "Plante vivace cultivée pour ses fruits sucrés et juteux.",
+            "size": 20,
+            "minTemperature": -5,
+            "maxTemperature": 30,
+            "wateringFrequency": 3,
+            "wateringQuantity": 1.0,
+            "spacing": 30,
+            "plantingMethod": "Semis en godet, repiquer en pleine terre après les dernières gelées.",
+            "difficulty": "Moyenne"
+        },
+        {
+            "id": "839ds89ds",
+            "name": "Carotte",
+            "scientificName": "Daucus carota",
+            "image": "MVCarrot",
+            "description": "Plante bisannuelle cultivée pour sa racine comestible.",
+            "size": 30,
+            "minTemperature": -2,
+            "maxTemperature": 30,
+            "wateringFrequency": 5,
+            "wateringQuantity": 0.5,
+            "spacing": 5,
+            "plantingMethod": "Semis en ligne à 1 cm de profondeur, éclaircir après levée.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "837bdt78d",
+            "name": "Betterave",
+            "scientificName": "Beta vulgaris",
+            "image": "MVBeetroot",
+            "description": "Plante bisannuelle cultivée pour sa racine comestible et sucrée.",
+            "size": 40,
+            "minTemperature": -5,
+            "maxTemperature": 30,
+            "wateringFrequency": 4,
+            "wateringQuantity": 1.0,
+            "spacing": 10,
+            "plantingMethod": "Semis en ligne à 2 cm de profondeur, éclaircir après levée.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "23jkncs09",
+            "name": "Oignon",
+            "scientificName": "Allium cepa",
+            "image": "MVOnion",
+            "description": "Plante bisannuelle cultivée pour son bulbe comestible.",
+            "size": 50,
+            "minTemperature": -5,
+            "maxTemperature": 30,
+            "wateringFrequency": 6,
+            "wateringQuantity": 0.5,
+            "spacing": 10,
+            "plantingMethod": "Semis en pleine terre à 2 cm de profondeur.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "29s90sdnsd",
+            "name": "Ail",
+            "scientificName": "Allium sativum",
+            "image": "MVGarlic",
+            "description": "Plante vivace cultivée pour son bulbe aromatique.",
+            "size": 30,
+            "minTemperature": -10,
+            "maxTemperature": 30,
+            "wateringFrequency": 7,
+            "wateringQuantity": 0.3,
+            "spacing": 15,
+            "plantingMethod": "Planter les gousses directement en pleine terre.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "8hdh39ehd",
+            "name": "Concombre",
+            "scientificName": "Cucumis sativus",
+            "image": "MVCucumber",
+            "description": "Plante annuelle rampante cultivée pour ses fruits croquants.",
+            "size": 200,
+            "minTemperature": 10,
+            "maxTemperature": 35,
+            "wateringFrequency": 3,
+            "wateringQuantity": 1.5,
+            "spacing": 60,
+            "plantingMethod": "Semis direct en pleine terre après les dernières gelées.",
+            "difficulty": "Moyenne"
+        },
+        {
+            "id": "2389sd9ds",
+            "name": "Persil",
+            "scientificName": "Petroselinum crispum",
+            "image": "MVParsley",
+            "description": "Plante bisannuelle aromatique utilisée pour ses feuilles.",
+            "size": 25,
+            "minTemperature": -5,
+            "maxTemperature": 30,
+            "wateringFrequency": 3,
+            "wateringQuantity": 1.0,
+            "spacing": 15,
+            "plantingMethod": "Semis en ligne à 1 cm de profondeur, éclaircir après levée.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "q9dj9s9d",
+            "name": "Menthe",
+            "scientificName": "Mentha",
+            "image": "MVMint",
+            "description": "Plante vivace aromatique cultivée pour ses feuilles parfumées.",
+            "size": 60,
+            "minTemperature": -5,
+            "maxTemperature": 30,
+            "wateringFrequency": 2,
+            "wateringQuantity": 1.0,
+            "spacing": 40,
+            "plantingMethod": "Planter les boutures ou semer directement en pleine terre.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "98sdjfs7d",
+            "name": "Thym",
+            "scientificName": "Thymus vulgaris",
+            "image": "MVThyme",
+            "description": "Plante vivace aromatique utilisée pour ses feuilles dans de nombreux plats.",
+            "size": 30,
+            "minTemperature": -10,
+            "maxTemperature": 30,
+            "wateringFrequency": 1,
+            "wateringQuantity": 0.5,
+            "spacing": 20,
+            "plantingMethod": "Semis en godet ou directement en pleine terre.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "j9jsdj8s",
+            "name": "Romarin",
+            "scientificName": "Rosmarinus officinalis",
+            "image": "MVRosemary",
+            "description": "Plante vivace aromatique utilisée pour ses feuilles dans la cuisine méditerranéenne.",
+            "size": 100,
+            "minTemperature": -10,
+            "maxTemperature": 35,
+            "wateringFrequency": 2,
+            "wateringQuantity": 0.7,
+            "spacing": 50,
+            "plantingMethod": "Planter en pleine terre ou en pot.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "ndjs923r",
+            "name": "Sauge",
+            "scientificName": "Salvia officinalis",
+            "image": "MVSage",
+            "description": "Plante vivace aromatique utilisée pour ses feuilles dans divers plats.",
+            "size": 60,
+            "minTemperature": -10,
+            "maxTemperature": 30,
+            "wateringFrequency": 2,
+            "wateringQuantity": 0.5,
+            "spacing": 40,
+            "plantingMethod": "Planter en pleine terre ou en pot.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "8sdkjd8j",
+            "name": "Fenouil",
+            "scientificName": "Foeniculum vulgare",
+            "image": "MVFennel",
+            "description": "Plante vivace cultivée pour ses bulbes, feuilles et graines aromatiques.",
+            "size": 120,
+            "minTemperature": -5,
+            "maxTemperature": 30,
+            "wateringFrequency": 3,
+            "wateringQuantity": 1.5,
+            "spacing": 50,
+            "plantingMethod": "Semis en ligne ou en poquet.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "sdj8s9dj",
+            "name": "Aneth",
+            "scientificName": "Anethum graveolens",
+            "image": "MVDill",
+            "description": "Plante annuelle aromatique utilisée pour ses feuilles et ses graines.",
+            "size": 90,
+            "minTemperature": 5,
+            "maxTemperature": 30,
+            "wateringFrequency": 2,
+            "wateringQuantity": 0.7,
+            "spacing": 30,
+            "plantingMethod": "Semis en ligne ou en godet.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": "9djsj2ds",
+            "name": "Lavande",
+            "scientificName": "Lavandula angustifolia",
+            "image": "MVLavender",
+            "description": "Plante vivace aromatique cultivée pour ses fleurs parfumées.",
+            "size": 100,
+            "minTemperature": -10,
+            "maxTemperature": 35,
+            "wateringFrequency": 1,
+            "wateringQuantity": 0.5,
+            "spacing": 60,
+            "plantingMethod": "Planter en pleine terre ou en pot.",
+            "difficulty": "Facile"
+        }
+    ],
+    "fertilizers": [
+        {
+            "id": "1",
+            "name": "Composte",
+            "description": "Déchets organiques décomposés, riche en matière organique, améliore la structure du sol et fournit des nutriments."
+        },
+        {
+            "id": "2",
+            "name": "Fumier",
+            "description": "Excréments d'animaux décomposés, riche en azote, phosphore et potassium, améliore la fertilité du sol."
+        },
+        {
+            "id": "3",
+            "name": "Engrais vert",
+            "description": "Plantes cultivées et enfouies pour enrichir le sol, améliore la structure et ajoute de l'azote."
+        },
+        {
+            "id": "4",
+            "name": "Farine d'os",
+            "description": "Riche en phosphore et calcium, améliore la croissance des racines et la floraison."
+        },
+        {
+            "id": "5",
+            "name": "Guano",
+            "description": "Excréments d'oiseaux marins ou de chauves-souris, riche en azote et phosphore, utilisé comme amendement rapide."
+        },
+        {
+            "id": "6",
+            "name": "Tourteau de ricin",
+            "description": "Résidu de l'extraction d'huile de ricin, riche en azote, phosphore et potassium, utilisé comme engrais et répulsif pour certains nuisibles."
+        },
+        {
+            "id": "7",
+            "name": "Algues marines",
+            "description": "Riche en oligo-éléments, améliore la résistance des plantes aux maladies et stress."
+        },
+        {
+            "id": "8",
+            "name": "Farine de sang",
+            "description": "Riche en azote, favorise la croissance des feuilles et des tiges."
+        },
+        {
+            "id": "9",
+            "name": "Engrais azoté",
+            "description": "Contient de l'azote, favorise la croissance végétative, ex: nitrate d'ammonium."
+        },
+        {
+            "id": "10",
+            "name": "Engrais phosphaté",
+            "description": "Contient du phosphore, favorise la croissance des racines et la floraison, ex: superphosphate."
+        },
+        {
+            "id": "11",
+            "name": "Engrais potassique",
+            "description": "Contient du potassium, améliore la résistance aux maladies et la qualité des fruits, ex: sulfate de potassium."
+        },
+        {
+            "id": "12",
+            "name": "Engrais complet",
+            "description": "Contient des proportions équilibrées d'azote, phosphore et potassium."
+        },
+        {
+            "id": "13",
+            "name": "Engrais soluble",
+            "description": "Engrais dissous dans l'eau, rapidement disponible pour les plantes, utilisé pour les applications foliaires ou l'irrigation."
+        },
+        {
+            "id": "14",
+            "name": "Engrais à libération lente",
+            "description": "Libère les nutriments sur une période prolongée, réduit les risques de brûlure des plantes, ex: granulés enrobés d'urée."
+        },
+        {
+            "id": "15",
+            "name": "Engrais foliaire",
+            "description": "Appliqué directement sur les feuilles, fournit des nutriments rapidement absorbés par la plante."
+        },
+        {
+            "id": "16",
+            "name": "Dolomie",
+            "description": "Riche en calcium et magnésium, améliore le pH du sol et fournit des nutriments essentiels."
+        },
+        {
+            "id": "17",
+            "name": "Gypse",
+            "description": "Contient du calcium et du soufre, améliore la structure du sol et la croissance des racines."
+        },
+        {
+            "id": "18",
+            "name": "Roche phosphatée",
+            "description": "Source naturelle de phosphore, utilisé principalement dans les sols acides."
+        },
+        {
+            "id": "19",
+            "name": "Engrais mycorhizien",
+            "description": "Contient des spores de champignons mycorhiziens, améliore l'absorption des nutriments et l'eau par les racines."
+        },
+        {
+            "id": "20",
+            "name": "Vermicompost",
+            "description": "Produit par les vers de terre, riche en nutriments et microbes bénéfiques pour le sol."
+        },
+        {
+            "id": "21",
+            "name": "Thé de composte",
+            "description": "Liquide obtenu à partir de l'infusion de compost, utilisé comme fertilisant liquide et stimulant microbien."
+        },
+        {
+            "id": "22",
+            "name": "Engrais liquide universel",
+            "description": "Formulé pour une large gamme de plantes, généralement équilibré en NPK."
+        },
+        {
+            "id": "23",
+            "name": "Engrais liquide pour plantes fleuries",
+            "description": "Contient plus de phosphore pour encourager la floraison."
+        },
+        {
+            "id": "24",
+            "name": "Engrais liquide pour légumes",
+            "description": "Équilibré pour répondre aux besoins spécifiques des plantes potagères."
+        }
+    ],
+    "diseases": [
+        {
+            "id": "dbek59ugdfu76ez",
+            "name": "Mildiou",
+            "image": "MVMildew",
+            "description": "Provoque l'apparition de taches vertes pâles à brunes qui s'étendent peu à peu. Les tissus finissent par se dessécher.",
+            "cureMethod": "Semer ou planter à bonne distance pour favoriser la circulation de l'air et aérer régulièrement les abris. Certains conseillent d'espacer les plants d'1 mètre car le champignon se développera moins facilement."
+        }
+    ]
+}
