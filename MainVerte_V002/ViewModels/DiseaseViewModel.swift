@@ -14,7 +14,7 @@ class DiseaseViewModel: ObservableObject {
     
     func fetchDiseases() {
         
-        guard let url = URL(string: "http://10.80.55.36:3000/diseases") else {
+        guard let url = URL(string: "http://localhost:3000/diseases") else {
             print("Invalid URL")
             return
         }

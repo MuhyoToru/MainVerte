@@ -12,7 +12,7 @@ class FertilizerViewModel: ObservableObject {
     @Published var fertilizers: [Fertilizer] = []
     
     func fetchFertilizers() {
-        guard let url = URL(string: "http://10.80.55.36:3000/fertilizers") else {
+        guard let url = URL(string: "http://localhost:3000/fertilizers") else {
             print("Invalid URL")
             return
         }

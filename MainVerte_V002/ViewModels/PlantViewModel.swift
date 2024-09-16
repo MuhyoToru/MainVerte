@@ -9,7 +9,7 @@ import Foundation
 
 class PlantViewModel: ObservableObject {
     @Published var plants : [Plant] = []
-    private let baseUrl : String = "http://10.80.55.36:3000/plants"
+    private let baseUrl : String = "http://localhost:3000/plants"
     
     func fetchPlants() {
         guard let url = URL(string : baseUrl) else {
