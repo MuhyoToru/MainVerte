@@ -116,6 +116,9 @@
 		F65A29032C5E9C130021764A /* IdeaListQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */; };
 		F65A29052C603C430021764A /* CreateIdeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29042C603C420021764A /* CreateIdeaView.swift */; };
 		F65A29572C6258970021764A /* IdeaMyPublicationCreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65A29562C6258970021764A /* IdeaMyPublicationCreatedView.swift */; };
+		F6781D0C2C9459F3007D1892 /* LikeManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6781D0B2C9459F3007D1892 /* LikeManagerModel.swift */; };
+		F6781D102C945E00007D1892 /* LikeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6781D0F2C945E00007D1892 /* LikeProtocol.swift */; };
+		F6781D122C94648C007D1892 /* CommentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6781D112C94648C007D1892 /* CommentableProtocol.swift */; };
 		F684409B2C629C5D00DF562B /* CustomTextFieldCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684409A2C629C5D00DF562B /* CustomTextFieldCoordinator.swift */; };
 		F684409D2C629D1D00DF562B /* CustomTextFieldUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684409C2C629D1D00DF562B /* CustomTextFieldUIView.swift */; };
 		F697B2D92C64341F009EBA82 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697B2D82C64341F009EBA82 /* CollectionModel.swift */; };
@@ -233,6 +236,9 @@
 		F65A29022C5E9C130021764A /* IdeaListQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaListQuestionsView.swift; sourceTree = "<group>"; };
 		F65A29042C603C420021764A /* CreateIdeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIdeaView.swift; sourceTree = "<group>"; };
 		F65A29562C6258970021764A /* IdeaMyPublicationCreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaMyPublicationCreatedView.swift; sourceTree = "<group>"; };
+		F6781D0B2C9459F3007D1892 /* LikeManagerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeManagerModel.swift; sourceTree = "<group>"; };
+		F6781D0F2C945E00007D1892 /* LikeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeProtocol.swift; sourceTree = "<group>"; };
+		F6781D112C94648C007D1892 /* CommentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentableProtocol.swift; sourceTree = "<group>"; };
 		F684409A2C629C5D00DF562B /* CustomTextFieldCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldCoordinator.swift; sourceTree = "<group>"; };
 		F684409C2C629D1D00DF562B /* CustomTextFieldUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldUIView.swift; sourceTree = "<group>"; };
 		F697B2D82C64341F009EBA82 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
@@ -360,6 +366,9 @@
 			children = (
 				E2909B9F2C92EB6000724546 /* Extensions */,
 				F697B2D82C64341F009EBA82 /* CollectionModel.swift */,
+				F6781D0F2C945E00007D1892 /* LikeProtocol.swift */,
+				F6781D112C94648C007D1892 /* CommentableProtocol.swift */,
+				F6781D0B2C9459F3007D1892 /* LikeManagerModel.swift */,
 				E20AF7812C5B83DD001579B2 /* ColorButtonModel.swift */,
 				E20AF7842C5B83DD001579B2 /* CommentModel.swift */,
 				E20AF7832C5B83DD001579B2 /* DiseaseModel.swift */,
@@ -728,6 +737,7 @@
 				E284CE412C620E2E00A89689 /* ImageUIView.swift in Sources */,
 				E20AF7FB2C5B84A0001579B2 /* IdeaSpaceDetailsView.swift in Sources */,
 				E20AF7F32C5B84A0001579B2 /* IdeaTipDetailsView.swift in Sources */,
+				F6781D102C945E00007D1892 /* LikeProtocol.swift in Sources */,
 				F684409D2C629D1D00DF562B /* CustomTextFieldUIView.swift in Sources */,
 				E22A70B22C637E2500E644D7 /* CreateSpaceAddPlantProposalView.swift in Sources */,
 				E20AF7C22C5B845F001579B2 /* ComposedImagesExView.swift in Sources */,
@@ -748,6 +758,7 @@
 				E2A252072C5CDB3E0048E809 /* MyAccountRegisterView.swift in Sources */,
 				F65A28FD2C5D03060021764A /* ImageTextExView.swift in Sources */,
 				E20AF7C92C5B845F001579B2 /* ButtonAddExView.swift in Sources */,
+				F6781D122C94648C007D1892 /* CommentableProtocol.swift in Sources */,
 				E20AF7A82C5B8418001579B2 /* DiseaseViewModel.swift in Sources */,
 				E20AF7FA2C5B84A0001579B2 /* FavoritesPlantsView.swift in Sources */,
 				F697B2D92C64341F009EBA82 /* CollectionModel.swift in Sources */,
@@ -762,6 +773,7 @@
 				E20AF7CC2C5B845F001579B2 /* LineSeparatorExView.swift in Sources */,
 				E20AF7AE2C5B8418001579B2 /* IdeaSpaceViewModel.swift in Sources */,
 				E20AF78B2C5B83DD001579B2 /* PlantModel.swift in Sources */,
+				F6781D0C2C9459F3007D1892 /* LikeManagerModel.swift in Sources */,
 				E284CE472C620E3900A89689 /* JustifiedTextViewContainer.swift in Sources */,
 				E22A70AF2C637E2500E644D7 /* MySpaceAddPlantAlreadyHereView.swift in Sources */,
 				E284CE422C620E2E00A89689 /* ImageViewContainer.swift in Sources */,
